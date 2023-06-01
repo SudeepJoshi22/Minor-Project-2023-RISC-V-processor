@@ -8,10 +8,7 @@ Instructions supported are:
 6. SRL
 In the project instr_mem.v gets its memory initialized by using $readmemh.
 The simple test assembly program used to test this is:
-.global main
-
-.text
-main:
+	
 	add t2, t0, t1 
 	sub s0, t0, t1 
 	and s1, t0, t1 
@@ -23,3 +20,4 @@ if you want to run it on your system).
 Note: As we don't have any supporting instructions to load data to registers in the reg_file.v we are initializing registors x0-x31 with the values correspoding to their index(ex: x2 is initialized with 2).
 
 The output waveform is as follows:
+![Screenshot]
