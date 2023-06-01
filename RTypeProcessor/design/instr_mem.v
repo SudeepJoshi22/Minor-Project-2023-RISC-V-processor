@@ -31,7 +31,7 @@ always @(*)
 begin
     if(!rst)
     begin
-        $readmemh("/home/sudeepaj/Documents/MinorProjectGITHUB/RTypeProcessor/Instructions/r_type_test_instructios.mem",Mem);
+        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RTypeProcessor/Instructions/r_type_test_instructios.mem",Mem);
         /*
         Mem[3]<=8'h01;
         Mem[2]<=8'h49;
