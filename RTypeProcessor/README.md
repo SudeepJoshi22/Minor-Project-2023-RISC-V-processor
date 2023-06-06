@@ -10,6 +10,7 @@ In the project instr_mem.v gets its memory initialized by using $readmemh.
 
 
 The simple test assembly program used to test this is:
+Markup:
 	*add t0,t1,t2
 	*sub t0,t1,t2
 	*and t0,t1,t2
