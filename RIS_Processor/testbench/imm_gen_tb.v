@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05.05.2023 11:46:19
+// Create Date: 17.05.2023 23:16:50
 // Design Name: 
-// Module Name: processor_r_type_tb
+// Module Name: imm_gen_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,22 +20,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_r_type_tb;
-reg clk,rst;
-wire [31:0] result;
-wire zero;
+module imm_gen_tb;
+reg [31:0] instr;
+wire [31:0] immOut;
 
-processor_r_type DUT(clk,rst,result,zero);
-//processor_r_type_pipelined DUT(clk,rst,result,zero);
-
-
-initial clk <=0;
-always #10 clk <= ~clk;
+imm_gen DUT(
+instr,
+immOut
+);
 
 initial
 begin
-    rst = 0;
-    #25 rst = 1;
+instr <= 32'h06432283;
+#10
+instr <= 32'h0653a223;
+
 end
 
 endmodule

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05.05.2023 11:46:19
+// Create Date: 03.05.2023 12:24:57
 // Design Name: 
-// Module Name: processor_r_type_tb
+// Module Name: instr_fetch
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,22 +20,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_r_type_tb;
-reg clk,rst;
-wire [31:0] result;
-wire zero;
+module instr_fetch(
+input clk,
+input rst,
+output [31:0] instrCode
+);
+reg [31:0] PC;
 
-processor_r_type DUT(clk,rst,result,zero);
-//processor_r_type_pipelined DUT(clk,rst,result,zero);
+instr_mem m(PC,rst,instrCode);
 
-
-initial clk <=0;
-always #10 clk <= ~clk;
-
-initial
+always @(posedge clk,negedge rst)
 begin
-    rst = 0;
-    #25 rst = 1;
+    if(!rst)
+        PC <= 0;
+    else
+        PC <= PC + 32'd4;
+
 end
 
 endmodule

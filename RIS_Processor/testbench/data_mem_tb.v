@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05.05.2023 11:46:19
+// Create Date: 17.05.2023 20:11:06
 // Design Name: 
-// Module Name: processor_r_type_tb
+// Module Name: data_mem_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,22 +20,40 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_r_type_tb;
-reg clk,rst;
-wire [31:0] result;
-wire zero;
+module data_mem_tb;
+reg clk;
+reg rst;
+reg rw;
+reg [31:0] addr;
+reg [31:0] write_data;
+wire [31:0] read_data;
 
-processor_r_type DUT(clk,rst,result,zero);
-//processor_r_type_pipelined DUT(clk,rst,result,zero);
+data_mem DUT(
+clk,
+rst,
+rw,
+addr,
+write_data,
+read_data
+);
 
+initial clk <= 0;
 
-initial clk <=0;
 always #10 clk <= ~clk;
 
 initial
 begin
-    rst = 0;
-    #25 rst = 1;
+    rst <= 0;
+    rw <= 0;
+    addr <= 0;
+    write_data <= 0;
+    #25
+    rw <= 0;
+    rst <= 1;
+    addr <= 10;
+    write_data <= 32'd20;
+    #10
+    rw <= 1;
 end
 
 endmodule

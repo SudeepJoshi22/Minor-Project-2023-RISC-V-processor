@@ -29,14 +29,14 @@ input [31:0] write_data,
 output wire [31:0] read_data
 );
 
-reg [7:0] memory[(2^32)-1:0]; //byte adressablenteger i;
+reg [7:0] memory[(2^32)-1:0]; //byte adressable
 integer i;
 
 always @(posedge clk, negedge rst)
 begin
     if(~rst)
     begin
-        for(i=0;i<(2^32);i=i+1) memory[i] <= i;
+        for(i=0;i<(2^32);i=i+1) memory[i] <= 8'd0;
     end
     else
     begin

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05.05.2023 11:46:19
+// Create Date: 03.05.2023 12:28:36
 // Design Name: 
-// Module Name: processor_r_type_tb
+// Module Name: instr_fetch_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,22 +20,26 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_r_type_tb;
+module instr_fetch_tb;
 reg clk,rst;
-wire [31:0] result;
-wire zero;
+wire [31:0] instrCode;
 
-processor_r_type DUT(clk,rst,result,zero);
-//processor_r_type_pipelined DUT(clk,rst,result,zero);
+instr_fetch DUT(clk,rst,instrCode);
 
+initial clk = 0;
 
-initial clk <=0;
 always #10 clk <= ~clk;
 
 initial
 begin
+    rst = 1;
+    #10
     rst = 0;
-    #25 rst = 1;
+    #10 
+    rst = 1;
+    #200 
+    $finish;
+
 end
 
 endmodule

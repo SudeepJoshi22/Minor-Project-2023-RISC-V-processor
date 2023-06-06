@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05.05.2023 11:46:19
+// Create Date: 20.05.2023 00:34:21
 // Design Name: 
-// Module Name: processor_r_type_tb
+// Module Name: processor_i_type_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,22 +20,28 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_r_type_tb;
+module processor_i_type_tb;
 reg clk,rst;
 wire [31:0] result;
 wire zero;
 
-processor_r_type DUT(clk,rst,result,zero);
-//processor_r_type_pipelined DUT(clk,rst,result,zero);
+processor_i_type DUT(
+clk,
+rst,
+result,
+zero
+);
 
+initial clk <= 0;
 
-initial clk <=0;
 always #10 clk <= ~clk;
 
 initial
 begin
-    rst = 0;
-    #25 rst = 1;
+    rst <= 0;
+    #25
+    rst <= 1;
+
 end
 
 endmodule
