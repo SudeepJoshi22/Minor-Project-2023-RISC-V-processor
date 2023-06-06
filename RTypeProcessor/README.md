@@ -8,11 +8,13 @@ Instructions supported are:
 6. SRL
 In the project instr_mem.v gets its memory initialized by using $readmemh.
 The simple test assembly program used to test this is:
-	
-	I1: add t2, t0, t1 
-	I2: sub s0, t0, t1 
-	I3: and s1, t0, t1 
-	I4: sll t6,t4,s1
+
+	*add t0,t1,t2
+	*sub t0,t1,t2
+	*and t0,t1,t2
+	*or  t0,t1,t2
+	*sll t0,t1,t2
+	*srl t0,t1,t2
 
 Using RARS software these assembly instructions are converted to machine code and saved in the .mem to be read by the instr_mem.v(replace the path location in the instr_mem.v by your path whrere you have saved the .mem,
 if you want to run it on your system).
