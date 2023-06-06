@@ -6,6 +6,7 @@ Instructions supported are:
 4. OR
 5. SLL
 6. SRL
+
 In the project instr_mem.v gets its memory initialized by using $readmemh.
 
 
