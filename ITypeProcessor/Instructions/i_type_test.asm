@@ -1,7 +1,10 @@
 .global main
 
-.text
+.text 
 main:
-	andi t3,t2,0x0ff
-	slli t4,t3,1
-	srli t5,t4,1
+	lw t1,0(t0)
+	addi t0,t1,0x123
+	andi t0,t1,0x00f
+	ori t0,t1,0x0f0
+	slli t0,t1,0x001
+	srli t0,t1,0x001

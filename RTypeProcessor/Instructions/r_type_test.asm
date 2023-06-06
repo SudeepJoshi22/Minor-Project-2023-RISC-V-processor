@@ -2,7 +2,11 @@
 
 .text
 main:
-	add t2, t0, t1 
-	sub s0, t0, t1 
-	and s1, t0, t1 
-	sll t6,t4,s1
+	add t0,t1,t2
+	sub t0,t1,t2
+	and t0,t1,t2
+	or  t0,t1,t2
+	sll t0,t1,t2
+	srl t0,t1,t2
+	
+	
