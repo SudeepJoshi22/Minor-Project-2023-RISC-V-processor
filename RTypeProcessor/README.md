@@ -23,4 +23,4 @@ if you want to run it on your system).
 Note: As we don't have any supporting instructions to load data to registers in the reg_file.v we are initializing registors x0-x31 with the values correspoding to their index(ex: x2 is initialized with 2).
 
 The output waveform is as follows:
-![Screenshot]([https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RTypeProcessor/R_type_output.png](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RTypeProcessor/r_vivado.png])
+![Screenshot]([https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RTypeProcessor/r_vivado.png])
