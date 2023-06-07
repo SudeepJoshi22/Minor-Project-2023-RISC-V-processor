@@ -26,14 +26,15 @@ output wire [31:0] immOut
 );
 reg [11:0] imm;
 wire [6:0] opcode;
-parameter I = 7'b0010011, S = 7'b0000011;
+parameter I1 = 7'b0010011, I2 = 7'b0000011, S = 7'b0000011;
 
 assign opcode = instr[6:0];
 
 always @(*)
 begin
     case(opcode)
-        I: imm <= instr[31:20];
+        I1: imm <= instr[31:20];
+        I2: imm <= instr[31:20];
         S: imm <= {instr[31:25],instr[11:7]};
         default: imm <= 12'd0;
     endcase

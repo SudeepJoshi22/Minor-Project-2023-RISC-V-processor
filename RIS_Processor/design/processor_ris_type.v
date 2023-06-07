@@ -40,6 +40,9 @@ wire MemToReg;
 wire AluSrc;
 wire [31:0] Bi;
 wire [31:0] read_data;
+wire [1:0] whb;
+wire [31:0] B_ext;
+wire [31:0] WriteData_ext;
 
 assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
@@ -56,8 +59,14 @@ instrCode
 reg_file_i REG_FILE(
 clk,RegWrite,rst,
 rs1,rs2,rd,
-WriteData,
+WriteData_ext,
 A,B
+);
+
+signext SIGNEXT1(
+B,
+whb,
+B_ext
 );
 
 //Imm Gen
@@ -73,7 +82,8 @@ RegWrite,
 alu_ctrl,
 rw,
 MemToReg,
-AluSrc
+AluSrc,
+whb
 );
 
 
@@ -93,10 +103,17 @@ clk,
 rst,
 rw,
 result,
-B,
+B_ext,
 read_data
 );
 
+//WB
 assign WriteData = (MemToReg)? read_data : result;
+
+signext SIGNEXT2(
+WriteData,
+whb,
+WriteData_ext
+);
 
 endmodule

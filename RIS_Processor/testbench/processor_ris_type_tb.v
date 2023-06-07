@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_i_type_tb;
+module processor_ris_type_tb;
 reg clk,rst;
 wire [31:0] result;
 wire zero;
 
-processor_i_type DUT(
+processor_ris_type DUT(
 clk,
 rst,
 result,

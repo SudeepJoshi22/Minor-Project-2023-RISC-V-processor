@@ -31,9 +31,13 @@ immOut
 
 initial
 begin
-instr <= 32'h06432283;
+instr <= 32'hf9c30293;
 #10
-instr <= 32'h0653a223;
+instr <= 32'h06430293;
+#10
+instr <= 32'h0c832283;
+#10
+instr <= 32'hf3832283;
 
 end
 

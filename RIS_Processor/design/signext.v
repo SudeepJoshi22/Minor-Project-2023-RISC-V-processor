@@ -6,7 +6,7 @@ input [1:0] whb,
 output reg [31:0] data_op
 );
 
-parameter byte  = 2'b00, half_word = 2'b01, word = 2'b01;
+parameter byte  = 2'b00, half_word = 2'b01, word = 2'b10;
  
 always @(*)
 begin
