@@ -42,9 +42,9 @@ begin
         XOR:
             result <= A ^ B;
         SRL:
-            result <= A << B;
-        SLL:
             result <= A >> B;
+        SLL:
+            result <= A << B;
         default:
             result <= 32'bz;
     endcase

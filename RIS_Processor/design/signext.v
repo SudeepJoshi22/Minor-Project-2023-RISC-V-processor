@@ -3,11 +3,12 @@
 module signext(
 input [31:0]  data,
 input [1:0] whb,
-output reg [31:0] data_op
+output wire [31:0] data_op
 );
 
 parameter byte  = 2'b00, half_word = 2'b01, word = 2'b10;
  
+/*
 always @(*)
 begin
 	case(whb)
@@ -23,5 +24,8 @@ begin
     endcase
     
 end
+*/
+
+assign data_op = ( ( whb== word )? data : ( (whb == half_word )? ({{16{data[15]}},data[15:0]}) : ( (whb == byte)? ( {{24{data[7]}},data[7:0]} ) : 32'dz ) ) );
 
 endmodule

@@ -25,6 +25,7 @@ input [31:0] instr,
 output wire [31:0] immOut
 );
 reg [11:0] imm;
+parameter 
 
 always @(*)
 begin

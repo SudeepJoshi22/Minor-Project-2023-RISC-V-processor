@@ -23,19 +23,21 @@
 module instr_mem(PC,rst,instrCode);
 input [31:0] PC;
 input rst;
-output [31:0 ] instrCode;
-integer i;
+output reg [31:0 ] instrCode;
 
-reg [7:0] Mem[(1000):0];
+reg [7:0] Mem[2048:0];
 
 always @(*)
 begin
     if(~rst)
     begin
         $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RIS_Processor/Instructions/ris_type_test.mem",Mem);
+        instrCode <= 32'd0;
     end
+    else
+        instrCode <= {Mem[PC],Mem[PC+1],Mem[PC+2],Mem[PC+3]};
 
 end
-assign instrCode = {Mem[PC],Mem[PC+1],Mem[PC+2],Mem[PC+3]};
+//assign instrCode = {Mem[PC],Mem[PC+1],Mem[PC+2],Mem[PC+3]};
 
 endmodule

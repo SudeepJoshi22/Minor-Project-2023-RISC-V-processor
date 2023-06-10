@@ -26,14 +26,23 @@ output wire [31:0] immOut
 );
 reg [11:0] imm;
 wire [6:0] opcode;
-parameter I1 = 7'b0010011, I2 = 7'b0000011, S = 7'b0000011;
+wire [2:0] func3;
+
+parameter I1 = 7'b0010011, I2 = 7'b0000011, S = 7'b0100011;
+assign  func3 = instr[14:12];
 
 assign opcode = instr[6:0];
 
 always @(*)
 begin
     case(opcode)
-        I1: imm <= instr[31:20];
+        I1:
+        begin 
+            if( func3 == 3'b001 || func3 == 3'b101)
+                imm <= {{7{instr[24]}},instr[24:20]}; //for I-type shift instructions shift emount is encoded in the instructions only
+            else
+                imm <= instr[31:20];
+        end
         I2: imm <= instr[31:20];
         S: imm <= {instr[31:25],instr[11:7]};
         default: imm <= 12'd0;

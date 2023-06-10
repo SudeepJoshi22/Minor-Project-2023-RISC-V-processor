@@ -46,6 +46,7 @@ wire [31:0] WriteData_ext;
 
 assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
+assign rs2 = instrCode[24:20];
 assign rd = instrCode[11:7];
 
 //IF
