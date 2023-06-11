@@ -28,6 +28,7 @@ output zero
 );
 
 parameter ADD = 4'b0000,SUB = 4'b0001,AND = 4'b0010,OR = 4'b0100,XOR = 4'b1000,SRL = 4'b1001,SLL = 4'b1010;
+
 always @(*)
 begin
     case(alu_ctrl)        
@@ -42,9 +43,9 @@ begin
         XOR:
             result <= A ^ B;
         SRL:
-            result <= A >> B;
+            result <= A >> B[4:0]; //Shift is only define by the lower order 5-bits of B
         SLL:
-            result <= A << B;
+            result <= A << B[4:0]; //Same here
         default:
             result <= 32'bz;
     endcase

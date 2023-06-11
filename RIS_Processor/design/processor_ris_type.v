@@ -64,7 +64,7 @@ WriteData_ext,
 A,B
 );
 
-signext SIGNEXT1(
+store_whb STORE_WHB(
 B,
 whb,
 B_ext
@@ -111,7 +111,7 @@ read_data
 //WB
 assign WriteData = (MemToReg)? read_data : result;
 
-signext SIGNEXT2(
+signext SIGNEXT(
 WriteData,
 whb,
 WriteData_ext
