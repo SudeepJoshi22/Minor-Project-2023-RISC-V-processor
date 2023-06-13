@@ -22,4 +22,4 @@ main:
 	xor t2,t3,t4
 	and t2,t3,t4
 	or t2,t3,t4
-	
+	add t0,t1,t2
