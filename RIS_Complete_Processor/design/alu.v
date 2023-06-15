@@ -27,7 +27,7 @@ output reg [31:0] result,
 output zero
 );
 
-parameter ADD = 4'b0000,SUB = 4'b0001,AND = 4'b0010,OR = 4'b0100,XOR = 4'b1000,SRL = 4'b1001,SLL = 4'b1010;
+parameter ADD = 4'b0000,SUB = 4'b0001,AND = 4'b0010,OR = 4'b0100,XOR = 4'b1000,SRL = 4'b1001,SLL = 4'b1010, SRA = 4'b1011;
 
 always @(*)
 begin
@@ -46,6 +46,8 @@ begin
             result <= A >> B[4:0]; //Shift is only define by the lower order 5-bits of B
         SLL:
             result <= A << B[4:0]; //Same here
+        SRA:
+            result <= A >>> B;
         default:
             result <= 32'bz;
     endcase
