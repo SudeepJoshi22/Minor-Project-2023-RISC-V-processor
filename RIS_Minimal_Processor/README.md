@@ -19,8 +19,10 @@ This folder constains simple un-pipelined processor datapath supporting some cho
 18. SH
 19. SB
 
- In the project instr_mem.v gets its memory initialized by using $readmemh. The simple test assembly program used to test this is:
-addi t0,zero,0x07ff
+ In the project instr_mem.v gets its memory initialized by using $readmemh. 
+ 
+ Simple test assembly program used to test:
+ 
 * slli t1,t0,0xf
 * add t1,t1,t0
 * srli t0,t0,0x8
