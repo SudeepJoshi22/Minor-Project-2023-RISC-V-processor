@@ -25,7 +25,7 @@ input [31:0] PC;
 input rst;
 output [31:0 ] instrCode;
 
-reg [7:0] Mem[(2^30):0];
+reg [7:0] Mem[100:0];  
 
 always @(*)
 begin
