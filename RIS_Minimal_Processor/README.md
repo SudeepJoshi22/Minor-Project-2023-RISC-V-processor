@@ -49,3 +49,5 @@ The Output waveform is as follows:
 * ![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Minimal_Processor/Vivado_output_1.png)
 * ![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Minimal_Processor/Vivado_output_2.png)
 * ![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Minimal_Processor/Vivado_output_3.png)
+Data Memory Output:
+* ![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Minimal_Processor/DataMemory_output.png)
