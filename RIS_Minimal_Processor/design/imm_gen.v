@@ -38,10 +38,12 @@ begin
     case(opcode)
         I1:
         begin 
+            /*
             if( func3 == 3'b001 || func3 == 3'b101)
                 imm <= {{7{instr[24]}},instr[24:20]}; //for I-type shift instructions shift amount is encoded in the instructions only
             else
-                imm <= instr[31:20];
+            */
+        imm <= instr[31:20];
         end
         I2: imm <= instr[31:20];
         S: imm <= {instr[31:25],instr[11:7]};
