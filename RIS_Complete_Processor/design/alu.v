@@ -60,7 +60,7 @@ begin
         SLL:
             result <= A << B[4:0]; //Same here
         SRA:
-            result <= A >>> B;
+            result <= A >>> B[4:0];
         default:
             result <= 32'bz;
     endcase

@@ -31,11 +31,11 @@ always @(*)
 begin
     if(~rst)
     begin
-        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RIS_Minimal_Processor/Instructions/ris_type_test.mem",Mem);
+        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RIS_Complete_Processor/Instructions/ris_complete_instructions.mem",Mem);
         instrCode <= 32'd0;
     end
     else
-        instrCode <= {Mem[PC],Mem[PC+1],Mem[PC+2],Mem[PC+3]};
+        instrCode <= {Mem[PC+3],Mem[PC+2],Mem[PC+1],Mem[PC]};
 
 end
 //assign instrCode = {Mem[PC],Mem[PC+1],Mem[PC+2],Mem[PC+3]};

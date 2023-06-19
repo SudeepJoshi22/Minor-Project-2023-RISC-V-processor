@@ -15,10 +15,18 @@ main:
 	lb t2,4(zero)
 	lw t3,8(zero)
 	lh t4,0(zero)
+	lhu t4,0(zero)
+	lbu t2,4(zero)
 	add t2,t3,t4
 	sub t3,t2,t4
 	sll t3,t4,t2
 	srl t3,t4,t2
+	slli t0,t1,0x006
+	sra t0,t0,t2
+	slt t3,t4,t2
+	sltu t3,t2,t4
+	slti t3,t2,0x001
+	sltiu t3,t3,0x7ff
 	xor t2,t3,t4
 	and t2,t3,t4
 	or t2,t3,t4

@@ -122,6 +122,7 @@ assign WriteData = (MemToReg)? read_data : result;
 signext SIGNEXT(
 WriteData,
 whb,
+su,
 WriteData_ext
 );
 
