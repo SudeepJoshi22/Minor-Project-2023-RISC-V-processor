@@ -1,3 +1,4 @@
+![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Complete_Processor/RIS_Processor.jpg)
 This folder constains an un-pipelined processor datapath supporting all R-type, I-type and S-type instructions written in Verilog HDL. Instructions supported are:
 1. ADD
 2. SUB
