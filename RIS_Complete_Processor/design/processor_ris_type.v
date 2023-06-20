@@ -24,7 +24,10 @@ module processor_ris_type(
 input clk,
 input rst,
 output wire [31:0] result,
-output wire zero
+output wire [31:0] WriteData_ext_set,
+output wire zero,
+wire lt,
+wire ltu
 );
 
 wire [31:0] instrCode;
@@ -45,8 +48,8 @@ wire [31:0] B_ext;
 wire [31:0] WriteData_ext;
 wire su;
 wire wos;
-wire lt,ltu;
-wire [31:0] WriteData_ext_set,set;
+wire set;
+
 
 assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
