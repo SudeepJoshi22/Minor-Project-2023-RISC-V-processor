@@ -1,4 +1,4 @@
-This folder constains simple un-pipelined processor datapath supporting all R-type, I-type and S-type instructions written in Verilog HDL. Instructions supported are:
+This folder constains an un-pipelined processor datapath supporting all R-type, I-type and S-type instructions written in Verilog HDL. Instructions supported are:
 1. ADD
 2. SUB
 3. SLL
@@ -64,8 +64,12 @@ This folder constains simple un-pipelined processor datapath supporting all R-ty
 Using RARS software these assembly instructions are converted to machine code and saved in the .mem to be read by the instr_mem.v(replace the path location in the instr_mem.v by your path whrere you have saved the .mem, if you want to run it on your system).
 
 The Output waveform is as follows:
+* result  - this signal is the output result signal of the ALU. This gives the physical address values for LOAD and STORE instructions and register write value for R and I-type instructions.(for SLT,SLTU,SLTI,SLTIU this gives the difference values.)
+* WriteData_ext_set - this signal is the actual value written onto the destination register. This is used to verify STORE and SLT,SLTI,SLTU,SLTIU instructions.
+* lt, ltu - These flags are 'less than' and 'less than unsigned' flags. 'lt' flag tells if the result is less than 0 or not(signed). 'ltu' flag has meaning only during SLTU and SLTIU instruction(look into alu.v for better understanding)
 * ![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Complete_Processor/complete_ris1.png)
 * ![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Complete_Processor/complete_ris2.png)
 * ![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Complete_Processor/complete_ris3.png)
 
-
+Data Memory Output:
+* ![Screenshot](https://github.com/SudeepJoshi22/Minor-Project-2023-RISC-V-processor/blob/master/RIS_Minimal_Processor/DataMemory_output.png)
