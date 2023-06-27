@@ -36,7 +36,7 @@ begin
     else if(!PC_src)
         PC <= PC + 32'd4;
    else
-        PC<=immOut;  
+        PC<=immOut<<1;  
 end
 
 endmodule

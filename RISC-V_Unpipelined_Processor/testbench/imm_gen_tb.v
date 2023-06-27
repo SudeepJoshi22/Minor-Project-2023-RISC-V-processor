@@ -38,7 +38,18 @@ instr <= 32'h06430293;
 instr <= 32'h0c832283;
 #10
 instr <= 32'hf3832283;
-
+#10
+instr <= 32'h02528063;
+#10
+instr <= 32'h008002ef;
+#10
+instr <= 32'h100302e7;
+#10
+instr <= 32'h800ff337;
+#10
+instr <= 32'h00230313;  
+#10
+instr <= 32'h00305397;   
 end
 
 endmodule
