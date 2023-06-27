@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module reg_file_i(
+module reg_file(
 input clk,RegWrite,rst,
 input [4:0] ReadAddr1,ReadAddr2,WriteAddr,
 input [31:0] WriteData,

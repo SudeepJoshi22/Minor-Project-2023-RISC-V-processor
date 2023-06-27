@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_ris_type(
+module processor_unpipelined(
 input clk,
 input rst,
 output wire [31:0] result,
@@ -64,7 +64,7 @@ instrCode
 );
 
 //ID
-reg_file_i REG_FILE(
+reg_file REG_FILE(
 clk,RegWrite,rst,
 rs1,rs2,rd,
 WriteData_ext_set,
@@ -84,7 +84,7 @@ immOut
 );
 
 //Control Unit
-control_unit_i CONTROL_UNIT(
+control_unit CONTROL_UNIT(
 instrCode,
 RegWrite,
 alu_ctrl,
@@ -109,6 +109,15 @@ lt,
 ltu
 );
 
+//PC_SRC
+PC_src PC(
+branch,
+jump,
+zero,
+lt,
+ltu,
+instr ,
+PC_src);
 //MEM
 data_mem MEM(
 clk,
@@ -119,9 +128,11 @@ B_ext,
 read_data
 );
 
+
 //WB
 assign WriteData = (MemToReg)? read_data : result;
 
+ 
 signext SIGNEXT(
 WriteData,
 whb,

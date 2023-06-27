@@ -22,7 +22,7 @@
 
 module instr_fetch(
 input clk,
-input rst,
+input rst,input PC_src,input [31:0]immOut,
 output [31:0] instrCode
 );
 reg [31:0] PC;
@@ -33,9 +33,10 @@ always @(posedge clk,negedge rst)
 begin
     if(!rst)
         PC <= 0;
-    else
+    else if(!PC_src)
         PC <= PC + 32'd4;
-
+   else
+        PC<=immOut;  
 end
 
 endmodule
