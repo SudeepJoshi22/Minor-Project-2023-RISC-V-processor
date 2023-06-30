@@ -29,7 +29,7 @@ output lt,
 output ltu
 );
 
-parameter ADD = 4'b0000,SUB = 4'b0001,AND = 4'b0010,OR = 4'b0100,XOR = 4'b1000,SRL = 4'b1001,SLL = 4'b1010, SRA = 4'b1100;
+parameter ADD = 4'b0000,SUB = 4'b0001,AND = 4'b0010,OR = 4'b0100,XOR = 4'b1000,SRL = 4'b1001,SLL = 4'b1010, SRA = 4'b1100, BUF = 4'b1101;
 
 reg signed [32:0] AU,BU,resultu;
 
@@ -61,6 +61,8 @@ begin
             result <= A << B[4:0]; //Same here
         SRA:
             result <= A >>> B[4:0];
+         BUF:
+            result <= B;  
         default:
             result <= 32'bz;
     endcase

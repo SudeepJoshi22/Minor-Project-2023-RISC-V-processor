@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_unpipelined(
+module processor_unpipelined(   
 input clk,
 input rst,
 output wire [31:0] result,
@@ -29,7 +29,7 @@ output wire zero,
 wire lt,
 wire ltu
 );
-
+wire [6:0] opcode;
 wire [31:0] instrCode;
 wire RegWrite;
 wire [31:0] A,B;
@@ -47,7 +47,7 @@ wire [1:0] whb;
 wire [31:0] B_ext;
 wire [31:0] WriteData_ext;
 wire su;
-wire wos;
+wire [1:0]wos;
 wire set;
 
 
@@ -55,18 +55,24 @@ assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
 assign rs2 = instrCode[24:20];
 assign rd = instrCode[11:7];
-
+assign opcode = instrCode[6:0];
 //IF
 instr_fetch IF(
 clk,
 rst,
+PC_src,
+result,
 instrCode
 );
 
 //ID
 reg_file REG_FILE(
-clk,RegWrite,rst,
-rs1,rs2,rd,
+clk,
+RegWrite,
+rst,
+rs1,
+rs2,
+rd,
 WriteData_ext_set,
 A,B
 );
@@ -96,11 +102,18 @@ su,
 wos
 );
 
+// mux for ALU
+assign Ai = (opcode==7'b1101111||opcode==7'b0010111)? instrCode:A;
+assign Bi = (opcode==7'b0110011||opcode==7'b1100011)? B: immOut ;
 
-assign Bi = (AluSrc)? immOut : B;
+//a = (opcode==jal || opcode==auipc)? pc:rs1;  // a can either be pc or rs1
+//b = (opcode==R || opcode==branch)? rs2:imm; // b can either be rs2 or imm 
+        
+//assign Bi = (AluSrc)? immOut : B;
+//assign Ai = (AluSrc)? instrCode:A;
 //EX
 alu ALU(
-A,
+Ai,
 Bi,
 alu_ctrl,
 result,
@@ -140,7 +153,7 @@ su,
 WriteData_ext
 );
 
-assign WriteData_ext_set = (wos) ? WriteData_ext : set;
+assign WriteData_ext_set = wos[0]? (wos[1]? result: instrCode +4): (wos[1]? WriteData_ext:set);
 assign set = (lt | ltu) ? 32'd1: 32'd0;
 
 endmodule
