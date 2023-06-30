@@ -102,7 +102,7 @@ if(func3 == 3'b000 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc
      J:
                                  {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_xxxx_x_x_x_10_1_xx_0_1; //JAL 
      U:
-                                 {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_1_1_1_10_1_01_0_0; //LUI 
+                                 {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1101_1_1_1_10_1_01_0_0; //LUI 
      UPC:
                                  {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_1_1_1_10_1_01_0_0; //AUIPC 
      default:                    {RegWrite,alu_ctrl, rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <=14'bx_xxxx_x_x_x_xx_x_xx_x_x; 
