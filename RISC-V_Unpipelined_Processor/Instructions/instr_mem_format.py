@@ -1,8 +1,8 @@
-dump = open('dump.mem','r')
+dump = open('risc_v_unpipelined.mem','r')
 instr = dump.read()
 code = []
 
-mem = open('ris_complete_instructions.mem','w')
+mem = open('dump.mem','w')
 ii = 0
 while ii < len(instr):
     if(instr[ii] == 'i'):

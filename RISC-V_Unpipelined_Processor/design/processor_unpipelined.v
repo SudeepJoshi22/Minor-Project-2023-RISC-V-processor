@@ -49,6 +49,8 @@ wire [31:0] WriteData_ext;
 wire su;
 wire [1:0]wos;
 wire set;
+wire branch;
+wire jump;
 
 
 assign imm = instrCode[31:20];
@@ -99,7 +101,9 @@ MemToReg,
 AluSrc,
 whb,
 su,
-wos
+wos,
+branch,
+jump
 );
 
 // mux for ALU
