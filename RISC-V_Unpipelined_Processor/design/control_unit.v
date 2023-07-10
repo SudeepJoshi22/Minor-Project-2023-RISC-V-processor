@@ -29,7 +29,9 @@ output reg MemtoReg,
 output reg AluSrc,
 output reg [1:0] whb,
 output reg su,
-output reg [1:0]wos
+output reg [1:0]wos,
+output reg branch,
+output reg jump
 );
 
 wire [2:0] func3;
@@ -47,65 +49,62 @@ always @(*)
 begin
     case(opcode)
 	R:
-	   begin
-                     
-if(func3 == 3'b000 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_x_0_0_10_1_01_0_0; //ADD 
-            else if(func3 == 3'b000 && func7 == 7'b0100000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0001_x_0_0_10_1_01_0_0; //SUB 
-            else if(func3 == 3'b001 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1010_x_0_0_10_1_01_0_0; //SLL 
-            else if(func3 == 3'b101 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1001_x_0_0_10_1_01_0_0; //SRL 
-            else if(func3 == 3'b100 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1000_x_0_0_10_1_01_0_0; //XOR 
-            else if(func3 == 3'b111 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0010_x_0_0_10_1_01_0_0; //AND 
-            else if(func3 == 3'b110 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0100_x_0_0_10_1_01_0_0; //OR 
-            else if(func3 == 3'b101 && func7 == 7'b0100000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1100_x_0_0_10_1_01_0_0; //SRA  
-            else if(func3 == 3'b010 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0001_x_0_0_10_1_00_0_0; //SLT  
-            else if(func3 == 3'b011 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0001_x_0_0_10_1_00_0_0; //SLTU  
-         
-       end
+	begin
+         if(func3 == 3'b000 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0000_x_0_0_10_1_01_0_0; //ADD 
+         else if(func3 == 3'b000 && func7 == 7'b0100000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0001_x_0_0_10_1_01_0_0; //SUB 
+         else if(func3 == 3'b001 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1010_x_0_0_10_1_01_0_0; //SLL 
+         else if(func3 == 3'b101 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1001_x_0_0_10_1_01_0_0; //SRL 
+         else if(func3 == 3'b100 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1000_x_0_0_10_1_01_0_0; //XOR 
+         else if(func3 == 3'b111 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0010_x_0_0_10_1_01_0_0; //AND 
+         else if(func3 == 3'b110 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0100_x_0_0_10_1_01_0_0; //OR 
+         else if(func3 == 3'b101 && func7 == 7'b0100000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1100_x_0_0_10_1_01_0_0; //SRA  
+         else if(func3 == 3'b010 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0001_x_0_0_10_1_00_0_0; //SLT  
+         else if(func3 == 3'b011 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0001_x_0_0_10_1_00_0_0; //SLTU  
+    end
     I1:
-        begin
-            if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_x_0_1_10_1_01_0_0; //ADDI 
-             else if(func3 == 3'b001 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1010_x_0_1_10_1_01_0_0; //SLLI 
-             else if(func3 == 3'b101 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1001_x_0_1_10_1_01_0_0; //SRLI 
-             else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1000_x_0_1_10_1_01_0_0; //XORI 
-             else if(func3 == 3'b111) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0010_x_0_1_10_1_01_0_0; //ANDI 
-             else if(func3 == 3'b110) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0100_x_0_1_10_1_01_0_0; //ORI 
-             else if(func3 == 3'b101) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0001_x_0_1_10_1_00_0_0; //SLTI 
-             else if(func3 == 3'b011) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0001_x_0_1_10_1_00_0_0; //SLTIU 
-             else if(func3 == 3'b101 && func7 == 7'b0100000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1100_x_0_1_10_1_01_0_0; //SRAI  
-        end
+    begin
+         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0000_x_0_1_10_1_01_0_0; //ADDI 
+         else if(func3 == 3'b001 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1010_x_0_1_10_1_01_0_0; //SLLI 
+         else if(func3 == 3'b101 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1001_x_0_1_10_1_01_0_0; //SRLI 
+         else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1000_x_0_1_10_1_01_0_0; //XORI 
+         else if(func3 == 3'b111) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0010_x_0_1_10_1_01_0_0; //ANDI 
+         else if(func3 == 3'b110) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0100_x_0_1_10_1_01_0_0; //ORI 
+         else if(func3 == 3'b101) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0001_x_0_1_10_1_00_0_0; //SLTI 
+         else if(func3 == 3'b011) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0001_x_0_1_10_1_00_0_0; //SLTIU 
+         else if(func3 == 3'b101 && func7 == 7'b0100000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1100_x_0_1_10_1_01_0_0; //SRAI 
+    end
     I2:
-        begin
-             if(func3 == 3'b010) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_1_1_1_10_1_01_0_0; //LW 
-             else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_1_1_1_01_1_01_0_0; //LH 
-             else if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_1_1_1_00_1_01_0_0; //LB 
-             else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_1_1_1_00_0_01_0_0; //LBU 
-             else if(func3 == 3'b101) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_1_1_1_01_0_01_0_0; //LHU 
-        end
+    begin
+         if(func3 == 3'b010) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0000_1_1_1_10_1_01_0_0; //LW 
+         else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0000_1_1_1_01_1_01_0_0; //LH 
+         else if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0000_1_1_1_00_1_01_0_0; //LB 
+         else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0000_1_1_1_00_0_01_0_0; //LBU 
+         else if(func3 == 3'b101) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0000_1_1_1_01_0_01_0_0; //LHU 
+    end
     S:
-        begin
-	        if(func3 == 3'b010) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b0_0000_0_0_1_10_1_01_0_0; //SW 
-             else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b0_0000_0_0_1_01_1_01_0_0; //SH 
-             else if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b0_0000_0_0_1_00_1_01_0_0; //SB 
-         end
-         
-     B:   
-        begin
-            if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_0001_x_x_x_10_1_xx_1_0; //BEQ 
-             else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_0001_x_x_x_10_1_xx_1_0; //BNE  
-             else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_0001_x_x_x_10_1_xx_1_0; //BLT 
-             else if(func3 == 3'b101) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_0001_x_x_x_10_1_xx_1_0; //BGE 
-             else if(func3 == 3'b110) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_0001_x_x_x_10_0_xx_1_0; //BLTU 
-             else if(func3 == 3'b111) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_0001_x_x_x_10_0_xx_1_0; //BGEU  
-          end  
-     JR:
-             if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_xxxx_x_x_x_10_1_xx_0_1; //JALR 
-     J:
-                                 {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'bx_xxxx_x_x_x_10_1_xx_0_1; //JAL 
-     U:
-                                 {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_1101_1_1_1_10_1_01_0_0; //LUI 
-     UPC:
-                                 {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 14'b1_0000_1_1_1_10_1_01_0_0; //AUIPC 
-     default:                    {RegWrite,alu_ctrl, rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <=14'bx_xxxx_x_x_x_xx_x_xx_x_x; 
+    begin
+         if(func3 == 3'b010) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b0_0000_0_0_1_10_1_01_0_0; //SW 
+         else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b0_0000_0_0_1_01_1_01_0_0; //SH 
+         else if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b0_0000_0_0_1_00_1_01_0_0; //SB 
+    end
+    B:
+    begin
+         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'bx_0001_x_x_0_10_1_xx_1_0; //BEQ 
+         else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'bx_0001_x_x_0_10_1_xx_1_0; //BNE  
+         else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'bx_0001_x_x_0_10_1_xx_1_0; //BLT 
+         else if(func3 == 3'b101) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'bx_0001_x_x_0_10_1_xx_1_0; //BGE 
+         else if(func3 == 3'b110) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'bx_0001_x_x_0_10_0_xx_1_0; //BLTU 
+         else if(func3 == 3'b111) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'bx_0001_x_x_0_10_0_xx_1_0; //BGEU 
+    end
+    JR:
+         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'bx_xxxx_x_x_0_10_1_xx_0_1; //JALR 
+    J:
+         if(func3 == 3'bxxx) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'bx_xxxx_x_x_0_10_1_xx_0_1; //JAL 
+    U:
+         if(func3 == 3'bxxx) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_1101_1_1_1_10_1_01_0_0; //LUI 
+    UPC:
+         if(func3 == 3'bxxx) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <= 15'b1_0000_1_1_1_10_1_01_0_0; //AUIPC 
+     default:                    {RegWrite,alu_ctrl, rw,MemtoReg,AluSrc,whb,su,wos,branch,jump} <=15'bx_xxxx_x_x_x_xx_x_xx_x_x; 
         
     endcase
  end

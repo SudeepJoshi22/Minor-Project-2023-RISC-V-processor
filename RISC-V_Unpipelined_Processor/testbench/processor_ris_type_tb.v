@@ -28,7 +28,7 @@ wire zero;
 wire lt;
 wire ltu;
 
-processor_ris_type DUT(
+processor_unpipelined DUT(
 clk,
 rst,
 result,
