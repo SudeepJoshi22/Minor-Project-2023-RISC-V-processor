@@ -30,8 +30,11 @@ output [31:0] instrCode
 );
 reg [31:0] PC;
 wire [7:0]opcode;
+
 instr_mem m(PC,rst,instrCode);
+
 assign opcode=instrCode[6:0];
+
 always @(posedge clk,negedge rst)
 begin
     if(!rst)

@@ -25,7 +25,7 @@ input [31:0] instr,
 output wire [31:0] immOut
 );
 reg [11:0] imm;
-reg [20:0] imm_j_u; //20 bit immediate for both u type and j type
+reg [19:0] imm_j_u; //20 bit immediate for both u type and j type
 
 wire [6:0] opcode;
 wire [2:0] func3;
@@ -84,7 +84,7 @@ end
       //      assign immout<={{20{imm[11]}}, imm[11:0]};
       //else if(opcode==7'b0110111 ||opcode==7'b0010111)  
         //          assign immout<={imm_j_u,12'b0};
-         assign immOut = (opcode== U ||opcode==UPC)? {imm_j_u,12'b0}:(opcode==J)? {{11{imm_j_u[20]}},imm_j_u[20:0]}:{{20{imm[11]}}, imm[11:0]};
+         assign immOut = (opcode== U ||opcode==UPC)? {imm_j_u,12'd0}:(opcode==J)? {{11{imm_j_u[20]}},imm_j_u[20:0]}:{{20{imm[11]}}, imm[11:0]};
 //assign immOut = (opcode == J)? {{11{imm_j_u[20]}},imm_j_u[20:0]} : {{20{imm[11]}}, imm[11:0]}; 
 
 endmodule
