@@ -1,0 +1,269 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+Process ID: 5467
+
+Current time: 	7/9/23 7:44:42 PM
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: NAME="Ubuntu"
+Version: 5.15.0-75-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	/opt/Xilinx/Vivado/2014.4/tps/lnx64/jre
+
+User name: 	ishita
+User directory: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: /home/ishita/.Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: /home/ishita/.Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	144 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 719 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 61 MB (+61581kb) [00:00:05]
+// [Engine Memory]: 719 MB (+602540kb) [00:00:05]
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/ishita/riscv_unpipeline/riscv_unpipeline.xpr", 0); // s:v (JViewport:JComponent, ch:JFrame)
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/ishita/riscv_unpipeline/riscv_unpipeline.xpr 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 813 MB (+98050kb) [00:00:08]
+// [Engine Memory]: 820 MB (+7430kb) [00:00:09]
+// [Engine Memory]: 851 MB (+32763kb) [00:00:09]
+// [Engine Memory]: 853 MB (+2039kb) [00:00:10]
+// [Engine Memory]: 855 MB (+2646kb) [00:00:10]
+// Tcl Message: open_project /home/ishita/riscv_unpipeline/riscv_unpipeline.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 865 MB. GUI used memory: 24 MB. Current time: 7/9/23 7:44:46 PM
+// [Engine Memory]: 868 MB (+13078kb) [00:00:11]
+// [Engine Memory]: 868 MB (+131kb) [00:00:11]
+// [Engine Memory]: 868 MB (+69kb) [00:00:11]
+// [Engine Memory]: 868 MB (+196kb) [00:00:11]
+// [Engine Memory]: 868 MB (+200kb) [00:00:11]
+// [Engine Memory]: 869 MB (+65kb) [00:00:11]
+// [Engine Memory]: 869 MB (+135kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 869 MB (+65kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 869 MB (+200kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 869 MB (+65kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 869 MB (+397kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 869 MB (+131kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 870 MB (+135kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 870 MB (+331kb) [00:00:12]
+// [Engine Memory]: 870 MB (+131kb) [00:00:12]
+// [Engine Memory]: 872 MB (+2449kb) [00:00:12]
+// [Engine Memory]: 873 MB (+1183kb) [00:00:12]
+// [Engine Memory]: 874 MB (+131kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 874 MB (+69kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 874 MB (+65kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 874 MB (+200kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 874 MB (+65kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 874 MB (+327kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 874 MB (+135kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 874 MB (+65kb) [00:00:12]
+// [Engine Memory]: 875 MB (+65kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 875 MB (+65kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 875 MB (+69kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 875 MB (+65kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 876 MB (+1826kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 877 MB (+1048kb) [00:00:13]
+// [Engine Memory]: 881 MB (+3883kb) [00:00:13]
+// [Engine Memory]: 881 MB (+69kb) [00:00:13]
+// [Engine Memory]: 881 MB (+65kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 882 MB (+1114kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 883 MB (+200kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 883 MB (+65kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: riscv_unpipeline; location: /home/ishita/riscv_unpipeline; part: xc7vx485tffg1157-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 5733.598 ; gain = 117.000 ; free physical = 860 ; free virtual = 2956 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// [Engine Memory]: 888 MB (+5935kb) [00:00:14]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 900 MB (+12599kb) [00:00:14]
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 902 MB (+1662kb) [00:00:16]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v)]", 1); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 903 MB (+1126kb) [00:00:17]
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v)]", 1); // u:k (I:JPanel, ch:JFrame)
+// PAPropertyPanels.initPanels (processor_unpipelined.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v)]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 905 MB (+1716kb) [00:00:19]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v)]", 1, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 905 MB (+524kb) [00:00:19]
+// [Engine Memory]: 907 MB (+2232kb) [00:00:19]
+// [Engine Memory]: 915 MB (+7774kb) [00:00:19]
+// [Engine Memory]: 915 MB (+331kb) [00:00:19]
+// [Engine Memory]: 915 MB (+532kb) [00:00:23]
+// [Engine Memory]: 916 MB (+864kb) [00:00:25]
+// [Engine Memory]: 916 MB (+131kb) [00:00:30]
+// [Engine Memory]: 916 MB (+65kb) [00:00:35]
+// [Engine Memory]: 917 MB (+69kb) [00:00:40]
+// [Engine Memory]: 917 MB (+196kb) [00:00:55]
+// [Engine Memory]: 917 MB (+69kb) [00:01:05]
+// [Engine Memory]: 917 MB (+65kb) [00:01:10]
+// [Engine Memory]: 917 MB (+65kb) [00:01:15]
+// [Engine Memory]: 917 MB (+200kb) [00:01:20]
+// [Engine Memory]: 917 MB (+65kb) [00:01:30]
+// [Engine Memory]: 917 MB (+65kb) [00:01:40]
+// [Engine Memory]: 917 MB (+69kb) [00:01:45]
+// [Engine Memory]: 917 MB (+65kb) [00:01:50]
+// [Engine Memory]: 917 MB (+65kb) [00:02:05]
+// [Engine Memory]: 918 MB (+65kb) [00:02:15]
+// [Engine Memory]: 918 MB (+135kb) [00:02:25]
+// [Engine Memory]: 918 MB (+131kb) [00:02:45]
+// [Engine Memory]: 918 MB (+69kb) [00:03:10]
+// [Engine Memory]: 918 MB (+131kb) [00:03:30]
+// [Engine Memory]: 918 MB (+135kb) [00:04:10]
+// [Engine Memory]: 918 MB (+65kb) [00:04:20]
+// [Engine Memory]: 918 MB (+65kb) [00:04:30]
+// [Engine Memory]: 918 MB (+135kb) [00:04:40]
+// [Engine Memory]: 918 MB (+65kb) [00:04:55]
+// [Engine Memory]: 919 MB (+131kb) [00:05:20]
+// [Engine Memory]: 919 MB (+397kb) [00:05:30]
+// [Engine Memory]: 919 MB (+65kb) [00:05:35]
+// [Engine Memory]: 919 MB (+65kb) [00:06:05]
+// [Engine Memory]: 919 MB (+69kb) [00:06:25]
+// [Engine Memory]: 919 MB (+65kb) [00:06:55]
+// [Engine Memory]: 919 MB (+65kb) [00:07:35]
+// [Engine Memory]: 919 MB (+65kb) [00:08:40]
+// [Engine Memory]: 919 MB (+69kb) [00:08:45]
+// [Engine Memory]: 919 MB (+65kb) [00:09:15]
+// [Engine Memory]: 919 MB (+65kb) [00:09:25]
+// [Engine Memory]: 920 MB (+331kb) [00:12:29]
+// [Engine Memory]: 920 MB (+135kb) [00:12:34]
+// [Engine Memory]: 920 MB (+131kb) [00:13:54]
+// [Engine Memory]: 920 MB (+262kb) [00:15:39]
+// Elapsed time: 954 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), CONTROL_UNIT - control_unit (control_unit.v)]", 6, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), CONTROL_UNIT - control_unit (control_unit.v)]", 6, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), IMM_GEN - imm_gen (imm_gen.v)]", 5, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), IMM_GEN - imm_gen (imm_gen.v)]", 5, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 921 MB (+262kb) [00:17:24]
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), SIGNEXT - signext (signext.v)]", 10, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), SIGNEXT - signext (signext.v)]", 10, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [GUI Memory]: 63 MB (+2102kb) [00:17:25]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), MEM - data_mem (data_mem.v)]", 9, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), MEM - data_mem (data_mem.v)]", 9, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 926 MB (+5234kb) [00:17:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 27 MB. Current time: 7/9/23 8:02:04 PM
+// [Engine Memory]: 936 MB (+10469kb) [00:17:31]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), PC - PC_src (PC_Src.v)]", 8, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 936 MB (+462kb) [00:17:35]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), PC - PC_src (PC_Src.v)]", 8, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 936 MB (+65kb) [00:17:35]
+// [Engine Memory]: 936 MB (+69kb) [00:17:40]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), ALU - alu (alu.v)]", 7, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), ALU - alu (alu.v)]", 7, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), ALU - alu (alu.v)]", 7, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 936 MB (+65kb) [00:17:48]
+// [Engine Memory]: 941 MB (+5234kb) [00:17:53]
+// [Engine Memory]: 941 MB (+65kb) [00:18:23]
+// [Engine Memory]: 941 MB (+65kb) [00:18:33]
+// [GUI Memory]: 63 MB (+339kb) [00:18:40]
+// [Engine Memory]: 941 MB (+135kb) [00:18:40]
+// [GUI Memory]: 69 MB (+5623kb) [00:18:44]
+// [Engine Memory]: 942 MB (+131kb) [00:18:44]
+// [GUI Memory]: 70 MB (+923kb) [00:18:49]
+// [GUI Memory]: 70 MB (+133kb) [00:18:54]
+// [Engine Memory]: 942 MB (+200kb) [00:19:02]
+// [Engine Memory]: 942 MB (+65kb) [00:19:07]
+// [GUI Memory]: 70 MB (+282kb) [00:19:19]
+// [Engine Memory]: 942 MB (+135kb) [00:19:19]
+// Elapsed time: 92 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), CONTROL_UNIT - control_unit (control_unit.v)]", 6, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 942 MB (+65kb) [00:19:19]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), CONTROL_UNIT - control_unit (control_unit.v)]", 6, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 942 MB (+65kb) [00:19:19]
+// [Engine Memory]: 942 MB (+69kb) [00:19:19]
+// [Engine Memory]: 942 MB (+131kb) [00:19:23]
+// [Engine Memory]: 942 MB (+65kb) [00:19:28]
+// [Engine Memory]: 942 MB (+135kb) [00:19:30]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), IMM_GEN - imm_gen (imm_gen.v)]", 5, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), IMM_GEN - imm_gen (imm_gen.v)]", 5, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 942 MB (+65kb) [00:19:30]
+// [Engine Memory]: 943 MB (+65kb) [00:19:30]
+// [Engine Memory]: 943 MB (+397kb) [00:19:31]
+// [Engine Memory]: 943 MB (+200kb) [00:19:34]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+// [Engine Memory]: 943 MB (+65kb) [00:19:34]
+// [Engine Memory]: 944 MB (+466kb) [00:19:35]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), STORE_WHB - store_whb (store_whb.v)]", 4, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), STORE_WHB - store_whb (store_whb.v)]", 4, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+// [Engine Memory]: 944 MB (+131kb) [00:19:58]
+// [GUI Memory]: 72 MB (+1915kb) [00:19:59]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), REG_FILE - reg_file (reg_file.v)]", 3, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), REG_FILE - reg_file (reg_file.v)]", 3, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 944 MB (+65kb) [00:20:00]
+// [Engine Memory]: 944 MB (+335kb) [00:20:03]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+// [GUI Memory]: 72 MB (+595kb) [00:20:08]
+// [GUI Memory]: 75 MB (+3140kb) [00:20:08]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), REG_FILE - reg_file (reg_file.v)]", 3, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 944 MB (+65kb) [00:20:09]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), IF - instr_fetch (instr_fetch.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 944 MB (+65kb) [00:20:09]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), IF - instr_fetch (instr_fetch.v)]", 2, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 944 MB (+65kb) [00:20:23]
+// [Engine Memory]: 944 MB (+135kb) [00:20:30]
+// [Engine Memory]: 945 MB (+65kb) [00:20:35]
+// [GUI Memory]: 76 MB (+967kb) [00:20:45]
+// [GUI Memory]: 76 MB (+71kb) [00:20:50]
+// [GUI Memory]: 77 MB (+174kb) [00:20:55]
+// [Engine Memory]: 945 MB (+65kb) [00:21:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 945 MB. GUI used memory: 28 MB. Current time: 7/10/23 2:22:33 AM
+// [Engine Memory]: 945 MB (+69kb) [06:38:00]
+// [Engine Memory]: 945 MB (+196kb) [06:38:14]

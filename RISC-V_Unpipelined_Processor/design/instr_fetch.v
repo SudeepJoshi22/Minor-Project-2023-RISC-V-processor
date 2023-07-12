@@ -24,7 +24,7 @@ module instr_fetch(
 input clk,
 input rst,
 input PC_src,
-input result,
+input [31:0]result,
 input [31:0]immOut,
 output [31:0] instrCode
 );
@@ -37,9 +37,9 @@ begin
     if(!rst)
         PC <= 0;
     else if(opcode==7'b1100111)// checking for jalr condition
-        PC<=~(result||1);//making pc as even address
+        PC<=result^~1;//making pc as even address
     else if(!PC_src)
-        PC <= PC + 32'd4; //for next address
+        PC <= PC + 32'd4; //for next addres
    else
         PC<=immOut<<1;  //used for B_type &jal
 end

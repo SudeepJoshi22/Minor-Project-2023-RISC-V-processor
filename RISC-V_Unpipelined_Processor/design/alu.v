@@ -61,7 +61,7 @@ begin
             result <= A << B[4:0]; //Same here
         SRA:
             result <= A >>> B[4:0];
-         BUF:
+        BUF:
             result <= B;  
         default:
             result <= 32'bz;

@@ -22,20 +22,29 @@
 
 module instr_fetch_tb;
 reg clk,rst;
+reg PC_src;
+reg [31:0] result;
+reg [31:0] immOut;
 wire [31:0] instrCode;
 
-instr_fetch DUT(clk,rst,instrCode);
+instr_fetch DUT(clk,rst,PC_src,result,immOut,instrCode);
 
-initial clk = 0;
-
+initial 
+begin
+ clk = 0;
+ immOut=32'h0004;
+ result=32'h0001;
+end
 always #10 clk <= ~clk;
 
 initial
 begin
-    rst = 1;
-    #10
     rst = 0;
+    #10
+    PC_src=1;
+    rst = 1;
     #10 
+    PC_src=0;
     rst = 1;
     #200 
     $finish;

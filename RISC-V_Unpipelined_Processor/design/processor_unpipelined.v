@@ -51,7 +51,7 @@ wire [1:0]wos;
 wire set;
 wire branch;
 wire jump;
-
+wire PC_src;
 
 assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
@@ -59,6 +59,7 @@ assign rs2 = instrCode[24:20];
 assign rd = instrCode[11:7];
 assign opcode = instrCode[6:0];
 //IF
+
 instr_fetch IF(
 clk,
 rst,

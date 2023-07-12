@@ -34,23 +34,24 @@ zero<= 0;
 lt <= 0;
 ltu <= 0;
 #10
-instr <= 32'h02528063;
+instr <= 32'h00628c63;
 zero <= 0;
 #10 
 zero <= 1;
 #10
-instr <= 32'h00529e63;
+instr <= 32'h00629a63;
 zero <= 0;
 #10 
 zero <= 1;
 #10
-instr <= 32'h0052cc63;
+zero<=0;
+instr <= 32'h0062c863;
 lt <= 0;
 #10 
 lt <= 1;
 #10
 //zero <= 0;
-instr <= 32'h0052da63;
+instr <= 32'h00062d663;
 lt <= 0;
 #10 
 lt <= 1;
@@ -60,16 +61,16 @@ ltu <= 0;
 #10 
 ltu <= 1;
 #10
-instr <= 32'h0052f663;
+instr <= 32'h0062f263;
 ltu <= 0;
 #10 
 ltu <= 1;
 #10
 branch <= 0;
-jump <= 1;
-instr <= 32'h008002ef;
-#10
-instr <= 32'h100302e7;
+//jump <= 1;
+//instr <= 32'h008002ef;
+//#10
+//instr <= 32'h100302e7;
 
 end
 
