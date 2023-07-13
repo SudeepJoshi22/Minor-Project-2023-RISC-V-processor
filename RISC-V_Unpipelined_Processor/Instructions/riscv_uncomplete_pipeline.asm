@@ -31,7 +31,7 @@ main:
 	and t2,t3,t4
 	or t2,t3,t4
 	lui t1,0x800ff
-        auipc t2,0x00305
+        auipc t2,-100
 	beq t0,t1,loc
         bne t0,t1,loc
         blt t0,t1,loc

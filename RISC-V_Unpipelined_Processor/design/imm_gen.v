@@ -84,7 +84,7 @@ end
       //      assign immout<={{20{imm[11]}}, imm[11:0]};
       //else if(opcode==7'b0110111 ||opcode==7'b0010111)  
         //          assign immout<={imm_j_u,12'b0};
-         assign immOut = (opcode== U ||opcode==UPC)? {imm_j_u,12'd0}:(opcode==J)? {{11{imm_j_u[20]}},imm_j_u[20:0]}:{{20{imm[11]}}, imm[11:0]};
+         assign immOut = (opcode== U ||opcode==UPC)? {imm_j_u,12'd0}:(opcode==J)? {{12{imm_j_u[19]}},imm_j_u[19:0]}:{{20{imm[11]}}, imm[11:0]};
 //assign immOut = (opcode == J)? {{11{imm_j_u[20]}},imm_j_u[20:0]} : {{20{imm[11]}}, imm[11:0]}; 
 
 endmodule
