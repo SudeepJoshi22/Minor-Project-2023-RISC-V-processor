@@ -29,3 +29,5 @@ S:
 	 else if(func3 == 3'b010) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos} <= 12'b0_0000_0_0_1_10_1_1; //SW 
 	 else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos} <= 12'b0_0000_0_0_1_01_1_1; //SH 
 	 else if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos} <= 12'b0_0000_0_0_1_00_1_1; //SB 
+B:
+	 else if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos} <= 12'b0_0001_x_x_x_10_1_x; //BEQ 
