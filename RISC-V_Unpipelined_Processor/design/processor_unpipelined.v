@@ -49,9 +49,11 @@ wire [31:0] WriteData_ext;
 wire su;
 wire [1:0]wos;
 wire set;
-wire branch;
-wire jump;
+wire boj;
+wire jalr;
 wire PC_src;
+wire [31:0] PC;
+wire [31:0] PC_4;
 
 assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
@@ -64,8 +66,12 @@ instr_fetch IF(
 clk,
 rst,
 PC_src,
+jalr,
 result,
-instrCode
+immOut,
+instrCode,
+PC,
+PC_4
 );
 
 //ID
@@ -77,7 +83,8 @@ rs1,
 rs2,
 rd,
 WriteData_ext_set,
-A,B
+A,
+B
 );
 
 store_whb STORE_WHB(
@@ -103,13 +110,13 @@ AluSrc,
 whb,
 su,
 wos,
-branch,
-jump
+boj,
+jalr
 );
 
 // mux for ALU
-assign Ai = (opcode==7'b1101111||opcode==7'b0010111)? instrCode:A;
-assign Bi = (opcode==7'b0110011||opcode==7'b1100011)? B: immOut ;
+assign Ai = (opcode==7'b0010111)? PC:A;
+assign Bi = (AluSrc)?immOut:B;
 
 //a = (opcode==jal || opcode==auipc)? pc:rs1;  // a can either be pc or rs1
 //b = (opcode==R || opcode==branch)? rs2:imm; // b can either be rs2 or imm 
@@ -128,14 +135,14 @@ ltu
 );
 
 //PC_SRC
-PC_src PC(
-branch,
-jump,
+PC_src BRANCH_JUMP(
+boj,
 zero,
 lt,
 ltu,
 instr ,
 PC_src);
+
 //MEM
 data_mem MEM(
 clk,
@@ -158,7 +165,7 @@ su,
 WriteData_ext
 );
 
-assign WriteData_ext_set = wos[0]? (wos[1]? result: instrCode +4): (wos[1]? WriteData_ext:set);
 assign set = (lt | ltu) ? 32'd1: 32'd0;
+assign WriteData_ext_set = wos[1]? (wos[0]? immOut : PC_4) : (wos[0]? WriteData_ext : set);
 
 endmodule

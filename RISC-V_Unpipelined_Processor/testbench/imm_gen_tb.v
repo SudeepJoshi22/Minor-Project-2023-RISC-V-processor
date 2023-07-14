@@ -31,18 +31,18 @@ immOut
 
 initial
 begin
-instr <= 32'hf9c30293;
+instr <= 32'hf3800013;
 #10
-instr <= 32'h06430293;
+instr <= 32'h00064337;
 #10
-instr <= 32'h0c832283;
+instr <= 32'h000c8317;
 #10
-instr <= 32'hf3832283;
+instr <= 32'h00030663;
 #10
-instr <= 32'h02528063;
+instr <= 32'h0080036f;
 #10
-instr <= 32'h008002ef;
-#10
+instr <= 32'h00a00367;
+/*
 instr <= 32'h100302e7;
 #10
 instr <= 32'h800ff337;
@@ -50,6 +50,7 @@ instr <= 32'h800ff337;
 instr <= 32'h00230313;  
 #10
 instr <= 32'h00305397;   
+*/
 end
 
 endmodule

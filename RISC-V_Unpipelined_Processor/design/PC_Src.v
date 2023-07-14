@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PC_src(input branch,
-input jump,
+module PC_src(
+input boj,
 input zero,
 input lt,
 input ltu,
@@ -37,9 +37,7 @@ assign func3 = instr[14:12];
 
     always @(*)
     begin
-      if(jump==1)
-        PC_src <= 1;   //checking the jump condition
-      else if(branch==1)
+      if(boj == 1)
         begin
         case(func3)
         BEQ: begin
@@ -78,7 +76,7 @@ assign func3 = instr[14:12];
              else
              PC_src<=0;
              end
-        default:PC_src<=0;
+        default:PC_src<=1;
          endcase
         end
       else 

@@ -20,16 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module PC_src_tb;
-reg branch,jump,zero,lt,ltu; 
+reg boj,zero,lt,ltu; 
 reg [31:0] instr;
 wire PC_src;
 
-PC_src dut(branch,jump,zero,lt,ltu,instr,PC_src);
+PC_src dut(boj,zero,lt,ltu,instr,PC_src);
 
 initial
 begin
-branch <= 1;
-jump <= 0;
+boj <= 1;
 zero<= 0;
 lt <= 0;
 ltu <= 0;
@@ -66,7 +65,8 @@ ltu <= 0;
 #10 
 ltu <= 1;
 #10
-branch <= 0;
+boj <= 0;
+instr <= 32'h0062c863;
 //jump <= 1;
 //instr <= 32'h008002ef;
 //#10
