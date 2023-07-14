@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,7 +22,7 @@
 
 
 module imm_gen(
-input [31:0] instr,
+input wire [31:0] instr,
 output wire [31:0] immOut
 );
 reg [11:0] imm;

@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,13 +22,13 @@
 
 
 module instr_fetch(
-input clk,
-input rst,
-input PC_src,
-input jalr,
+input wire clk,
+input wire rst,
+input wire PC_src,
+input wire jalr,
 input wire [31:0]result,
 input wire [31:0]immOut,
-output [31:0] instrCode,
+output wire [31:0] instrCode,
 output reg [31:0] PC,
 output wire [31:0] PC_4
 );

@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,11 +22,11 @@
 
 
 module PC_src(
-input boj,
-input zero,
-input lt,
-input ltu,
-input [31:0] instr,
+input wire boj,
+input wire zero,
+input wire lt,
+input wire ltu,
+input wire [31:0] instr,
 output reg PC_src);
 
 parameter BEQ=3'b000, BNE=3'b001,BLT=3'b100, BGE=3'b101, BLTU=3'b110, BGEU=3'b111;
