@@ -34,7 +34,7 @@ output wire [31:0] PC_4
 );
 wire [31:0] PC_imm,PC_branch_jump,PC_next;
 
-assign PC_imm = PC + immOut;
+assign PC_imm = PC + (immOut<<1);
 assign PC_4 = PC + 32'd4;
 assign PC_branch_jump = jalr? (result & ~1 ) : PC_imm;
 assign PC_next = PC_src ? PC_branch_jump : PC_4;

@@ -53,7 +53,7 @@ begin
    jalr <= 0;
    result <= 32'hffabcd11;
    immOut <= 32'h000000ff;
-   #8
+   #5
    rst <= 1;
    #100
    PC_src <= 1;

@@ -87,9 +87,9 @@ begin
          else if(func3 == 3'b110) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0001_x_x_0_10_0_01_1_0; //BLTU 
          else if(func3 == 3'b111) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0001_x_x_0_10_0_01_1_0; //BGEU 
     JR:
-         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_0000_x_x_0_10_1_10_0_1; //JALR 
+         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_0000_x_x_1_10_1_10_0_1; //JALR 
     J:
-         {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_0000_x_x_0_10_1_10_1_0; //JAL 
+         {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_0000_x_x_1_10_1_10_1_0; //JAL 
     U:
          {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_1101_x_0_1_10_1_01_0_0; //LUI 
     UPC:
