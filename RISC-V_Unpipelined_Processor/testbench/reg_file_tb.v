@@ -26,7 +26,7 @@ reg [4:0] ReadAddr1,ReadAddr2,WriteAddr;
 reg [31:0] WriteData;
 wire [31:0]  ReadData1,ReadData2;
 
-reg_file DUT(clk,RegWrite,rst,ReadAddr1,ReadAddr2,WriteAddr,ReadData1,ReadData2,WriteData);
+reg_file DUT(clk,RegWrite,rst,ReadAddr1,ReadAddr2,WriteAddr,WriteData,ReadData1,ReadData2);
 initial clk<=0;
 
 always #10 clk<=~clk;

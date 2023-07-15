@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -31,14 +30,15 @@ output [31:0] instrCode,
 output reg [31:0] PC,
 output wire [31:0] PC_4
 );
-wire [31:0] PC_imm,PC_branch_jump,PC_next;
+wire [31:0] PC_imm,/*PC_branch_jump,*/PC_next;
 
-assign PC_imm = PC + immOut;
+assign PC_imm = immOut<<1;
 assign PC_4 = PC + 32'd4;
-assign PC_branch_jump = jalr? (result & ~1 ) : PC_imm;
-assign PC_next = PC_src ? PC_branch_jump : PC_4;
+//assign PC_branch_jump = jalr? (result & ~1 ) : PC_imm;
+//assign PC_next = PC_src ? PC_branch_jump : PC_4;
+assign PC_next= PC_src? (jalr ? result & ~1 : PC_imm): PC_4;
 
-instr_mem m(PC,rst,instrCode);
+//instr_mem m(PC,rst,instrCode);
 
 always @(posedge clk, negedge rst)
 begin
@@ -47,6 +47,7 @@ begin
     else
         PC <= PC_next;
 end         
+   instr_mem m(PC,rst,instrCode);
     /*    
     else if(opcode==7'b1100111)// checking for jalr condition
         PC<=result^~1;//making pc as even address
