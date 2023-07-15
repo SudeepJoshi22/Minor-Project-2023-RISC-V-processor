@@ -169,6 +169,6 @@ WriteData_ext
 );
 
 assign set = (lt | ltu) ? 32'd1: 32'd0;
-assign WriteData_ext_set = wos[1]? (wos[0]? immOut : PC_4) : (wos[0]? WriteData_ext : set);
+assign WriteData_ext_set = wos[1]? (wos[0]? 32'dz : PC_4) : (wos[0]? WriteData_ext : set);
 
 endmodule
