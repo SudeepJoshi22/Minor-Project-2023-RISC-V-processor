@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Jul 16 16:42:05 2023
+# Process ID: 3824
+# Log file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/riscv_unpipeline/riscv_unpipeline.xpr
+update_compile_order -fileset sim_1
+launch_simulation
+source processor_unpipelined.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top processor_ris_type_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source processor_ris_type_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source processor_ris_type_tb.tcl
+close_sim
+close_project
+open_project /home/ishita/Desktop/unpipelined_processor_v2/unpipelined_processor_v2.xpr
