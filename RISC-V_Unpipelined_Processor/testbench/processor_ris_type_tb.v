@@ -47,7 +47,7 @@ always #10 clk <= ~clk;
 initial
 begin
     rst <= 0;
-    #15
+    #7
     rst <= 1;
 
 end
