@@ -715,3 +715,10 @@ selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sourc
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), IF - instr_fetch (instr_fetch.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_unpipelined (processor_unpipelined.v), IF - instr_fetch (instr_fetch.v)]", 2, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
 // HMemoryUtils.trashcanNow. Engine heap size: 906 MB. GUI used memory: 34 MB. Current time: 7/16/23 5:33:10 PM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

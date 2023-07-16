@@ -23,7 +23,11 @@ module alu(
 input signed [31:0] A,
 input signed [31:0] B,
 input [3:0] alu_ctrl,
+<<<<<<< HEAD
 output reg  signed [31:0] result,
+=======
+output reg signed [31:0] result,
+>>>>>>> 0cfec344caa2cef562d63fbc9908eefb509fead3
 output zero,
 output lt,
 output ltu

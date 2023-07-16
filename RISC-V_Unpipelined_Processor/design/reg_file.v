@@ -67,8 +67,10 @@ begin
         reg_file[31] <=32'd0;
     end
     
-    else if(RegWrite) reg_file[WriteAddr] <= WriteData;
-
+    else if(RegWrite) begin
+        reg_file[32'd0] <= 32'd0;
+        reg_file[WriteAddr] <= WriteData;
+    end
 end
 
 assign ReadData1 = reg_file[ReadAddr1]; 
