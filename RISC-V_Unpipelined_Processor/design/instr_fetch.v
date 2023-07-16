@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,22 +22,26 @@
 
 
 module instr_fetch(
-input clk,
-input rst,
-input PC_src,
-input jalr,
+input wire clk,
+input wire rst,
+input wire PC_src,
+input wire jalr,
 input wire [31:0]result,
 input wire [31:0]immOut,
-output [31:0] instrCode,
+output wire [31:0] instrCode,
 output reg [31:0] PC,
 output wire [31:0] PC_4
 );
-wire [31:0] PC_imm,PC_branch_jump,PC_next;
+wire [31:0] PC_imm,/*PC_branch_jump,*/PC_next;
 
-assign PC_imm = PC + immOut;
+//assign PC_imm = immOut<<1;
+assign PC_imm = PC + (immOut<<1);
 assign PC_4 = PC + 32'd4;
-assign PC_branch_jump = jalr? (result & ~1 ) : PC_imm;
-assign PC_next = PC_src ? PC_branch_jump : PC_4;
+
+//assign PC_branch_jump = jalr? (result & ~1 ) : PC_imm;
+//assign PC_next = PC_src ? PC_branch_jump : PC_4;
+assign PC_next= PC_src? (jalr ? result & ~1 : PC_imm): PC_4;
+
 
 instr_mem m(PC,rst,instrCode);
 

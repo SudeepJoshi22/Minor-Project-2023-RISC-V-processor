@@ -30,16 +30,3 @@ main:
 	xor t2,t3,t4
 	and t2,t3,t4
 	or t2,t3,t4
-	lui t1,0x800ff
-        auipc t2,-100
-	beq t0,t1,loc
-        bne t0,t1,loc
-        blt t0,t1,loc
-        bge t0,t1,loc
-        bltu t0,t1,loc
-        bgeu t0,t1,loc
-        jal t1,loc
-        jalr t1,t2,0x01
-        
-        loc:
-        addi t3,t1,100

@@ -1,4 +1,4 @@
-dump = open('risc_v_unpipelined.mem','r')
+dump = open('risc_v_unpipeline.txt','r')
 instr = dump.read()
 code = []
 

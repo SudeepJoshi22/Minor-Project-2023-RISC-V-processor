@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,14 +22,17 @@
 
 
 module processor_unpipelined(   
-input clk,
-input rst,
+input wire clk,
+input wire rst,
 output wire [31:0] result,
 output wire [31:0] WriteData_ext_set,
 output wire zero,
-wire lt,
-wire ltu
+output wire lt,
+output wire ltu,
+output wire [31:0] PC
+
 );
+
 wire [6:0] opcode;
 wire [31:0] instrCode;
 wire RegWrite;
@@ -41,7 +45,7 @@ wire [3:0] alu_ctrl;
 wire rw;
 wire MemToReg;
 wire AluSrc;
-wire [31:0] Bi;
+wire [31:0] Bi,Ai;
 wire [31:0] read_data;
 wire [1:0] whb;
 wire [31:0] B_ext;
@@ -52,16 +56,15 @@ wire set;
 wire boj;
 wire jalr;
 wire PC_src;
-wire [31:0] PC;
 wire [31:0] PC_4;
-
-assign imm = instrCode[31:20];
+parameter I1 = 7'b0010011, I2 = 7'b0000011, S = 7'b0100011, R = 7'b0110011,BRANCH=7'b1100011,JAL=7'b1101111,JR=7'b1100111,U=7'b0110111,AUIPC=7'b0010111;
+/*assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
 assign rs2 = instrCode[24:20];
 assign rd = instrCode[11:7];
 assign opcode = instrCode[6:0];
+*/
 //IF
-
 instr_fetch IF(
 clk,
 rst,
@@ -73,6 +76,13 @@ instrCode,
 PC,
 PC_4
 );
+
+
+assign imm = instrCode[31:20];
+assign rs1 = instrCode[19:15];
+assign rs2 = instrCode[24:20];
+assign rd = instrCode[11:7];
+assign opcode = instrCode[6:0];
 
 //ID
 reg_file REG_FILE(
@@ -115,11 +125,11 @@ jalr
 );
 
 // mux for ALU
-assign Ai = (opcode==7'b0010111)? PC:A;
-assign Bi = (AluSrc)?immOut:B;
+//assign Ai = (opcode==7'b0010111)? PC:A;
+//assign Bi = (AluSrc)?immOut:B;
 
-//a = (opcode==jal || opcode==auipc)? pc:rs1;  // a can either be pc or rs1
-//b = (opcode==R || opcode==branch)? rs2:imm; // b can either be rs2 or imm 
+assign Ai = (opcode==JAL || opcode==AUIPC)? PC:A;  // a can either be pc or rs1
+assign Bi = (opcode==R || opcode==BRANCH)? B:immOut; // b can either be rs2 or imm 
         
 //assign Bi = (AluSrc)? immOut : B;
 //assign Ai = (AluSrc)? instrCode:A;
@@ -140,7 +150,7 @@ boj,
 zero,
 lt,
 ltu,
-instr ,
+instrCode,
 PC_src);
 
 //MEM
@@ -166,6 +176,6 @@ WriteData_ext
 );
 
 assign set = (lt | ltu) ? 32'd1: 32'd0;
-assign WriteData_ext_set = wos[1]? (wos[0]? immOut : PC_4) : (wos[0]? WriteData_ext : set);
+assign WriteData_ext_set = wos[1]? (wos[0]? 32'dz : PC_4) : (wos[0]? WriteData_ext : set);
 
 endmodule

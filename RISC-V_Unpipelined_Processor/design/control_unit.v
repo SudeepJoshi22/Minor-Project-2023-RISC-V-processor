@@ -80,22 +80,22 @@ begin
          else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0000_0_0_1_01_1_01_0_0; //SH 
          else if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0000_0_0_1_00_1_01_0_0; //SB 
     B:
-         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'bx_0001_x_x_0_10_1_01_1_0; //BEQ 
-         else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'bx_0001_x_x_0_10_1_01_1_0; //BNE  
-         else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'bx_0001_x_x_0_10_1_01_1_0; //BLT 
-         else if(func3 == 3'b101) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'bx_0001_x_x_0_10_1_01_1_0; //BGE 
-         else if(func3 == 3'b110) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'bx_0001_x_x_0_10_0_01_1_0; //BLTU 
-         else if(func3 == 3'b111) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'bx_0001_x_x_0_10_0_01_1_0; //BGEU 
+         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0001_x_x_0_10_1_01_1_0; //BEQ 
+         else if(func3 == 3'b001) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0001_x_x_0_10_1_01_1_0; //BNE  
+         else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0001_x_x_0_10_1_01_1_0; //BLT 
+         else if(func3 == 3'b101) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0001_x_x_0_10_1_01_1_0; //BGE 
+         else if(func3 == 3'b110) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0001_x_x_0_10_0_01_1_0; //BLTU 
+         else if(func3 == 3'b111) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b0_0001_x_x_0_10_0_01_1_0; //BGEU 
     JR:
-         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'bx_0000_x_x_0_10_1_10_0_1; //JALR 
+         if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_0000_x_x_1_10_1_10_1_1; //JALR 
     J:
-         if(func3 == 3'bxxx) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'bx_xxxx_x_x_0_10_1_10_1_0; //JAL 
+         {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_0000_x_x_1_10_1_10_1_0; //JAL 
     U:
-         if(func3 == 3'bxxx) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_1101_1_1_0_10_1_11_0_0; //LUI 
+         {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_1101_x_0_1_10_1_01_0_0; //LUI 
     UPC:
-         if(func3 == 3'bxxx) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_0000_1_1_1_10_1_01_0_0; //AUIPC 
+         {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <= 15'b1_0000_1_1_1_10_1_01_0_0; //AUIPC 
      default:                    
-                              {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <=15'bx_xxxx_x_x_x_xx_x_xx_x_x; 
+          {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb,su,wos,boj,jalr} <=15'bx_xxxx_x_x_x_xx_x_xx_x_x; 
         
     endcase
  end
