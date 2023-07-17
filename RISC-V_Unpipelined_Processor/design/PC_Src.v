@@ -1,25 +1,5 @@
 `timescale 1ns / 1ps
 `default_nettype none
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 25.06.2023 18:05:00
-// Design Name: 
-// Module Name: PC_Src
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module PC_src(
 input wire boj,
@@ -38,62 +18,58 @@ wire [6:0] opcode;
 assign func3 = instr[14:12];
 assign opcode = instr[6:0];
 
-    always @(*)
+always @(*)
+begin
+    if(boj == 1)
     begin
-      if(boj == 1)
-        begin
         if(opcode == J || opcode == JR)
             PC_src <= 1;
-        else begin
-        case(func3)
-        BEQ: begin
-             if(zero==1)
-             PC_src<=1;
-             else
-             PC_src<=0;
-             end
-        BNE:begin
-            if(zero==0)
-            PC_src<=1;
-            else
-            PC_src<=0;
-            end
-        BLT:begin
-            if(lt==1)
-            PC_src<=1;
-            else
-            PC_src<=0;
-            end
-        BGE:begin
-            if(zero==1 || lt!=1)
-            PC_src<=1;
-            else
-            PC_src<=0;
-            end
-        BLTU:begin
-             if(ltu==1)
-             PC_src<=1;
-             else
-             PC_src<=0;
-             end
-        BGEU:begin
-             if(zero==1 || ltu!=1)
-             PC_src<=1;
-             else
-             PC_src<=0;
-             end
-        default:PC_src<=1;
-         endcase
-         end
+        else 
+        begin
+            case(func3)
+                BEQ: begin
+                         if(zero==1)
+                            PC_src<=1;
+                         else
+                            PC_src<=0;
+                     end
+                BNE:begin
+                        if(zero==0)
+                            PC_src<=1;
+                        else
+                            PC_src<=0;
+                    end
+                BLT:begin
+                        if(lt==1)
+                            PC_src<=1;
+                        else
+                            PC_src<=0;
+                    end
+                BGE:begin
+                        if(zero==1 || lt!=1)
+                            PC_src<=1;
+                        else
+                            PC_src<=0;
+                    end
+                BLTU:begin
+                         if(ltu==1)
+                            PC_src<=1;
+                         else
+                            PC_src<=0;
+                     end
+                BGEU:begin
+                         if(zero==1 || ltu!=1)
+                            PC_src<=1;
+                         else
+                            PC_src<=0;
+                     end
+                default:
+                            PC_src<=1;
+            endcase
         end
-      else 
-           PC_src<=0;
-       
-     end
+    end
+    else 
+       PC_src<=0;
+end
 
-
-
-
-
-  
 endmodule
