@@ -32,16 +32,11 @@ output wire [31:0] instrCode,
 output reg [31:0] PC,
 output wire [31:0] PC_4
 );
-wire [31:0] PC_imm,/*PC_branch_jump,*/PC_next;
+wire [31:0] PC_imm,PC_next;
 
-//assign PC_imm = immOut<<1;
 assign PC_imm = PC + (immOut<<1);
 assign PC_4 = PC + 32'd4;
-
-//assign PC_branch_jump = jalr? (result & ~1 ) : PC_imm;
-//assign PC_next = PC_src ? PC_branch_jump : PC_4;
 assign PC_next= PC_src? (jalr ? result & ~1 : PC_imm): PC_4;
-
 
 instr_mem m(PC,rst,instrCode);
 
@@ -52,13 +47,5 @@ begin
     else
         PC <= PC_next;
 end         
-    /*    
-    else if(opcode==7'b1100111)// checking for jalr condition
-        PC<=result^~1;//making pc as even address
-    else if(!PC_src)
-        PC <= PC + 32'd4; //for next addres
-   else
-        PC<=immOut<<1;  //used for B_type &jal
-*/
 
 endmodule

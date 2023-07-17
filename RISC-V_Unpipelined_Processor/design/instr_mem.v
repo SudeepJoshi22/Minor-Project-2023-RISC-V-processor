@@ -1,4 +1,7 @@
+`include "parameters.vh"
 `timescale 1ns / 1ps
+`default_nettype none
+
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -20,12 +23,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module instr_mem(PC,rst,instrCode);
-input [31:0] PC;
-input rst;
-output reg [31:0 ] instrCode;
-
-reg [7:0] Mem[2048:0];
+module instr_mem(
+input wire [31:0] PC,
+input wire rst,
+output reg [31:0] instrCode
+);
+reg [7:0] Mem[2**20:0];
 
 always @(*)
 begin
@@ -38,6 +41,5 @@ begin
         instrCode <= {Mem[PC+3],Mem[PC+2],Mem[PC+1],Mem[PC]};
 
 end
-//assign instrCode = {Mem[PC],Mem[PC+1],Mem[PC+2],Mem[PC+3]};
 
 endmodule
