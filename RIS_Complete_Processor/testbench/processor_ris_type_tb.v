@@ -23,13 +23,19 @@
 module processor_ris_type_tb;
 reg clk,rst;
 wire [31:0] result;
+wire [31:0] WriteData_ext_set;
 wire zero;
+wire lt;
+wire ltu;
 
 processor_ris_type DUT(
 clk,
 rst,
 result,
-zero
+WriteData_ext_set,
+zero,
+lt,
+ltu
 );
 
 initial clk <= 0;

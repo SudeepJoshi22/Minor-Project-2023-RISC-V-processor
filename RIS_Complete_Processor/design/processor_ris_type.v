@@ -24,7 +24,10 @@ module processor_ris_type(
 input clk,
 input rst,
 output wire [31:0] result,
-output wire zero
+output wire [31:0] WriteData_ext_set,
+output wire zero,
+wire lt,
+wire ltu
 );
 
 wire [31:0] instrCode;
@@ -43,6 +46,10 @@ wire [31:0] read_data;
 wire [1:0] whb;
 wire [31:0] B_ext;
 wire [31:0] WriteData_ext;
+wire su;
+wire wos;
+wire set;
+
 
 assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
@@ -60,7 +67,7 @@ instrCode
 reg_file_i REG_FILE(
 clk,RegWrite,rst,
 rs1,rs2,rd,
-WriteData_ext,
+WriteData_ext_set,
 A,B
 );
 
@@ -84,7 +91,9 @@ alu_ctrl,
 rw,
 MemToReg,
 AluSrc,
-whb
+whb,
+su,
+wos
 );
 
 
@@ -95,7 +104,9 @@ A,
 Bi,
 alu_ctrl,
 result,
-zero
+zero,
+lt,
+ltu
 );
 
 //MEM
@@ -114,7 +125,11 @@ assign WriteData = (MemToReg)? read_data : result;
 signext SIGNEXT(
 WriteData,
 whb,
+su,
 WriteData_ext
 );
+
+assign WriteData_ext_set = (wos) ? WriteData_ext : set;
+assign set = (lt | ltu) ? 32'd1: 32'd0;
 
 endmodule

@@ -46,7 +46,7 @@ begin
     case(opcode)
 	R:
 	   begin
-         if(func3 == 3'b000 && func7 == 7'b0000000) {Reite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_0000_x_0_0_10; //ADD 
+         if(func3 == 3'b000 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_0000_x_0_0_10; //ADD 
          else if(func3 == 3'b000 && func7 == 7'b0100000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_0001_x_0_0_10; //SUB 
          else if(func3 == 3'b001 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_1010_x_0_0_10; //SLL 
          else if(func3 == 3'b101 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_1001_x_0_0_10; //SRL 
@@ -57,8 +57,8 @@ begin
     I1:
         begin
          if(func3 == 3'b000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_0000_x_0_1_10; //ADDI 
-	     else if(func3 == 3'b001 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_1010_x_0_1_10; //SLLI 
-         else if(func3 == 3'b101 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_1001_x_0_1_10; //SRLI 
+         else if(func3 == 3'b001 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_1010_x_0_1_10; //SLLI 
+         else if(func3 == 3'b101 && func7 == 7'b0000000) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_1001_x_0_1_10; //SRLI  
          else if(func3 == 3'b100) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_1000_x_0_1_10; //XORI 
          else if(func3 == 3'b111) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_0010_x_0_1_10; //ANDI 
          else if(func3 == 3'b110) {RegWrite,alu_ctrl,rw,MemtoReg,AluSrc,whb} <= 10'b1_0100_x_0_1_10; //ORI 
