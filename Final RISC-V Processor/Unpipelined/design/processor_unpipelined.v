@@ -40,11 +40,11 @@ wire [31:0] PC_4;
 
 parameter I1 = 7'b0010011, I2 = 7'b0000011, S = 7'b0100011, R = 7'b0110011,BR=7'b1100011,J=7'b1101111,JR=7'b1100111,U=7'b0110111,UPC=7'b0010111;
 
-assign imm = instrCode[31:20];
-assign rs1 = instrCode[19:15];
-assign rs2 = instrCode[24:20];
-assign rd = instrCode[11:7];
-assign opcode = instrCode[6:0];
+assign imm = instrCode[31:20]; //
+assign rs1 = instrCode[19:15]; //
+assign rs2 = instrCode[24:20]; //
+assign rd = instrCode[11:7]; //
+assign opcode = instrCode[6:0]; //
 
 assign Ai = (opcode==J || opcode==UPC)? PC:A;  // a can either be pc or rs1
 assign Bi = (opcode==R || opcode==BR)? B:immOut; // b can either be rs2 or imm 
@@ -54,7 +54,7 @@ assign WriteData_ext_set = wos[1]? (wos[0]? 32'dz : PC_4) : (wos[0]? WriteData_e
 assign WriteData = (opcode == I2)? read_data : result;  
 
 assign jalr = (opcode == JR)? 1'b1: 1'b0;
-assign RegWrite = (opcode == S || opcode == BR)? 1'b0:1'b1;
+assign RegWrite = (opcode == S || opcode == BR)? 1'b0:1'b1; //
 
 assign boj = ((opcode == B) || (opcode == J) || (opcode == JR))? 1'b1:1'b0;
 
