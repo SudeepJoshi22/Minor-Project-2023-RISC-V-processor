@@ -23,7 +23,7 @@ wire [31:0] WriteData;
 wire [31:0] immOut;
 wire [3:0] alu_ctrl;
 wire rw;
-wire MemToReg;
+//wire MemToReg;
 wire AluSrc;
 wire [31:0] Bi,Ai;
 wire [31:0] read_data;
@@ -46,19 +46,19 @@ assign rs2 = instrCode[24:20]; //
 assign rd = instrCode[11:7]; //
 assign opcode = instrCode[6:0]; //
 
-assign Ai = (opcode==J || opcode==UPC)? PC:A;  // a can either be pc or rs1
-assign Bi = (opcode==R || opcode==BR)? B:immOut; // b can either be rs2 or imm 
+assign Ai = (opcode==J || opcode==UPC)? PC:A; // // a can either be pc or rs1
+assign Bi = (opcode==R || opcode==BR)? B:immOut; // // b can either be rs2 or imm 
 
-assign set = (lt | ltu) ? 32'd1: 32'd0;
-assign WriteData_ext_set = wos[1]? (wos[0]? 32'dz : PC_4) : (wos[0]? WriteData_ext : set);
-assign WriteData = (opcode == I2)? read_data : result;  
+assign set = (lt | ltu) ? 32'd1: 32'd0; //
+assign WriteData_ext_set = wos[1]? (wos[0]? 32'dz : PC_4) : (wos[0]? WriteData_ext : set); //
+assign WriteData = (opcode == I2)? read_data : result;  //
 
-assign jalr = (opcode == JR)? 1'b1: 1'b0;
+assign jalr = (opcode == JR)? 1'b1: 1'b0; //
 assign RegWrite = (opcode == S || opcode == BR)? 1'b0:1'b1; //
 
-assign boj = ((opcode == B) || (opcode == J) || (opcode == JR))? 1'b1:1'b0;
+assign boj = ((opcode == B) || (opcode == J) || (opcode == JR))? 1'b1:1'b0; //
 
-assign rw = (opcode == I2)? 1'b1:1'b0;
+assign rw = (opcode == I2)? 1'b1:1'b0; //
 
 //IF
 instr_fetch IF(
