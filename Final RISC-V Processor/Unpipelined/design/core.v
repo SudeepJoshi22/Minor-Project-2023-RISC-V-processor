@@ -11,7 +11,10 @@ output wire cs_d_n,
 output wire rd,
 output wire wr,
 output wire [31:0] i_addr,
-output wire [31:0] d_addr
+output wire [31:0] d_addr,
+output wire [31:0] Data_write,
+output wire [31:0] result,
+output wire [31:0] DataOut_WB
 );
 
 ////IF
@@ -41,7 +44,7 @@ wire [31:0] PC_ID;
 wire [31:0] PC_4_ID;
 
 ////EX
-wire [31:0] result;
+//wire [31:0] result;
 wire [31:0] Data_store;
 //flags out
 wire lt;
@@ -56,7 +59,7 @@ wire [5:0] opcode_EX;
 wire [31:0] PC_4_EX;
 
 ////MEM
-wire [31:0] Data_write; //data to write into data mem
+//wire [31:0] Data_write; //data to write into data mem
 wire [31:0] Data_out_MEM; //data read from the data mem
 //control signals forwarding
 wire su_MEM;
@@ -71,7 +74,7 @@ wire [31:0] result_MEM;
 wire [31:0] PC_4_MEM;
 
 ////WB
-wire [31:0] DataOut_WB;
+//wire [31:0] DataOut_WB;
 
 IF M0(
 clk,

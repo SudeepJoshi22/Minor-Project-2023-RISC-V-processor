@@ -13,7 +13,7 @@ output wire [31:0] Read1,
 output wire [31:0] Read2,
 output wire [31:0] immOut,
 //instruction forwards to next stage
-output wire [5:0] opcode,
+output wire [6:0] opcode,
 output wire [2:0] func3,
 //control signlas
 output wire su,
@@ -41,6 +41,7 @@ assign PC_ID  = PC;
 assign PC_4_ID = PC_4;
 
 assign Read2 = B_ext;
+assign Read1 = A;
 
 assign RegWrite = (opcode == S || opcode == BR)? 1'b0:1'b1;
 

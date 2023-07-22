@@ -1,43 +1,30 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03.05.2023 12:19:51
-// Design Name: 
-// Module Name: instr_mem_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module instr_mem_tb;
 reg [31:0] PC;
 reg rst;
+reg cs_n;
+reg clk;
 wire [31:0] instrCode;
 
-instr_mem DUT(PC,rst,instrCode);
+instr_mem DUT(clk,PC,rst,cs_n,instrCode);
 
+initial clk<= 0;
+
+always #10 clk <= ~clk;
+
+always @(posedge clk) PC <= PC + 32'h4;
+ 
 initial
 begin
-    rst = 0;
+    rst <= 0;
+    cs_n <= 1;
+    PC <= 0;
     #10 
     rst = 1;
-    PC = 32'h0000;
-    #10
-    PC = 32'h0004;
-    #10
-    PC = 32'h000c;
-    $finish;
+    cs_n <= 0;
+    #200 $finish;
 end
 
 endmodule

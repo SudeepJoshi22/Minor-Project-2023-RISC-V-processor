@@ -2,6 +2,7 @@
 `default_nettype none
 
 module instr_mem(
+input wire clk,
 input wire [31:0] iaddr,
 input wire rst,
 input wire cs_n,
@@ -21,7 +22,7 @@ always @(*)
 begin
     if(~rst)
     begin
-        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/Instructions/dump1.mem",Mem);
+        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/Instructions/dump2.mem",Mem);
         instrCode <= 32'dz;
     end
 end

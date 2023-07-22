@@ -11,7 +11,7 @@ input wire [31:0] PC,
 input wire [31:0] PC_4,
 input wire [3:0] alu_ctrl,
 input wire [2:0] func3,
-input wire [5:0] opcode,
+input wire [6:0] opcode,
 //control signals to forward
 input wire su,
 input wire [1:0] whb,
@@ -29,7 +29,7 @@ output wire su_EX,
 output wire [1:0] whb_EX,
 output wire [1:0] wos_EX,
 //intruction forward
-output wire [5:0] opcode_EX,
+output wire [6:0] opcode_EX,
 //immOut for IF stage
 output wire [31:0] immOut_EX,
 //PC forwards
@@ -47,6 +47,7 @@ assign whb_EX = whb;
 assign wos_EX = wos;
 assign opcode_EX = opcode;
 assign immOut_EX = immOut;
+assign Data_store = Read2;
 
 assign Ai = (opcode==J || opcode==UPC)? PC:Read1;  // a can either be pc or rs1
 assign Bi = (opcode==R || opcode==BR)? Read2:immOut; // b can either be rs2 or imm 

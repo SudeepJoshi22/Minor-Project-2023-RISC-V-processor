@@ -6,7 +6,7 @@ input wire clk,
 input wire rst,
 input wire [31:0] result,
 input wire [31:0] Data_store,
-input wire [5:0] opcode,
+input wire [6:0] opcode,
 input wire [31:0] Data_read,
 input wire [31:0] PC_4,
 input wire su,
@@ -28,7 +28,7 @@ output wire [1:0] wos_MEM,
 output wire lt_MEM,
 output wire ltu_MEM,
 //pipeline forwarding
-output wire [5:0] opcode_MEM,
+output wire [6:0] opcode_MEM,
 output wire [31:0] result_MEM,
 output wire [31:0] PC_4_MEM
 );
