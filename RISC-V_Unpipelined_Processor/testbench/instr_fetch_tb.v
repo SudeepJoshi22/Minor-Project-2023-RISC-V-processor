@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+/*
 module instr_fetch_tb;
 reg clk;
 reg rst;
@@ -59,6 +59,56 @@ begin
    PC_src <= 1;
    #10
    jalr <= 1;
+   #50
+   $finish;
+end
+
+endmodule
+*/
+
+
+
+
+
+module instr_fetch_tb;
+reg clk;
+reg rst;
+reg hit;
+reg taken;
+reg [31:0]pred_PC;
+wire [31:0] instrCode;
+wire [31:0] PC;
+wire [31:0] PC_4;
+
+instr_fetch DUT(
+clk,
+rst,
+hit,
+taken,
+pred_PC,
+instrCode,
+PC,
+PC_4
+);
+
+initial clk <= 0;
+always #10 clk <= ~clk;
+
+initial
+begin
+   rst <= 0;
+   hit <= 0;
+   taken<= 0;
+   pred_PC<= 32'hffabcd11;
+   #5
+   rst <= 1;
+   #100
+    hit<= 1;
+    taken<=0;
+   #10
+    taken <= 1;
+    #10
+    hit<=0;
    #50
    $finish;
 end
