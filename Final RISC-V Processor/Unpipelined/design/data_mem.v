@@ -12,7 +12,7 @@ input wire [31:0] write_data,
 output wire [31:0] read_data
 );
 
-reg [7:0] memory[1023:0]; //byte adressable
+reg [7:0] memory[2**20:0]; //byte adressable
 integer i;
 
 assign read_data = (rd && ~cs_n)? {memory[addr+3], memory[addr+2], memory[addr+1], memory[addr]}:32'dz; 

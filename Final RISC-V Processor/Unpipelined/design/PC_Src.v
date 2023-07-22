@@ -7,7 +7,7 @@ input wire zero,
 input wire lt,
 input wire ltu,
 input wire [2:0] func3,
-input wire [5:0] opcode,
+input wire [6:0] opcode,
 output reg PC_src);
 
 parameter BEQ=3'b000, BNE=3'b001,BLT=3'b100, BGE=3'b101, BLTU=3'b110, BGEU=3'b111;
@@ -59,7 +59,7 @@ begin
                             PC_src<=0;
                      end
                 default:
-                            PC_src<=1;
+                            PC_src<=0;
             endcase
         end
     end

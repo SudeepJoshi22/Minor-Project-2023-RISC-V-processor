@@ -32,7 +32,7 @@ wire [31:0] Read1;
 wire [31:0] Read2;
 wire [31:0] immOut;
 //instruction forwards to next stage
-wire [5:0] opcode;
+wire [6:0] opcode;
 wire [2:0] func3;
 //control signlas
 wire su;
@@ -54,7 +54,7 @@ wire su_EX;
 wire [1:0] whb_EX;
 wire [1:0] wos_EX;
 //intruction forward
-wire [5:0] opcode_EX;
+wire [6:0] opcode_EX;
 //PC forwards
 wire [31:0] PC_4_EX;
 
@@ -69,7 +69,7 @@ wire [1:0] wos_MEM;
 wire lt_MEM;
 wire ltu_MEM;
 //pipeline forwarding
-wire [5:0] opcode_MEM;
+wire [6:0] opcode_MEM;
 wire [31:0] result_MEM;
 wire [31:0] PC_4_MEM;
 

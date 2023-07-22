@@ -17,19 +17,19 @@ output wire [31:0] PC_IF,
 output wire [31:0] PC_4_IF
 );
 wire [31:0] PC_imm,PC_next;
-reg [31:0] PC;
+reg [31:0] PC,addr;
 wire [31:0] PC_4;
 
 assign PC_IF = PC;
 assign PC_4_IF = PC_4;
-assign i_addr = PC;
+assign i_addr = rst? PC : 32'dz;
 assign instrCode = instr_read;
 
 assign cs_i_n = rst? 1'b0 : 'b1;
 
 assign PC_imm = PC + (immOut_EX<<1);
 assign PC_4 = PC + 32'd4;
-assign PC_next= PC_src? (jalr ? result_EX & ~1 : PC_imm): PC_4;
+assign PC_next= PC_src? ( jalr ? (result_EX & ~1) : PC_imm): PC_4;
 
 /*
 //ce logic for fetch stage
@@ -44,12 +44,13 @@ begin
 end
 */
 
-always @(posedge clk, negedge rst)
+always @(posedge clk)
 begin
     if(!rst)
         PC <= 32'd0;
-    else
+    else begin
         PC <= PC_next;
+    end
 end       
 
 endmodule

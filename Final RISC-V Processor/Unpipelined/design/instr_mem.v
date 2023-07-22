@@ -10,26 +10,19 @@ output reg [31:0] instrCode
 );
 
 reg [7:0] Mem[2**20:0];
-reg [31:0] raddr;
-
-always @(posedge clk)
-begin
-    if(~cs_n)
-        raddr <= iaddr;
-end
 
 always @(*)
 begin
     if(~rst)
     begin
-        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/Instructions/dump2.mem",Mem);
+        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/instructions/dump1.mem",Mem);
         instrCode <= 32'dz;
     end
 end
 
-always @(raddr)
+always @(*)
 begin
-    instrCode <= {Mem[raddr+3],Mem[raddr+2],Mem[raddr+1],Mem[raddr]};
+    instrCode <= {Mem[iaddr+3],Mem[iaddr+2],Mem[iaddr+1],Mem[iaddr]};
 end
 
 endmodule
