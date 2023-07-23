@@ -74,7 +74,7 @@ PC_4
 );
 
 
-
+/*
 branch_pred_unit BPU(
 clk,rst,
 PC,
@@ -88,6 +88,7 @@ hit,
 predicted_addr,
 taken
  );
+ */
 //ID
 reg_file REG_FILE(
 clk,
