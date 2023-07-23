@@ -21,7 +21,7 @@ always @(posedge clk, negedge rst)
 begin
     if(~rst)
         begin
-            for(i=0;i<1024;i=i+1) memory[i] <= 8'd1;
+            for(i=0;i<1024;i=i+1) memory[i] <= 8'd0;
         end
     else
         begin
