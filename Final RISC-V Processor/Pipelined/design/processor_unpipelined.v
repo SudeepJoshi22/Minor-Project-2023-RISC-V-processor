@@ -73,21 +73,6 @@ PC,
 PC_4
 );
 
-
-
-branch_pred_unit BPU(
-clk,rst,
-PC,
-ADDR_EX,
-Pred_EX,
-btb_enable,
-state_change,
-state_write,
-branch, //to indicate whether branch was taken or not in ex 
-hit,
-predicted_addr,
-taken
- );
 //ID
 reg_file REG_FILE(
 clk,
