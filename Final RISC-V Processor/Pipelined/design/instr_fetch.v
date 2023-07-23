@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 `default_nettype none
 
-module instr_fetch(
+module IF(
 input wire clk,
 input wire rst,
 input wire PC_src,
@@ -12,6 +12,7 @@ output wire [31:0] instrCode,
 output reg [31:0] PC,
 output wire [31:0] PC_4
 );
+
 wire [31:0] PC_imm,PC_next;
 
 assign PC_imm = PC + (immOut<<1);
