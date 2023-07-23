@@ -12,7 +12,11 @@ always @(*)
 begin
     if(~rst)
     begin
+<<<<<<< HEAD
+        $readmemh("/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/Instructions/dump.mem",Mem);
+=======
         $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/Instructions/dump1.mem",Mem);
+>>>>>>> 4e0830f4901d8bbec00a03eb2adbf3ff9098ca97
         instrCode <= 32'd0;
     end
     else

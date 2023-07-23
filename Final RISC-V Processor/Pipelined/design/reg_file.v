@@ -51,8 +51,13 @@ begin
     end
     
     else if(RegWrite) begin
+<<<<<<< HEAD
+        reg_file[32'd0] <= 32'd0;
+        reg_file[WriteAddr] <= WriteData;
+=======
         if(WriteAddr != 5'b00000) //x0 register must be always 0
             reg_file[WriteAddr] <= WriteData;
+>>>>>>> 4e0830f4901d8bbec00a03eb2adbf3ff9098ca97
     end
 end
 
