@@ -1,30 +1,13 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 17.05.2023 23:46:29
-// Design Name: 
-// Module Name: reg_file_i
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
+`default_nettype none
 
 module reg_file(
-input clk,RegWrite,rst,
-input [4:0] ReadAddr1,ReadAddr2,WriteAddr,
-input [31:0] WriteData,
-output [31:0]  ReadData1,ReadData2
+input wire clk,
+input wire RegWrite,
+input wire rst,
+input wire [4:0] ReadAddr1,ReadAddr2,WriteAddr,
+input wire [31:0] WriteData,
+output wire [31:0]  ReadData1,ReadData2
 );
 
 reg [31:0] reg_file[31:0];
@@ -68,8 +51,13 @@ begin
     end
     
     else if(RegWrite) begin
+<<<<<<< HEAD
         reg_file[32'd0] <= 32'd0;
         reg_file[WriteAddr] <= WriteData;
+=======
+        if(WriteAddr != 5'b00000) //x0 register must be always 0
+            reg_file[WriteAddr] <= WriteData;
+>>>>>>> 4e0830f4901d8bbec00a03eb2adbf3ff9098ca97
     end
 end
 
