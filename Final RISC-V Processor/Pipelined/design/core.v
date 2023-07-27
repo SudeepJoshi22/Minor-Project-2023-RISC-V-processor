@@ -113,6 +113,7 @@ module core(
   wire [31:0] PC_4_MEM_MEM_WB;
 
   // WB - stage
+  wire RegWrite;
 //  wire [31:0] DataOut_WB_MEM;
 
   // Instantiate the IF stage (M0)
@@ -121,7 +122,7 @@ module core(
     rst_n,
     PC_src,
     jalr,
-    result,
+    result_EX,
     immOut_EX,
     i_data,
     cs_i_n,
@@ -152,6 +153,7 @@ module core(
     DataOut_WB,
     PC_IF_ID,
     PC_4_IF_ID,
+    RegWrite,
     // Data forwards to the next stage
     Read1,
     Read2,
@@ -206,7 +208,7 @@ module core(
     immOut_ID_EX,
     PC_ID_ID_EX,
     PC_4_ID_ID_EX,
-    alu_ctrl_ID_EX,
+    alu_ctrl_ID_EX, 
     func3_ID_EX,
     opcode_ID_EX,
     su_ID_EX,
@@ -310,7 +312,7 @@ module core(
   WB M4(
     clk,
     rst_n,
-    d_data,
+    Data_out_MEM_MEM_WB,
     result_MEM_MEM_WB,
     opcode_MEM_MEM_WB,
     PC_4_MEM_MEM_WB,
@@ -319,6 +321,7 @@ module core(
     wos_MEM_MEM_WB,
     lt_MEM_MEM_WB,
     ltu_MEM_MEM_WB,
+    RegWrite,
     DataOut_WB
   );
 

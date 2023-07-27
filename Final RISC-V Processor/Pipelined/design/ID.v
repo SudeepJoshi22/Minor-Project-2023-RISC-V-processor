@@ -8,6 +8,7 @@ input wire [31:0] instrCode,
 input wire [31:0] Data_WB,
 input wire [31:0] PC,
 input wire [31:0] PC_4,
+input wire RegWrite,
 //Data forwards to next stage
 output wire [31:0] Read1,
 output wire [31:0] Read2,
@@ -29,7 +30,7 @@ parameter I1 = 7'b0010011, I2 = 7'b0000011, S = 7'b0100011, R = 7'b0110011,BR=7'
 wire [31:0] A,B,B_ext;
 wire [4:0] rs1,rs2,rd;
 wire [11:0] imm;
-wire RegWrite;
+
 
 assign imm = instrCode[31:20];
 assign rs1 = instrCode[19:15];
@@ -43,7 +44,7 @@ assign PC_4_ID = PC_4;
 assign Read2 = B_ext;
 assign Read1 = A;
 
-assign RegWrite = (opcode == S || opcode == BR)? 1'b0:1'b1;
+//assign RegWrite = (opcode == S || opcode == BR)? 1'b0:1'b1;
 
 reg_file REG_FILE(
 clk,

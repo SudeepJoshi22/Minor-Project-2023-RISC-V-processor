@@ -2,7 +2,8 @@ dump = open('dump.mem','r')
 instr = dump.read()
 code = []
 
-mem = open('ris_complete_instructions.mem','w')
+name = input("enter the output file name")
+mem = open(name,'w')
 ii = 0
 while ii < len(instr):
     if(instr[ii] == 'i'):

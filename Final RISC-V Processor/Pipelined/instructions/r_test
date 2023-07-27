@@ -1,0 +1,18 @@
+.text
+	addi t0,x0,0x00f
+	addi t1,x0,0x123
+	addi t2,x0,0x00e
+	addi t3,x0,0x00d
+	addi t4,x0,0x004
+	addi t5,x0,0x0fe
+	addi t6,x0,0x7ff
+	add a0,t0,t1
+	sub a1,t2,t3
+	sll a2,t4,t5
+	srl a3,t4,t2
+	sra a4,t0,t2
+	slt s4,t4,t2
+	sltu s3,t2,t4
+	xor a0,t3,t4
+	and a7,t3,t4
+	or s10,t3,t4
