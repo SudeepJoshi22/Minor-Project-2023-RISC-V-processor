@@ -11,7 +11,7 @@ reg  [31:0] PC;
 reg  [31:0] PC_4;
 reg  [3:0] alu_ctrl;
 reg  [2:0] func3;
-reg  [5:0] opcode;
+reg  [6:0] opcode;
 //control signals to forward
 reg  su;
 reg  [1:0] whb;
@@ -29,7 +29,7 @@ wire su_EX;
 wire [1:0] whb_EX;
 wire [1:0] wos_EX;
 //intruction forward
-wire [5:0] opcode_EX;
+wire [6:0] opcode_EX;
 //immOut for IF stage
 wire [31:0] immOut_EX;
 //PC forwards

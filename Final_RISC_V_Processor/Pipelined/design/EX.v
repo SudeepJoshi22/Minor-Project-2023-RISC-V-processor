@@ -49,8 +49,10 @@ assign opcode_EX = opcode;
 assign immOut_EX = immOut;
 assign Data_store = Read2;
 
-assign Ai = (opcode==J || opcode==UPC)? PC:Read1;  // a can either be pc or rs1
+//assign Ai = (opcode==J || opcode==UPC)? PC:Read1;  // a can either be pc or rs1
+assign Ai = Read1;
 assign Bi = (opcode==R || opcode==BR || opcode==S)? Read2:immOut; // b can either be rs2 or imm 
+//assign Bi = Read2;
 assign boj = ((opcode == BR) || (opcode == J) || (opcode == JR))? 1'b1:1'b0;
 assign jalr = (opcode == JR)? 1'b1: 1'b0;
 

@@ -15,7 +15,7 @@ always @(*)
 begin
     if(~rst)
     begin
-        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Pipelined/instructions/r.mem",Mem);
+        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/Final_RISC_V_Processor/Pipelined/instructions/r.mem",Mem);
         instrCode <= 32'dz;
     end
 end
