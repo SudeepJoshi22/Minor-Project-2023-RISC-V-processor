@@ -40,9 +40,11 @@ begin
     //At the positive edge of the clk2, if RegWrite is active then do the write operation
     if(RegWrite && clk2)
     begin
-        reg_file[WriteAddr] = WriteData;
-        read_data1_valid = 1'b0;
-        read_data2_valid = 1'b0; 
+        if(WriteAddr != 5'b00000) begin
+            reg_file[WriteAddr] = WriteData;
+            read_data1_valid = 1'b0;
+            read_data2_valid = 1'b0; 
+        end
     end
     else
     begin

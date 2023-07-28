@@ -1,9 +1,10 @@
 module core(
   // Input ports
   input wire clk,
-  input wire rst_n,
+  input wire rst,
   input wire [31:0] i_data,
   input wire [31:0] d_data,
+  // Output ports
   output wire cs_i_n,
   output wire cs_d_n,
   output wire rd,
@@ -15,49 +16,46 @@ module core(
   output wire [31:0] DataOut_WB
 );
 
-  // IF - stage
-  wire PC_src;
-  wire jalr;
-  wire [31:0] immOut_EX;
-  wire [31:0] instrCode;
-  // PC forwards
-  wire [31:0] PC_IF;
-  wire [31:0] PC_4_IF;
+/////IF
+wire PC_src;
+wire jalr;
+wire [31:0] result_EX;
+wire [31:0] immOut_EX;
+wire [31:0] instr_read;
+wire cs_i_n;
+wire [31:0] i_addr;
+wire [31:0] instrCode;
+wire [31:0] PC_IF;
 
-  // IF_ID
-  wire [31:0] instrCode_IF_ID;
-  wire [31:0] PC_IF_ID;
-  wire [31:0] PC_4_IF_ID;
+// IF_ID stage outputs (wires)
+wire [31:0] instrCode_IF_ID;
+wire [31:0] PC_IF_IF_ID;
 
   // ID - stage
-  // Data forwards to the next stage
-  wire [31:0] Read1;
-  wire [31:0] Read2;
-  wire [31:0] immOut;
-  // Instruction forwards to the next stage
-  wire [6:0] opcode;
-  wire [2:0] func3;
-  // Control signals
-  wire su;
-  wire [1:0] whb;
-  wire [1:0] wos;
-  wire [3:0] alu_ctrl;
-  // Pipeline forwards
-  wire [31:0] PC_ID;
-  wire [31:0] PC_4_ID;
+wire [4:0] rd_WB;
+wire [31:0] instrCode;
+wire [31:0] Data_WB;
+wire [31:0] PC;
+wire read_data_valid;
+wire [3:0] alu_ctrl;
+wire [31:0] immOut;
+wire [31:0] Read1;
+wire [31:0] Read2;
+wire [4:0] rd;
+wire [2:0] func3;
+wire [6:0] opcode;
+wire [31:0] PC_ID;
 
-  // ID_EX
-  wire [31:0] Read1_ID_EX;
-  wire [31:0] Read2_ID_EX;
-  wire [31:0] immOut_ID_EX;
-  wire [6:0] opcode_ID_EX;
-  wire [2:0] func3_ID_EX;
-  wire su_ID_EX;
-  wire [1:0] whb_ID_EX;
-  wire [1:0] wos_ID_EX;
-  wire [3:0] alu_ctrl_ID_EX;
-  wire [31:0] PC_ID_ID_EX;
-  wire [31:0] PC_4_ID_ID_EX;
+// ID_EX
+wire read_data_valid_ID_EX;
+wire [3:0] alu_ctrl_ID_EX;
+wire [31:0] immOut_ID_EX;
+wire [31:0] Read1_ID_EX;
+wire [31:0] Read2_ID_EX;
+wire [4:0] rd_ID_EX;
+wire [2:0] func3_ID_EX;
+wire [6:0] opcode_ID_EX;
+wire [31:0] PC_ID_ID_EX;
 
   // EX - stage
  // wire [31:0] result_EX;
@@ -116,117 +114,100 @@ module core(
   wire RegWrite;
 //  wire [31:0] DataOut_WB_MEM;
 
-  // Instantiate the IF stage (M0)
-  IF M0(
-    clk,
-    rst_n,
-    PC_src,
-    jalr,
-    result_EX,
-    immOut_EX,
-    i_data,
-    cs_i_n,
-    i_addr,
-    instrCode,
-    // PC forwards
-    PC_IF,
-    PC_4_IF
-  );
+// Instantiate the IF stage (M0)
+IF IF_inst (
+    .clk(clk),
+    .rst(rst),
+    .PC_src(PC_src),
+    .jalr(jalr),
+    .result_EX(result_EX),
+    .immOut_EX(immOut_EX),
+    .instr_read(instr_read),
+    .cs_i_n(cs_i_n),
+    .i_addr(i_addr),
+    .instrCode(instrCode),
+    .PC_IF(PC_IF)
+);
 
-  // Instantiate the IF_ID module
-  IF_ID IF_ID_inst (
-    clk,
-    rst_n,
-    instrCode,
-    PC_IF,
-    PC_4_IF,
-    instrCode_IF_ID,
-    PC_IF_ID,
-    PC_4_IF_ID
-  );
+// Instantiate IF_ID register
+IF_ID IF_ID_inst (
+    .clk(clk),
+    .rst(rst),
+    .instrCode(instrCode),
+    .PC_IF(PC_IF),
+    .instrCode_IF_ID(instrCode_IF_ID),
+    .PC_IF_IF_ID(PC_IF_IF_ID)
+);
 
   // Instantiate the ID stage (M1)
-  ID M1(
-    clk,
-    rst_n,
-    instrCode_IF_ID,
-    DataOut_WB,
-    PC_IF_ID,
-    PC_4_IF_ID,
-    RegWrite,
-    // Data forwards to the next stage
-    Read1,
-    Read2,
-    immOut,
-    // Instruction forwards to the next stage
-    opcode,
-    func3,
-    // Control signals
-    su,
-    whb,
-    wos,
-    alu_ctrl,
-    // Pipeline forwards
-    PC_ID,
-    PC_4_ID
-  );
+ID ID_inst (
+    .clk(clk),
+    .rst(rst),
+    .RegWrite(RegWrite),
+    .rd_WB(rd_WB),
+    .instrCode(instrCode),
+    .Data_WB(Data_WB),
+    .PC(PC),
+    .read_data_valid(read_data_valid),
+    .alu_ctrl(alu_ctrl),
+    .immOut(immOut),
+    .Read1(Read1),
+    .Read2(Read2),
+    .rd(rd),
+    .func3(func3),
+    .opcode(opcode),
+    .PC_ID(PC_ID)
+);
 
   // Instantiate the ID_EX module
-  ID_EX ID_EX_inst (
-    clk,
-    rst_n,
-    Read1,
-    Read2,
-    immOut,
-    opcode,
-    func3,
-    su,
-    whb,
-    wos,
-    alu_ctrl,
-    PC_ID,
-    PC_4_ID,
-    Read1_ID_EX,
-    Read2_ID_EX,
-    immOut_ID_EX,
-    opcode_ID_EX,
-    func3_ID_EX,
-    su_ID_EX,
-    whb_ID_EX,
-    wos_ID_EX,
-    alu_ctrl_ID_EX,
-    PC_ID_ID_EX,
-    PC_4_ID_ID_EX
-  );
+ID_EX ID_EX_inst (
+    .clk(clk),
+    .rst(rst),
+    .read_data_valid(read_data_valid),
+    .alu_ctrl(alu_ctrl),
+    .immOut(immOut),
+    .Read1(Read1),
+    .Read2(Read2),
+    .rd(rd),
+    .func3(func3),
+    .opcode(opcode),
+    .PC_ID(PC_ID),
+    .read_data_valid_ID_EX(read_data_valid_ID_EX),
+    .alu_ctrl_ID_EX(alu_ctrl_ID_EX),
+    .immOut_ID_EX(immOut_ID_EX),
+    .Read1_ID_EX(Read1_ID_EX),
+    .Read2_ID_EX(Read2_ID_EX),
+    .rd_ID_EX(rd_ID_EX),
+    .func3_ID_EX(func3_ID_EX),
+    .opcode_ID_EX(opcode_ID_EX),
+    .PC_ID_ID_EX(PC_ID_ID_EX)
+);
 
   // Instantiate the EX stage (M2)
-  EX M2(
-    clk,
-    rst_n,
-    Read1_ID_EX,
-    Read2_ID_EX,
-    immOut_ID_EX,
-    PC_ID_ID_EX,
-    PC_4_ID_ID_EX,
-    alu_ctrl_ID_EX, 
-    func3_ID_EX,
-    opcode_ID_EX,
-    su_ID_EX,
-    whb_ID_EX,
-    wos_ID_EX,
-    result_EX,
-    Data_store,
-    PC_src,
-    jalr,
-    lt,
-    ltu,
-    su_EX,
-    whb_EX,
-    wos_EX,
-    opcode_EX,
-    immOut_EX,
-    PC_4_EX
-  );
+EX EX_inst (
+    .clk(clk),
+    .rst(rst),
+    .read_data_valid(read_data_valid),
+    .alu_ctrl(alu_ctrl),
+    .immOut(immOut),
+    .Read1(Read1),
+    .Read2(Read2),
+    .rd(rd),
+    .func3(func3),
+    .opcode(opcode),
+    .PC(PC),
+    .func3_EX(func3_EX),
+    .rd_EX(rd_EX),
+    .opcode_EX(opcode_EX),
+    .result(result),
+    .DataStore(DataStore),
+    .PC_src(PC_src),
+    .jalr(jalr),
+    .lt(lt),
+    .ltu(ltu),
+    .immOut_EX(immOut_EX),
+    .PC_EX(PC_EX)
+);
 
   // Instantiate the EX_MEM module
   EX_MEM EX_MEM_inst (

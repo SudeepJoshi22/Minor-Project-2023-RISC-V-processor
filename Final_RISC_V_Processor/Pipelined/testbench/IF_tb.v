@@ -14,7 +14,6 @@ wire [31:0] i_addr;
 wire [31:0] instrCode;
 //PC forwards
 wire [31:0] PC_IF;
-wire [31:0] PC_4_IF;
 
 IF DUT(
 clk,
@@ -28,8 +27,7 @@ cs_i_n,
 i_addr,
 instrCode,
 //PC forwards
-PC_IF,
-PC_4_IF
+PC_IF
 );
 
 initial clk <= 0;
