@@ -7,7 +7,8 @@ input wire RegWrite,
 input wire rst,
 input wire [4:0] ReadAddr1,ReadAddr2,WriteAddr,
 input wire [31:0] WriteData,
-output wire [31:0]  ReadData1,ReadData2
+output wire [31:0]  ReadData1,
+output wire [31:0] ReadData2
 );
 
 reg [31:0] reg_file[31:0];
