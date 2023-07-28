@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jul 26 17:11:10 2023
+# Process ID: 4146
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.runs/synth_1/top_module.vds
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl

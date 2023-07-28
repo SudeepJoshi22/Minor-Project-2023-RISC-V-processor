@@ -1,0 +1,48 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_module_tb_behav xil_defaultlib.top_module_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu_MEM_MEM_WB [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:304]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:322]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" Line 4. Module top_module doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" Line 4. Module data_mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" Line 4. Module top_module doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" Line 4. Module data_mem doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.store_whb
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_tb_behav

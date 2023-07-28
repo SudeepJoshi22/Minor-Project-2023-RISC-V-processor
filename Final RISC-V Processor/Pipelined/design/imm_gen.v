@@ -1,28 +1,5 @@
 `timescale 1ns / 1ps
 `default_nettype none
-<<<<<<< HEAD
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 17.05.2023 23:09:41
-// Design Name: 
-// Module Name: imm_gen
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-=======
->>>>>>> 4e0830f4901d8bbec00a03eb2adbf3ff9098ca97
 
 module imm_gen(
 input wire [31:0] instr,

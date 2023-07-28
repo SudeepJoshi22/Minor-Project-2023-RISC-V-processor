@@ -1,2 +1,0 @@
-`define DATA_WIDTH 32
-`define ADDRESS_WIDTH 32

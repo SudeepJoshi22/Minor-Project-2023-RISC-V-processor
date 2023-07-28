@@ -2,25 +2,28 @@
 `default_nettype none
 
 module instr_mem(
-input wire [31:0] PC,
+input wire clk,
+input wire [31:0] iaddr,
 input wire rst,
+input wire cs_n,
 output reg [31:0] instrCode
 );
+
 reg [7:0] Mem[2**20:0];
 
 always @(*)
 begin
     if(~rst)
     begin
-<<<<<<< HEAD
-        $readmemh("/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/Instructions/dump.mem",Mem);
-=======
-        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/Instructions/dump1.mem",Mem);
->>>>>>> 4e0830f4901d8bbec00a03eb2adbf3ff9098ca97
-        instrCode <= 32'd0;
+        $readmemh("/home/ishita/Documents/minor_project/final_minor_project/Pipelined/instructions/ris_complete_instructions.mem",Mem);
+        instrCode <= 32'dz;
     end
-    else
-        instrCode <= {Mem[PC+3],Mem[PC+2],Mem[PC+1],Mem[PC]};
+end
+
+always @(*)
+begin
+    instrCode <= {Mem[iaddr+3],Mem[iaddr+2],Mem[iaddr+1],Mem[iaddr]};
 end
 
 endmodule
+        

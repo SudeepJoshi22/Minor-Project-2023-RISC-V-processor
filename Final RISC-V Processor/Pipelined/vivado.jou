@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jul 26 16:20:04 2023
+# Process ID: 4709
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/full_riscv/full_riscv.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project final_minor /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor -part xc7vx485tffg1157-1
+add_files -norecurse {/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/backup.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/MEM_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/ID_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/WB_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/IF_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/instr_mem_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/PC_src_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/reg_file_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/imm_gen_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/signext_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/data_mem_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/instr_fetch_tb.v /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/alu_tb.v}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+remove_files /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v
+launch_simulation
+remove_files /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/backup.v
+update_compile_order -fileset sources_1
+add_files -norecurse /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v
+update_compile_order -fileset sources_1
+launch_simulation
+source top_module_tb.tcl
+close_sim
+launch_simulation
+source top_module_tb.tcl
+close_sim
