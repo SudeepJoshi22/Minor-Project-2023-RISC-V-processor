@@ -25,8 +25,9 @@ reg clk,RegWrite,rst;
 reg [4:0] ReadAddr1,ReadAddr2,WriteAddr;
 reg [31:0] WriteData;
 wire [31:0]  ReadData1,ReadData2;
+wire read_data_valid;
 
-reg_file DUT(clk,RegWrite,rst,ReadAddr1,ReadAddr2,WriteAddr,ReadData1,ReadData2,WriteData);
+reg_file DUT(clk,RegWrite,rst,ReadAddr1,ReadAddr2,WriteAddr,WriteData,ReadData1,ReadData2,read_data_valid);
 initial clk<=0;
 
 always #10 clk<=~clk;
@@ -38,14 +39,21 @@ begin
     rst <= 1;
     RegWrite <= 1;
     WriteData <= 32'ha000b000;
-    WriteAddr <= 5'b00000;
-    #10
-    RegWrite <= 1;
     WriteAddr <= 5'b00001;
     #10
-    ReadAddr1 <= 5'b00000;
-    ReadAddr2 <= 5'b00001;
-    #50 $finish;
+    RegWrite <= 1;
+    WriteAddr <= 5'b00010;
+    #10
+    RegWrite <= 0;
+    ReadAddr1 <= 5'b00001;
+    ReadAddr2 <= 5'b00010;
+    #10
+    RegWrite <= 1;
+    WriteData <= 32'h0000ffff;
+    WriteAddr <= 5'b000011;
+    ReadAddr1 <= 5'b00010;
+    ReadAddr2 <= 5'b00011;
+    #60 $finish;
 end
 
 endmodule
