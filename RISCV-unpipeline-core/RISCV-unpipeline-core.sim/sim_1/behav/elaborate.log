@@ -1,0 +1,10 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 0de5c5d1b4f44b7394fc4af763be0a53 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IF_tb_behav xil_defaultlib.IF_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net instr_read is not permitted [/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/IF_tb.v:26]
+ERROR: [VRFC 10-29] IF expects 11 arguments [/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/IF_tb.v:19]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port cs_i_n [/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/IF_tb.v:26]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port i_addr [/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/IF_tb.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

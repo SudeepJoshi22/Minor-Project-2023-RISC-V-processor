@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Jul 29 05:43:10 2023
+# Process ID: 3624
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr
+update_compile_order -fileset sim_1
+add_files -norecurse /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top branch_pred_unit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top branch_pred_unit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source branch_pred_unit_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source branch_pred_unit_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source branch_pred_unit_tb.tcl
+close_sim
+launch_simulation
+source branch_pred_unit_tb.tcl

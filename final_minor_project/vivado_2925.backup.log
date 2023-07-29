@@ -1,0 +1,325 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Jul 28 05:18:00 2023
+# Process ID: 2951
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:06 . Memory (MB): peak = 5767.348 ; gain = 133.344 ; free physical = 2409 ; free virtual = 4151
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'EX_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj EX_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot EX_tb_behav xil_defaultlib.EX_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode_EX [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot EX_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3197346908 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.t..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 28 05:29:40 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "EX_tb_behav -key {Behavioral:sim_1:Functional:EX_tb} -tclbatch {EX_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source EX_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'EX_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 5825.547 ; gain = 46.191 ; free physical = 1410 ; free virtual = 3558
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'EX_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj EX_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot EX_tb_behav xil_defaultlib.EX_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode_EX [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot EX_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2598240973 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.t..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 28 05:45:57 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "EX_tb_behav -key {Behavioral:sim_1:Functional:EX_tb} -tclbatch {EX_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source EX_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'EX_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 5829.391 ; gain = 0.777 ; free physical = 1330 ; free virtual = 3484
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'EX_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj EX_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot EX_tb_behav xil_defaultlib.EX_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode_EX [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot EX_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2496262503 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.t..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 28 05:54:48 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "EX_tb_behav -key {Behavioral:sim_1:Functional:EX_tb} -tclbatch {EX_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source EX_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'EX_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5839.398 ; gain = 0.004 ; free physical = 1289 ; free virtual = 3446
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'EX_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj EX_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot EX_tb_behav xil_defaultlib.EX_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode_EX [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot EX_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 223670121 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/fi..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.t..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 28 05:57:05 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "EX_tb_behav -key {Behavioral:sim_1:Functional:EX_tb} -tclbatch {EX_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source EX_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'EX_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 5854.406 ; gain = 0.000 ; free physical = 1286 ; free virtual = 3443
+add_bp /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v 52
+add_bp /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v 53
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Stopped at time : 0 fs : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" Line 52
+run all
+Stopped at time : 0 fs : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" Line 53
+run all
+Stopped at time : 0 fs : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" Line 52
+run all
+Stopped at time : 0 fs : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" Line 53
+run all
+Stopped at time : 18 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" Line 52
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 5861.410 ; gain = 2.000 ; free physical = 1270 ; free virtual = 3316

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jul 26 16:30:23 2023
+# Process ID: 20347
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core/RISCV-unpipeline-core.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 5748.395 ; gain = 116.203 ; free physical = 141 ; free virtual = 2960
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

@@ -155,7 +155,8 @@ module branch_pred_unit(
     input wire branch, //to indicate whether branch was taken or not
     output wire hit,
     output wire[31:0]predicted_addr,
-    output wire taken
+    output wire taken,
+    output wire [3:0]ghp
  );
     
     
@@ -167,7 +168,7 @@ module branch_pred_unit(
     reg [31:0] predictedPC[127:0][3:0];
     reg [1:0] predictionState[127:0][3:0];
     
-    
+ assign ghp=global_history;   
  assign  hit = (PC_IF == branchPC[PC_IF[6:0]][global_history]);
  assign   predicted_addr= predictedPC[PC_IF[6:0]][global_history];
  assign  taken= (predictionState[PC_IF[6:0]][global_history] < 2'b10) ? 1 : 0;

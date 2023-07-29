@@ -1,0 +1,7 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/IF_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core/RISCV-unpipeline-core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

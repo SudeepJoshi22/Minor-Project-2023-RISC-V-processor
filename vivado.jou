@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jul 26 02:59:20 2023
+# Process ID: 12772
+# Log file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.xpr
+close_project
+create_project RISCV-unpipeline-core /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core -part xc7vx485tffg1157-1
+add_files -norecurse {{/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/WB.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/alu.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/instr_fetch.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/ID.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/PC_Src.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/core.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/IF.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/MEM.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/imm_gen.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/store_whb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/EX.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/processor_unpipelined.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/instr_mem.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/control_unit.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/signext.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/top_module.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/data_mem.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/reg_file.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/EX_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/ID_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/WB_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/instr_fetch_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/top_module_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/instr_mem_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/reg_file_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/PC_src_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/alu_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/IF_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/imm_gen_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/data_mem_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/MEM_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/signext_tb.v} {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/processor_ris_type_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IF_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IF [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_file {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/IF.v} [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+close_project

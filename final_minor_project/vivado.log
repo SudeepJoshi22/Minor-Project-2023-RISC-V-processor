@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Jul 29 05:43:10 2023
+# Process ID: 3624
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:07 . Memory (MB): peak = 5747.785 ; gain = 115.664 ; free physical = 1315 ; free virtual = 3408
+update_compile_order -fileset sim_1
+add_files -norecurse /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v
+update_compile_order -fileset sim_1
+set_property top branch_pred_unit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top branch_pred_unit [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj branch_pred_unit_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot branch_pred_unit_tb_behav xil_defaultlib.branch_pred_unit_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.branch_pred_unit
+Compiling module xil_defaultlib.branch_pred_unit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot branch_pred_unit_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 349206198 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/fi..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 29 05:55:41 2023...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 5773.113 ; gain = 0.000 ; free physical = 479 ; free virtual = 2829
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "branch_pred_unit_tb_behav -key {Behavioral:sim_1:Functional:branch_pred_unit_tb} -tclbatch {branch_pred_unit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source branch_pred_unit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 255 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" Line 107
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'branch_pred_unit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 5826.238 ; gain = 53.125 ; free physical = 463 ; free virtual = 2823
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj branch_pred_unit_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot branch_pred_unit_tb_behav xil_defaultlib.branch_pred_unit_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.branch_pred_unit
+Compiling module xil_defaultlib.branch_pred_unit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot branch_pred_unit_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3075999663 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 29 06:15:29 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "branch_pred_unit_tb_behav -key {Behavioral:sim_1:Functional:branch_pred_unit_tb} -tclbatch {branch_pred_unit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source branch_pred_unit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 255 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" Line 107
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'branch_pred_unit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 5828.387 ; gain = 0.000 ; free physical = 241 ; free virtual = 2426
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj branch_pred_unit_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit_tb
+ERROR: [VRFC 10-1412] syntax error near branch_pred_unit [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:37]
+ERROR: [VRFC 10-46] rst is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:38]
+ERROR: [VRFC 10-46] PC_IF is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:39]
+ERROR: [VRFC 10-46] ADDR_EX is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:40]
+ERROR: [VRFC 10-46] Pred_EX is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:41]
+ERROR: [VRFC 10-46] state_change is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:43]
+ERROR: [VRFC 10-46] state_write is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:44]
+ERROR: [VRFC 10-46] branch is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:45]
+ERROR: [VRFC 10-46] hit is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:46]
+ERROR: [VRFC 10-46] predicted_addr is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:47]
+ERROR: [VRFC 10-46] taken is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:48]
+ERROR: [VRFC 10-1412] syntax error near ) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:50]
+ERROR: [VRFC 10-1040] module branch_pred_unit_tb ignored due to previous errors [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:24]
+INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj branch_pred_unit_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot branch_pred_unit_tb_behav xil_defaultlib.branch_pred_unit_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.branch_pred_unit
+Compiling module xil_defaultlib.branch_pred_unit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot branch_pred_unit_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 4214340824 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 29 06:17:22 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "branch_pred_unit_tb_behav -key {Behavioral:sim_1:Functional:branch_pred_unit_tb} -tclbatch {branch_pred_unit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source branch_pred_unit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 255 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" Line 108
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'branch_pred_unit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 5829.426 ; gain = 1.039 ; free physical = 199 ; free virtual = 2387
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj branch_pred_unit_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:71]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:79]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:88]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:98]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot branch_pred_unit_tb_behav xil_defaultlib.branch_pred_unit_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.branch_pred_unit
+Compiling module xil_defaultlib.branch_pred_unit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot branch_pred_unit_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2514272673 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 29 06:28:19 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "branch_pred_unit_tb_behav -key {Behavioral:sim_1:Functional:branch_pred_unit_tb} -tclbatch {branch_pred_unit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source branch_pred_unit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 135 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" Line 157
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'branch_pred_unit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 5829.426 ; gain = 0.000 ; free physical = 676 ; free virtual = 2881

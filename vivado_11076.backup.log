@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jul 26 01:43:36 2023
+# Process ID: 10539
+# Log file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 5764.121 ; gain = 140.371 ; free physical = 449 ; free virtual = 2801
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav'
+xvlog -m64 -prj branch_pred_unit_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/instr_fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_unpipelined
+ERROR: [VRFC 10-91] ADDR_EX is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:101]
+ERROR: [VRFC 10-91] Pred_EX is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:102]
+ERROR: [VRFC 10-91] state_change is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:103]
+ERROR: [VRFC 10-91] state_write is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:104]
+ERROR: [VRFC 10-91] hit is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:106]
+ERROR: [VRFC 10-91] predicted_addr is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:107]
+ERROR: [VRFC 10-91] taken is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:108]
+ERROR: [VRFC 10-1040] module processor_unpipelined ignored due to previous errors [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:24]
+INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav'
+xvlog -m64 -prj branch_pred_unit_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/instr_fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_unpipelined
+ERROR: [VRFC 10-91] ADDR_EX is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:101]
+ERROR: [VRFC 10-91] Pred_EX is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:102]
+ERROR: [VRFC 10-91] state_change is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:103]
+ERROR: [VRFC 10-91] state_write is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:104]
+ERROR: [VRFC 10-91] hit is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:106]
+ERROR: [VRFC 10-91] predicted_addr is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:107]
+ERROR: [VRFC 10-91] taken is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:108]
+ERROR: [VRFC 10-1040] module processor_unpipelined ignored due to previous errors [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:24]
+INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav'
+xvlog -m64 -prj branch_pred_unit_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/instr_fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_unpipelined
+ERROR: [VRFC 10-91] ADDR_EX is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:101]
+ERROR: [VRFC 10-91] Pred_EX is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:102]
+ERROR: [VRFC 10-91] state_change is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:103]
+ERROR: [VRFC 10-91] state_write is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:104]
+ERROR: [VRFC 10-91] hit is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:106]
+ERROR: [VRFC 10-91] predicted_addr is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:107]
+ERROR: [VRFC 10-91] taken is not declared [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:108]
+ERROR: [VRFC 10-1040] module processor_unpipelined ignored due to previous errors [/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.srcs/sources_1/imports/design/processor_unpipelined.v:24]
+INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.sim/sim_1/behav/xvlog.log' file for more information.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 26 02:14:40 2023...

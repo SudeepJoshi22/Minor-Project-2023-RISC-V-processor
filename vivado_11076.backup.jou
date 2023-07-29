@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jul 26 01:43:36 2023
+# Process ID: 10539
+# Log file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.xpr
+launch_simulation
+launch_simulation
+launch_simulation

@@ -1,0 +1,11 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_pred_unit_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:71]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:79]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:88]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v:98]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,1337 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+Process ID: 3403
+
+Current time: 	7/26/23 4:57:11 PM
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: NAME="Ubuntu"
+Version: 5.15.0-78-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	/opt/Xilinx/Vivado/2014.4/tps/lnx64/jre
+
+User name: 	ishita
+User directory: /home/ishita/Documents/minor_project/final_minor_project
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: /home/ishita/.Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: /home/ishita/.Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	201 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 788 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 56) elapsed time: 0.5s
+// Tcl Message: start_gui 
+// [GUI Memory]: 29 MB (+28410kb) [00:00:06]
+// [Engine Memory]: 728 MB (+611715kb) [00:00:06]
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr", 0); // s:v (JViewport:JComponent, ch:JFrame)
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 41 MB (+12624kb) [00:00:08]
+// [Engine Memory]: 836 MB (+113315kb) [00:00:08]
+// [GUI Memory]: 62 MB (+21833kb) [00:00:09]
+// [Engine Memory]: 839 MB (+3035kb) [00:00:09]
+// [Engine Memory]: 896 MB (+60399kb) [00:00:09]
+// [Engine Memory]: 897 MB (+397kb) [00:00:10]
+// [Engine Memory]: 899 MB (+2248kb) [00:00:10]
+// Tcl Message: open_project /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 909 MB. GUI used memory: 24 MB. Current time: 7/26/23 4:57:15 PM
+// [Engine Memory]: 910 MB (+11599kb) [00:00:11]
+// [Engine Memory]: 910 MB (+135kb) [00:00:11]
+// [Engine Memory]: 910 MB (+393kb) [00:00:11]
+// [Engine Memory]: 911 MB (+69kb) [00:00:11]
+// [Engine Memory]: 911 MB (+131kb) [00:00:11]
+// [Engine Memory]: 911 MB (+200kb) [00:00:11]
+// [Engine Memory]: 911 MB (+65kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 911 MB (+135kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 911 MB (+65kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 911 MB (+131kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 911 MB (+135kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 911 MB (+65kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 912 MB (+135kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 912 MB (+131kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 912 MB (+266kb) [00:00:12]
+// [Engine Memory]: 912 MB (+65kb) [00:00:12]
+// [Engine Memory]: 912 MB (+135kb) [00:00:12]
+// [Engine Memory]: 912 MB (+327kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+135kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+131kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+65kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+69kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+65kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+65kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+65kb) [00:00:12]
+// [Engine Memory]: 913 MB (+69kb) [00:00:12]
+// [Engine Memory]: 913 MB (+196kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+69kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+65kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 915 MB (+2088kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 919 MB (+3588kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 921 MB (+1769kb) [00:00:13]
+// [Engine Memory]: 922 MB (+1785kb) [00:00:13]
+// [Engine Memory]: 924 MB (+1773kb) [00:00:13]
+// [Engine Memory]: 924 MB (+131kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 924 MB (+65kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 924 MB (+135kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: final_minor; location: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor; part: xc7vx485tffg1157-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 5751.133 ; gain = 126.047 ; free physical = 2436 ; free virtual = 4133 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// [Engine Memory]: 928 MB (+3952kb) [00:00:14]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 929 MB (+1130kb) [00:00:15]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 930 MB (+1261kb) [00:00:16]
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 932 MB (+1392kb) [00:00:17]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 932 MB (+131kb) [00:00:20]
+// [Engine Memory]: 932 MB (+200kb) [00:00:22]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M4 - WB (WB.v)]", 11); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 17); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 18); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 933 MB (+1179kb) [00:00:37]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M1 - instr_mem (instr_mem.v)]", 13, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M1 - instr_mem (instr_mem.v)]", 13, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 933 MB (+131kb) [00:00:38]
+// [Engine Memory]: 933 MB (+327kb) [00:00:38]
+// [Engine Memory]: 934 MB (+200kb) [00:00:39]
+// [Engine Memory]: 934 MB (+200kb) [00:00:44]
+// [Engine Memory]: 934 MB (+131kb) [00:00:49]
+// [Engine Memory]: 934 MB (+69kb) [00:00:54]
+// [Engine Memory]: 934 MB (+65kb) [00:00:59]
+// [Engine Memory]: 934 MB (+131kb) [00:01:09]
+// [Engine Memory]: 935 MB (+401kb) [00:01:12]
+// [Engine Memory]: 935 MB (+598kb) [00:01:15]
+// [Engine Memory]: 935 MB (+266kb) [00:01:15]
+// [Engine Memory]: 936 MB (+860kb) [00:01:17]
+// [Engine Memory]: 937 MB (+335kb) [00:01:18]
+// [Engine Memory]: 937 MB (+196kb) [00:01:19]
+// [Engine Memory]: 937 MB (+135kb) [00:01:20]
+// [Engine Memory]: 937 MB (+65kb) [00:01:21]
+// [Engine Memory]: 937 MB (+331kb) [00:01:23]
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13, true); // w:Y (v:I, ch:JFrame) - Node
+// [Engine Memory]: 938 MB (+335kb) [00:01:24]
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// cm:N (ch:JFrame):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: top_module 
+// [Engine Memory]: 978 MB (+42692kb) [00:01:28]
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: ERROR: [Synth 8-1031] result is not declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:124] 
+// Tcl Message: INFO: [Synth 8-2350] module core ignored due to previous errors [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1] 
+// Tcl Message: Failed to read verilog '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v'     while executing "rt::read_verilog {       /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v       /home/ishita/Documents/minor_proj..."     ("uplevel" body line 23)     invoked from within "uplevel #0 {     set ::env(BUILTIN_SYNTH) true     source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl     rt::HARTNDb_resetJobStats     rt::HARTNDb_startJobS..." 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// 'dg' command handler elapsed time: 3 seconds
+// N:a (ch:JFrame): Critical Messages: addNotify
+// [Engine Memory]: 982 MB (+4329kb) [00:01:28]
+dismissDialog("Open Elaborated Design"); // cm:N (ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 984 MB. GUI used memory: 26 MB. Current time: 7/26/23 4:58:33 PM
+// [Engine Memory]: 984 MB (+2113kb) [00:01:30]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, N:a)
+// [Engine Memory]: 985 MB (+65kb) [00:01:34]
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 985 MB (+135kb) [00:01:37]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 985 MB (+262kb) [00:01:39]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 985 MB (+65kb) [00:01:46]
+// [GUI Memory]: 66 MB (+3659kb) [00:01:47]
+// [GUI Memory]: 66 MB (+378kb) [00:01:48]
+// [Engine Memory]: 985 MB (+65kb) [00:01:48]
+// [GUI Memory]: 68 MB (+2116kb) [00:01:50]
+// [Engine Memory]: 985 MB (+135kb) [00:01:50]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 985 MB (+262kb) [00:01:52]
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// [Engine Memory]: 986 MB (+200kb) [00:01:54]
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot top_module_tb_behav 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:      while executing "webtalk_transmit -clientid 1387926300 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_w..." line 41) INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 16:59:04 2023... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 5802.438 ; gain = 0.000 ; free physical = 2291 ; free virtual = 4067 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_module_tb_behav -key {Behavioral:sim_1:Functional:top_module_tb} -tclbatch {top_module_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// [Engine Memory]: 1,019 MB (+34746kb) [00:02:01]
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// [Engine Memory]: 1,020 MB (+1245kb) [00:02:01]
+// [Engine Memory]: 1,020 MB (+393kb) [00:02:01]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 69 MB (+990kb) [00:02:02]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 70 MB (+887kb) [00:02:02]
+// [Engine Memory]: 1,020 MB (+69kb) [00:02:02]
+// Tcl Message: Time resolution is 1 ps 
+// [Engine Memory]: 1,021 MB (+458kb) [00:02:02]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,023 MB (+2760kb) [00:02:02]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: source top_module_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 1,024 MB (+69kb) [00:02:03]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 5856.570 ; gain = 54.133 ; free physical = 2276 ; free virtual = 4064 
+// 'c' command handler elapsed time: 10 seconds
+// Elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,024 MB. GUI used memory: 32 MB. Current time: 7/26/23 4:59:08 PM
+// [Engine Memory]: 1,024 MB (+528kb) [00:02:05]
+// [Engine Memory]: 1,024 MB (+65kb) [00:02:09]
+// [Engine Memory]: 1,029 MB (+4681kb) [00:02:12]
+// [GUI Memory]: 75 MB (+5685kb) [00:02:15]
+// [Engine Memory]: 1,029 MB (+65kb) [00:02:15]
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13, true); // w:Y (v:I, ch:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// cm:N (ch:JFrame):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: top_module 
+// [Engine Memory]: 1,029 MB (+335kb) [00:02:19]
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: ERROR: [Synth 8-1031] result is not declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:124] 
+// Tcl Message: INFO: [Synth 8-2350] module core ignored due to previous errors [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1] 
+// Tcl Message: Failed to read verilog '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v'     while executing "rt::read_verilog {       /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v       /home/ishita/Documents/minor_proj..."     ("uplevel" body line 23)     invoked from within "uplevel #0 {     set ::env(BUILTIN_SYNTH) true     source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl     rt::HARTNDb_resetJobStats     rt::HARTNDb_startJobS..." 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// 'dg' command handler elapsed time: 3 seconds
+// N:a (ch:JFrame): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // cm:N (ch:JFrame)
+// [Engine Memory]: 1,029 MB (+397kb) [00:02:22]
+// [Engine Memory]: 1,029 MB (+65kb) [00:02:30]
+// Elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, ch:JFrame)
+// [Engine Memory]: 1,029 MB (+69kb) [00:02:31]
+// [Engine Memory]: 1,030 MB (+397kb) [00:02:33]
+// [Engine Memory]: 1,030 MB (+200kb) [00:02:33]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 1,030 MB (+200kb) [00:02:33]
+// [Engine Memory]: 1,030 MB (+65kb) [00:02:34]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 1,030 MB (+65kb) [00:02:34]
+// [Engine Memory]: 1,031 MB (+327kb) [00:02:34]
+// [Engine Memory]: 1,031 MB (+69kb) [00:02:34]
+selectCodeEditor("core.v", 353, 156); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,031 MB (+131kb) [00:02:39]
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result", true); // l:an (c:JComboBox, ch:JFrame)
+// [Engine Memory]: 1,031 MB (+393kb) [00:02:49]
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 16 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "result"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("core.v", 96, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("core.v", 95, 287); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 1,031 MB (+200kb) [00:03:44]
+// [Engine Memory]: 1,032 MB (+266kb) [00:03:49]
+// [GUI Memory]: 77 MB (+1517kb) [00:03:49]
+// [Engine Memory]: 1,032 MB (+65kb) [00:03:49]
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,032 MB (+327kb) [00:03:52]
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// [GUI Memory]: 78 MB (+1682kb) [00:03:54]
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, Q:JDialog)
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // u:aG
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// [GUI Memory]: 79 MB (+208kb) [00:03:58]
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot top_module_tb_behav 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:      while executing "webtalk_transmit -clientid 29529421 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/fin..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_w..." line 41) INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 17:01:06 2023... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_module_tb_behav -key {Behavioral:sim_1:Functional:top_module_tb} -tclbatch {top_module_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// [Engine Memory]: 1,032 MB (+462kb) [00:04:03]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// [Engine Memory]: 1,033 MB (+135kb) [00:04:03]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// [Engine Memory]: 1,033 MB (+65kb) [00:04:04]
+// [Engine Memory]: 1,033 MB (+65kb) [00:04:04]
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,033 MB (+200kb) [00:04:04]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [Engine Memory]: 1,033 MB (+65kb) [00:04:04]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source top_module_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5862.188 ; gain = 2.004 ; free physical = 2261 ; free virtual = 4049 
+// [Engine Memory]: 1,033 MB (+135kb) [00:04:04]
+// 'c' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// [Engine Memory]: 1,033 MB (+131kb) [00:04:05]
+// [Engine Memory]: 1,033 MB (+65kb) [00:04:10]
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 160, 162); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,033 MB. GUI used memory: 46 MB. Current time: 7/26/23 5:01:18 PM
+// [Engine Memory]: 1,033 MB (+135kb) [00:04:16]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,033 MB (+65kb) [00:04:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 43 MB. Current time: 7/26/23 5:01:21 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,034 MB (+135kb) [00:04:17]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 39 MB. Current time: 7/26/23 5:01:21 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 39 MB. Current time: 7/26/23 5:01:22 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,034 MB (+131kb) [00:04:17]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,034 MB (+65kb) [00:04:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 39 MB. Current time: 7/26/23 5:01:22 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,034 MB (+69kb) [00:04:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 37 MB. Current time: 7/26/23 5:01:22 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,034 MB (+65kb) [00:04:18]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 39 MB. Current time: 7/26/23 5:01:22 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,034 MB (+393kb) [00:04:18]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 39 MB. Current time: 7/26/23 5:01:22 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,034 MB (+69kb) [00:04:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 39 MB. Current time: 7/26/23 5:01:23 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,035 MB (+196kb) [00:04:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 39 MB. Current time: 7/26/23 5:01:23 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,035 MB (+69kb) [00:04:18]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 40 MB. Current time: 7/26/23 5:01:23 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 42 MB. Current time: 7/26/23 5:01:23 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,035 MB (+65kb) [00:04:19]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 42 MB. Current time: 7/26/23 5:01:23 PM
+// [Engine Memory]: 1,035 MB (+131kb) [00:04:19]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 42 MB. Current time: 7/26/23 5:01:23 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 42 MB. Current time: 7/26/23 5:01:24 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,035 MB (+69kb) [00:04:19]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 42 MB. Current time: 7/26/23 5:01:24 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 42 MB. Current time: 7/26/23 5:01:24 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,035 MB (+131kb) [00:04:20]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 42 MB. Current time: 7/26/23 5:01:24 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// [Engine Memory]: 1,035 MB (+65kb) [00:04:22]
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_waveformGotoTime0"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,035 MB (+135kb) [00:04:24]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 50 MB. Current time: 7/26/23 5:01:28 PM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,035 MB (+65kb) [00:04:26]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 88, 103); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,035 MB (+65kb) [00:04:29]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 49 MB. Current time: 7/26/23 5:01:33 PM
+// [Engine Memory]: 1,035 MB (+69kb) [00:04:30]
+// [Engine Memory]: 1,035 MB (+131kb) [00:04:34]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "core.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,036 MB (+135kb) [00:04:35]
+// [Engine Memory]: 1,036 MB (+65kb) [00:04:40]
+// Elapsed time: 13 seconds
+selectCodeEditor("core.v", 14, 305); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,036 MB (+65kb) [00:04:49]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 82 MB (+3198kb) [00:04:53]
+// [GUI Memory]: 85 MB (+3558kb) [00:04:53]
+// [Engine Memory]: 1,036 MB (+65kb) [00:04:57]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "core.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab((HResource) null, (HResource) null, "Sources", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, ch:JFrame)
+// [GUI Memory]: 87 MB (+1865kb) [00:05:04]
+// [Engine Memory]: 1,036 MB (+262kb) [00:05:06]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [GUI Memory]: 91 MB (+4201kb) [00:05:09]
+// [GUI Memory]: 91 MB (+127kb) [00:05:14]
+// [GUI Memory]: 91 MB (+47kb) [00:05:19]
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "core.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,036 MB (+135kb) [00:05:41]
+// [Engine Memory]: 1,036 MB (+65kb) [00:05:46]
+// Elapsed time: 27 seconds
+selectCodeEditor("core.v", 69, 468); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,036 MB (+135kb) [00:06:16]
+// [GUI Memory]: 93 MB (+1550kb) [00:06:36]
+// [GUI Memory]: 93 MB (+154kb) [00:06:41]
+// [GUI Memory]: 93 MB (+110kb) [00:06:46]
+// Elapsed time: 57 seconds
+selectCodeEditor("core.v", 383, 398); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("core.v", 228, 462); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("core.v", 173, 473); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,036 MB (+65kb) [00:07:06]
+selectCodeEditor("core.v", 326, 443); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,037 MB (+65kb) [00:07:11]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,037 MB (+65kb) [00:07:13]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 1,037 MB (+69kb) [00:07:14]
+// [Engine Memory]: 1,037 MB (+65kb) [00:07:14]
+// [Engine Memory]: 1,037 MB (+65kb) [00:07:14]
+// [Engine Memory]: 1,037 MB (+65kb) [00:07:15]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// [Engine Memory]: 1,037 MB (+135kb) [00:07:18]
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// [Engine Memory]: 1,037 MB (+65kb) [00:07:20]
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// [GUI Memory]: 95 MB (+2673kb) [00:07:21]
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, Q:JDialog)
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 2"); // u:aG
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot top_module_tb_behav 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:      while executing "webtalk_transmit -clientid 592645540 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/fi..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_w..." line 41) INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 17:04:33 2023... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_module_tb_behav -key {Behavioral:sim_1:Functional:top_module_tb} -tclbatch {top_module_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// [Engine Memory]: 1,037 MB (+249kb) [00:07:30]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// [GUI Memory]: 96 MB (+372kb) [00:07:30]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [Engine Memory]: 1,037 MB (+65kb) [00:07:31]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source top_module_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 5862.188 ; gain = 0.000 ; free physical = 2246 ; free virtual = 4034 
+// [Engine Memory]: 1,037 MB (+135kb) [00:07:31]
+// 'c' command handler elapsed time: 13 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// [Engine Memory]: 1,038 MB (+65kb) [00:07:33]
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,043 MB. GUI used memory: 94 MB. Current time: 7/26/23 5:04:41 PM
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_waveformGotoTime0"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [Engine Memory]: 1,043 MB (+5369kb) [00:07:39]
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,043 MB (+65kb) [00:07:41]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,043 MB. GUI used memory: 60 MB. Current time: 7/26/23 5:04:46 PM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 295, 85); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 26 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 351, 117); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,043 MB (+65kb) [00:08:11]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [Engine Memory]: 1,043 MB (+135kb) [00:08:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,043 MB. GUI used memory: 62 MB. Current time: 7/26/23 5:05:21 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,043 MB (+131kb) [00:08:16]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O:a (Workspace:JPanel, ch:JFrame)
+// [Engine Memory]: 1,043 MB (+65kb) [00:08:20]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,043 MB (+69kb) [00:08:44]
+// [Engine Memory]: 1,043 MB (+65kb) [00:08:48]
+// Elapsed time: 44 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,043 MB. GUI used memory: 65 MB. Current time: 7/26/23 5:06:06 PM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [Engine Memory]: 1,043 MB (+200kb) [00:09:04]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,043 MB. GUI used memory: 54 MB. Current time: 7/26/23 5:06:10 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,043 MB (+65kb) [00:09:06]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,043 MB. GUI used memory: 54 MB. Current time: 7/26/23 5:06:10 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,043 MB. GUI used memory: 54 MB. Current time: 7/26/23 5:06:11 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,044 MB (+131kb) [00:09:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,044 MB. GUI used memory: 36 MB. Current time: 7/26/23 5:06:58 PM
+// [Engine Memory]: 1,044 MB (+69kb) [00:10:06]
+// [Engine Memory]: 1,044 MB (+196kb) [00:11:06]
+// Elapsed time: 134 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,044 MB (+69kb) [00:11:16]
+// [Engine Memory]: 1,044 MB (+196kb) [00:11:31]
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "core.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,044 MB (+69kb) [00:11:40]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13, true); // w:Y (v:I, ch:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// cm:N (ch:JFrame):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: top_module 
+// [Engine Memory]: 1,044 MB (+65kb) [00:11:44]
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:03:16 ; elapsed = 00:11:49 . Memory (MB): peak = 5870.445 ; gain = 5155.969 ; free physical = 2233 ; free virtual = 4024 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter BR bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'reg_file' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:4] INFO: [Synth 8-256] done synthesizing module 'reg_file' (3#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:4] INFO: [Synth 8-638] synthesizing module 'store_whb' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:4] 
+// Tcl Message: 	Parameter byte bound to: 2'b00  	Parameter half_word bound to: 2'b01  	Parameter word bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'store_whb' (4#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:4] INFO: [Synth 8-638] synthesizing module 'imm_gen' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter B bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'imm_gen' (5#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:4] INFO: [Synth 8-638] synthesizing module 'control_unit' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter B bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'control_unit' (6#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:4] INFO: [Synth 8-256] done synthesizing module 'ID' (7#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v:4] INFO: [Synth 8-638] synthesizing module 'ID_EX' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1] INFO: [Synth 8-256] done synthesizing module 'ID_EX' (8#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1] INFO: [Synth 8-638] synthesizing module 'EX' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter BR bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'alu' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:4] 
+// Tcl Message: 	Parameter ADD bound to: 4'b0000  	Parameter SUB bound to: 4'b0001  	Parameter AND bound to: 4'b0010  	Parameter OR bound to: 4'b0100  	Parameter XOR bound to: 4'b1000  	Parameter SRL bound to: 4'b1001  	Parameter SLL bound to: 4'b1010  	Parameter SRA bound to: 4'b1100  	Parameter BUF bound to: 4'b1101  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:4] INFO: [Synth 8-638] synthesizing module 'PC_src' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:4] 
+// Tcl Message: 	Parameter BEQ bound to: 3'b000  	Parameter BNE bound to: 3'b001  	Parameter BLT bound to: 3'b100  	Parameter BGE bound to: 3'b101  	Parameter BLTU bound to: 3'b110  	Parameter BGEU bound to: 3'b111  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'PC_src' (10#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:4] INFO: [Synth 8-256] done synthesizing module 'EX' (11#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:4] INFO: [Synth 8-638] synthesizing module 'EX_MEM' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1] INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (12#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1] INFO: [Synth 8-638] synthesizing module 'MEM' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter BR bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'MEM' (13#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:4] INFO: [Synth 8-638] synthesizing module 'MEM_WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1] INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (14#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter BR bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'signext' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:4] 
+// Tcl Message: 	Parameter byte bound to: 2'b00  	Parameter half_word bound to: 2'b01  	Parameter word bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'signext' (15#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:4] INFO: [Synth 8-256] done synthesizing module 'WB' (16#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:4] 
+// Tcl Message: ERROR: [Synth 8-4556] size of variable 'memory' is too large to handle; the size of the variable is 8388616, the limit is 1000000 [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:15] ERROR: [Synth 8-285] failed synthesizing module 'data_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:4] ERROR: [Synth 8-285] failed synthesizing module 'top_module' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:4] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:03:18 ; elapsed = 00:11:50 . Memory (MB): peak = 5938.098 ; gain = 5223.621 ; free physical = 2160 ; free virtual = 3956 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed     while executing "rt::run_rtlelab -module $rt::top"     ("uplevel" body line 60)     invoked from within "uplevel #0 {     set ::env(BUILTIN_SYNTH) true     source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl     rt::HARTNDb_resetJobStats     rt::HARTNDb_startJobS..." 
+// Tcl Message: 39 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// 'dg' command handler elapsed time: 4 seconds
+// [Engine Memory]: 1,113 MB (+72425kb) [00:11:46]
+// N:a (ch:JFrame): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // cm:N (ch:JFrame)
+// [Engine Memory]: 1,114 MB (+331kb) [00:11:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 36 MB. Current time: 7/26/23 5:08:53 PM
+// [Engine Memory]: 1,119 MB (+5234kb) [00:11:52]
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, N:a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// [Engine Memory]: 1,119 MB (+397kb) [00:11:59]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,119 MB (+131kb) [00:11:59]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-4556] size of variable 'memory' is too large to handle; the size of the variable is 8388616, the limit is 1000000 [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:15]. ]", 2, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v;-;;-;15;-;line;-;15;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// [Engine Memory]: 1,119 MB (+401kb) [00:12:03]
+// [Engine Memory]: 1,120 MB (+65kb) [00:12:03]
+// [Engine Memory]: 1,120 MB (+65kb) [00:12:03]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,120 MB (+135kb) [00:12:03]
+// [Engine Memory]: 1,120 MB (+266kb) [00:12:06]
+// [Engine Memory]: 1,120 MB (+266kb) [00:12:13]
+// [Engine Memory]: 1,120 MB (+131kb) [00:12:22]
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-285] failed synthesizing module 'data_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:4]. ]", 3, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v;-;;-;15;-;line;-;4;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// [Engine Memory]: 1,120 MB (+69kb) [00:12:23]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-285] failed synthesizing module 'data_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:4]. ]", 3, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v;-;;-;15;-;line;-;4;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// [Engine Memory]: 1,120 MB (+65kb) [00:12:24]
+// [Engine Memory]: 1,121 MB (+65kb) [00:12:26]
+selectCodeEditor("data_mem.v", 8, 15); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,121 MB (+200kb) [00:12:29]
+// [Engine Memory]: 1,121 MB (+65kb) [00:12:42]
+// [Engine Memory]: 1,121 MB (+65kb) [00:12:46]
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-285] failed synthesizing module 'top_module' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:4]. ]", 4, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v;-;;-;15;-;line;-;4;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectCodeEditor("top_module.v", 5, 24); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,121 MB (+135kb) [00:12:52]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,121 MB (+131kb) [00:12:56]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 1,121 MB (+69kb) [00:12:58]
+// y:ad (ch:JFrame): Invalid Top Module: addNotify
+// [Engine Memory]: 1,121 MB (+262kb) [00:12:58]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+dismissDialog("Invalid Top Module"); // y:ad (ch:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_module.v", 347, 154); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module.v", 354, 274); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module.v", 85, 49); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// n:al (ch:JFrame): Save Text Editor Changes: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b (TdiGroup:JideTabbedPane, ch:JFrame)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a:JButton (JPanel:JComponent, n:al)
+dismissDialog("Save Text Editor Changes"); // n:al (ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, top_module.v]", 2, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, top_module.v]", 2, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near /. [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:2]. ]", 8, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v;-;;-;15;-;line;-;2;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_module.v", 5, 22); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module.v", 459, 202); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// cm:N (ch:JFrame):  Starting Design Runs : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,122 MB (+131kb) [00:14:04]
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jul 26 17:11:09 2023] Launched synth_1... Run output will be captured here: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // cm:N (ch:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // w:Y (v:I, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // w:Y (v:I, ch:JFrame)
+// cm:N (ch:JFrame):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: top_module 
+// TclEventType: RUN_FAILED
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:03:54 ; elapsed = 00:14:24 . Memory (MB): peak = 5943.168 ; gain = 5228.691 ; free physical = 2137 ; free virtual = 3946 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter BR bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'reg_file' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:4] INFO: [Synth 8-256] done synthesizing module 'reg_file' (3#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:4] INFO: [Synth 8-638] synthesizing module 'store_whb' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:4] 
+// Tcl Message: 	Parameter byte bound to: 2'b00  	Parameter half_word bound to: 2'b01  	Parameter word bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'store_whb' (4#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:4] INFO: [Synth 8-638] synthesizing module 'imm_gen' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter B bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'imm_gen' (5#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:4] INFO: [Synth 8-638] synthesizing module 'control_unit' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter B bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'control_unit' (6#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:4] INFO: [Synth 8-256] done synthesizing module 'ID' (7#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v:4] INFO: [Synth 8-638] synthesizing module 'ID_EX' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1] INFO: [Synth 8-256] done synthesizing module 'ID_EX' (8#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1] INFO: [Synth 8-638] synthesizing module 'EX' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter BR bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'alu' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:4] 
+// Tcl Message: 	Parameter ADD bound to: 4'b0000  	Parameter SUB bound to: 4'b0001  	Parameter AND bound to: 4'b0010  	Parameter OR bound to: 4'b0100  	Parameter XOR bound to: 4'b1000  	Parameter SRL bound to: 4'b1001  	Parameter SLL bound to: 4'b1010  	Parameter SRA bound to: 4'b1100  	Parameter BUF bound to: 4'b1101  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:4] INFO: [Synth 8-638] synthesizing module 'PC_src' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:4] 
+// Tcl Message: 	Parameter BEQ bound to: 3'b000  	Parameter BNE bound to: 3'b001  	Parameter BLT bound to: 3'b100  	Parameter BGE bound to: 3'b101  	Parameter BLTU bound to: 3'b110  	Parameter BGEU bound to: 3'b111  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'PC_src' (10#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:4] INFO: [Synth 8-256] done synthesizing module 'EX' (11#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:4] INFO: [Synth 8-638] synthesizing module 'EX_MEM' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1] INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (12#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1] INFO: [Synth 8-638] synthesizing module 'MEM' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter BR bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'MEM' (13#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:4] INFO: [Synth 8-638] synthesizing module 'MEM_WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1] INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (14#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:4] 
+// Tcl Message: 	Parameter I1 bound to: 7'b0010011  	Parameter I2 bound to: 7'b0000011  	Parameter S bound to: 7'b0100011  	Parameter R bound to: 7'b0110011  	Parameter BR bound to: 7'b1100011  	Parameter J bound to: 7'b1101111  	Parameter JR bound to: 7'b1100111  	Parameter U bound to: 7'b0110111  	Parameter UPC bound to: 7'b0010111  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'signext' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:4] 
+// Tcl Message: 	Parameter byte bound to: 2'b00  	Parameter half_word bound to: 2'b01  	Parameter word bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'signext' (15#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:4] INFO: [Synth 8-256] done synthesizing module 'WB' (16#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:4] 
+// Tcl Message: ERROR: [Synth 8-4556] size of variable 'memory' is too large to handle; the size of the variable is 8388616, the limit is 1000000 [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:15] ERROR: [Synth 8-285] failed synthesizing module 'data_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:4] ERROR: [Synth 8-285] failed synthesizing module 'top_module' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:4] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:03:55 ; elapsed = 00:14:26 . Memory (MB): peak = 6007.109 ; gain = 5292.633 ; free physical = 2127 ; free virtual = 3935 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed     while executing "rt::run_rtlelab -module $rt::top"     ("uplevel" body line 60)     invoked from within "uplevel #0 {     set ::env(BUILTIN_SYNTH) true     source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl     rt::HARTNDb_resetJobStats     rt::HARTNDb_startJobS..." 
+// Tcl Message: 39 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// N:a (ch:JFrame): Critical Messages: addNotify
+// [Engine Memory]: 1,186 MB (+67117kb) [00:14:22]
+dismissDialog("Open Elaborated Design"); // cm:N (ch:JFrame)
+// [Engine Memory]: 1,186 MB (+262kb) [00:14:23]
+// Q:al (ch:JFrame): Synthesis Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,191 MB. GUI used memory: 38 MB. Current time: 7/26/23 5:11:28 PM
+// [Engine Memory]: 1,191 MB (+5234kb) [00:14:25]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // Q:al (ch:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, N:a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-285] failed synthesizing module 'top_module' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:4]. ]", 4, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v;-;;-;15;-;line;-;4;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectCodeEditor("top_module.v", 256, 173); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,191 MB (+131kb) [00:14:48]
+// [Engine Memory]: 1,191 MB (+65kb) [00:14:48]
+// [Engine Memory]: 1,191 MB (+135kb) [00:14:48]
+// [Engine Memory]: 1,191 MB (+65kb) [00:14:48]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,191 MB (+135kb) [00:14:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,191 MB. GUI used memory: 81 MB. Current time: 7/26/23 5:11:54 PM
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 3"); // u:aG
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-4556] size of variable 'memory' is too large to handle; the size of the variable is 8388616, the limit is 1000000 [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:15]. ]", 2, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v;-;;-;15;-;line;-;15;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectCodeEditor("data_mem.v", 187, 218); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,191 MB (+65kb) [00:15:04]
+typeControlKey((HResource) null, "data_mem.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,192 MB (+327kb) [00:15:08]
+// [Engine Memory]: 1,192 MB (+65kb) [00:15:45]
+// Elapsed time: 79 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-4556] size of variable 'memory' is too large to handle; the size of the variable is 8388616, the limit is 1000000 [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:15]. ]", 2, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v;-;;-;15;-;line;-;15;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// [Engine Memory]: 1,192 MB (+135kb) [00:16:28]
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 1,192 MB (+65kb) [00:16:47]
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 1,192 MB (+65kb) [00:17:18]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 1,192 MB (+69kb) [00:17:19]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1); // u:k (I:JPanel, ch:JFrame)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 18, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 18, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 1,192 MB (+131kb) [00:17:39]
+// [Engine Memory]: 1,192 MB (+65kb) [00:17:39]
+selectCodeEditor("top_module_tb.v", 132, 316); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 45, 462); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,192 MB (+200kb) [00:17:55]
+// Elapsed time: 35 seconds
+selectCodeEditor("top_module_tb.v", 117, 525); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,193 MB (+65kb) [00:18:25]
+selectCodeEditor("top_module_tb.v", 92, 463); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 89, 471); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,193 MB (+266kb) [00:18:30]
+selectCodeEditor("top_module_tb.v", 27, 456); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "top_module_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,193 MB (+335kb) [00:18:35]
+selectCodeEditor("top_module_tb.v", 52, 565); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "top_module_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 59, 353); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,193 MB (+131kb) [00:18:45]
+// [Engine Memory]: 1,193 MB (+262kb) [00:19:16]
+// [Engine Memory]: 1,194 MB (+65kb) [00:19:20]
+// [Engine Memory]: 1,194 MB (+69kb) [00:19:34]
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module_tb.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,194 MB (+65kb) [00:19:51]
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// [Engine Memory]: 1,194 MB (+65kb) [00:20:06]
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 2, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+// [Engine Memory]: 1,194 MB (+65kb) [00:20:12]
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top core [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 1,194 MB (+266kb) [00:20:14]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,194 MB (+69kb) [00:20:14]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 1,194 MB (+65kb) [00:20:20]
+// Elapsed time: 12 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 18); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 18); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 1,194 MB (+65kb) [00:20:27]
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 18); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 18); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, EX_tb (EX_tb.v)]", 20); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 1,194 MB (+135kb) [00:20:49]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,194 MB (+65kb) [00:20:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top top_module [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,194 MB (+65kb) [00:20:54]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 1,195 MB (+65kb) [00:20:55]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,195 MB (+69kb) [00:21:01]
+// [Engine Memory]: 1,195 MB (+65kb) [00:21:21]
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 23, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 23, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IF_tb.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,195 MB (+65kb) [00:21:33]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 1,195 MB (+65kb) [00:21:38]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module_tb.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,195 MB (+69kb) [00:21:43]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IF_tb.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,195 MB (+65kb) [00:21:54]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// [Engine Memory]: 1,195 MB (+65kb) [00:22:13]
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// [Engine Memory]: 1,195 MB (+200kb) [00:22:16]
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, Q:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// [Engine Memory]: 1,196 MB (+462kb) [00:22:20]
+// Tcl Message: INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' file for more information. 
+// a:a (ch:JFrame): Critical Messages: addNotify
+// 'c' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// [Engine Memory]: 1,196 MB (+65kb) [00:22:25]
+// [Engine Memory]: 1,196 MB (+65kb) [00:22:29]
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IF_tb.v", 6); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,196 MB (+135kb) [00:22:48]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module_tb.v", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,196 MB (+65kb) [00:22:52]
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 408, 208, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 136, 591); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 193, 372); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,196 MB (+65kb) [00:22:56]
+selectCodeEditor("top_module_tb.v", 160, 481, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 160, 481, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 160, 481, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 160, 481, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 160, 481, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 160, 481, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 160, 481, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+selectCodeEditor("top_module_tb.v", 160, 481, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+// Elapsed time: 15 seconds
+selectCodeEditor("top_module_tb.v", 83, 559); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 83, 559); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,196 MB (+65kb) [00:23:16]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module_tb.v", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module_tb.v", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,196 MB (+69kb) [00:23:51]
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_module_tb.v", 171, 385); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 13, 356); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 84, 407); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,196 MB (+196kb) [00:24:06]
+typeControlKey((HResource) null, "top_module_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 38, 129); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,196 MB (+69kb) [00:24:16]
+selectCodeEditor("top_module_tb.v", 157, 135); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,196 MB (+65kb) [00:24:21]
+selectCodeEditor("top_module_tb.v", 135, 95); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,197 MB (+65kb) [00:24:29]
+// [Engine Memory]: 1,197 MB (+65kb) [00:24:49]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,197 MB (+69kb) [00:25:16]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+// [Engine Memory]: 1,197 MB (+65kb) [00:25:16]
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,197 MB (+131kb) [00:25:18]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' file for more information. 
+// a:a (ch:JFrame): Critical Messages: addNotify
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// [Engine Memory]: 1,197 MB (+69kb) [00:25:28]
+// Elapsed time: 15 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 23, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 18, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 18, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectCodeEditor("top_module_tb.v", 29, 336); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 74, 391); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 31, 116); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 19, 126); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 34, 126); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 81, 124); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 78, 85); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "top_module_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// y:ad (ch:JFrame): Invalid Top Module: addNotify
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:ad)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+dismissDialog("Invalid Top Module"); // y:ad (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'top_module' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot top_module_behav 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:      while executing "webtalk_transmit -clientid 2364271057 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_behav/webtalk/xsim_webt..." line 41) INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 17:24:00 2023... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_module_behav -key {Behavioral:sim_1:Functional:top_module} -tclbatch {top_module.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// [Engine Memory]: 1,198 MB (+741kb) [00:26:56]
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// [Engine Memory]: 1,198 MB (+69kb) [00:26:56]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,198 MB (+262kb) [00:26:57]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source top_module.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 6014.117 ; gain = 0.004 ; free physical = 1284 ; free virtual = 3370 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module_tb.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 207, 449); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top_module_tb.v", 47, 396); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'EX_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:      while executing "webtalk_transmit -clientid 3223649654 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.t..." line 41) INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 17:24:31 2023... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "EX_tb_behav -key {Behavioral:sim_1:Functional:EX_tb} -tclbatch {EX_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// [Engine Memory]: 1,222 MB (+25165kb) [00:27:28]
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,222 MB (+196kb) [00:27:28]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,227 MB. GUI used memory: 42 MB. Current time: 7/26/23 5:24:33 PM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source EX_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [Engine Memory]: 1,227 MB (+5234kb) [00:27:29]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'EX_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6050.945 ; gain = 36.828 ; free physical = 1273 ; free virtual = 3358 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, NoName, Data_store[31:0]]", 15); // a:k (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,227 MB. GUI used memory: 47 MB. Current time: 7/26/23 5:24:42 PM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, NoName, Data_store[31:0]]", 15); // a:k (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_waveformGotoTime0"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,227 MB. GUI used memory: 51 MB. Current time: 7/26/23 5:24:50 PM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,227 MB. GUI used memory: 47 MB. Current time: 7/26/23 5:24:55 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,227 MB. GUI used memory: 45 MB. Current time: 7/26/23 5:24:55 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,227 MB. GUI used memory: 46 MB. Current time: 7/26/23 5:24:56 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 15 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 131, 463); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 12 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, NoName, PC_src]", 16, false); // a:k (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,227 MB. GUI used memory: 78 MB. Current time: 7/26/23 5:25:22 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O:a (Workspace:JPanel, ch:JFrame)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// RDIResource.RDIViews_WAVEFORM_VIEWER: Untitled 5: close view
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 5"); // u:aG
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+// [Engine Memory]: 1,227 MB (+262kb) [00:32:40]

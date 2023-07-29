@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jul 26 17:11:10 2023
+# Process ID: 4146
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.runs/synth_1/top_module.vds
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Synth 8-256} -limit 10000
+# set_msg_config -id {Synth 8-638} -limit 10000
+# create_project -in_memory -part xc7vx485tffg1157-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.cache/wt [current_project]
+# set_property parent.project_path /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib {
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v
+#   /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v
+# }
+# catch { write_hwdef -file top_module.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top_module -part xc7vx485tffg1157-1
+Command: synth_design -top top_module -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7vx485t'
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7vx485t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+
+    while executing
+"synth_design -top top_module -part xc7vx485tffg1157-1"
+    (file "top_module.tcl" line 42)
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 26 17:11:24 2023...

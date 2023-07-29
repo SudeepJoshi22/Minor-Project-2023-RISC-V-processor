@@ -1,0 +1,153 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+Process ID: 20347
+
+Current time: 	7/26/23 4:30:40 PM
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: NAME="Ubuntu"
+Version: 5.15.0-76-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	/opt/Xilinx/Vivado/2014.4/tps/lnx64/jre
+
+User name: 	ishita
+User directory: /home/ishita/Documents/minor_project/final_minor_project
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: /home/ishita/.Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: /home/ishita/.Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	143 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 725 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 27 MB (+25410kb) [00:00:06]
+// [Engine Memory]: 725 MB (+608803kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 19 MB. Current time: 7/26/23 4:30:42 PM
+// [Engine Memory]: 730 MB (+5238kb) [00:00:11]
+// [Engine Memory]: 730 MB (+327kb) [00:00:16]
+// [Engine Memory]: 731 MB (+331kb) [00:00:21]
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core/RISCV-unpipeline-core.xpr", 2); // s:v (JViewport:JComponent, ch:JFrame)
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 63 MB (+37899kb) [00:00:25]
+// [Engine Memory]: 799 MB (+71909kb) [00:00:25]
+// [Engine Memory]: 802 MB (+3297kb) [00:00:25]
+// [Engine Memory]: 841 MB (+40214kb) [00:00:26]
+// [Engine Memory]: 842 MB (+1323kb) [00:00:26]
+// [Engine Memory]: 843 MB (+991kb) [00:00:27]
+// Tcl Message: open_project /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core/RISCV-unpipeline-core.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 847 MB (+4153kb) [00:00:27]
+// [Engine Memory]: 847 MB (+135kb) [00:00:27]
+// [Engine Memory]: 847 MB (+131kb) [00:00:28]
+// [Engine Memory]: 847 MB (+135kb) [00:00:28]
+// [Engine Memory]: 848 MB (+528kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 848 MB (+200kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 848 MB (+65kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 848 MB (+65kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 848 MB (+200kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 848 MB (+65kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 849 MB (+331kb) [00:00:28]
+// [Engine Memory]: 849 MB (+69kb) [00:00:28]
+// [Engine Memory]: 849 MB (+65kb) [00:00:28]
+// [Engine Memory]: 849 MB (+131kb) [00:00:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 24 MB. Current time: 7/26/23 4:31:02 PM
+// [Engine Memory]: 859 MB (+10604kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 859 MB (+262kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 859 MB (+65kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 859 MB (+65kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 860 MB (+69kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 860 MB (+65kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 860 MB (+65kb) [00:00:29]
+// [Engine Memory]: 860 MB (+65kb) [00:00:29]
+// [Engine Memory]: 860 MB (+69kb) [00:00:29]
+// [Engine Memory]: 860 MB (+65kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 860 MB (+65kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 860 MB (+65kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 862 MB (+1634kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+1572kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+196kb) [00:00:29]
+// [Engine Memory]: 863 MB (+69kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+65kb) [00:00:30]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+65kb) [00:00:30]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 864 MB (+135kb) [00:00:30]
+// Project name: RISCV-unpipeline-core; location: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core; part: xc7vx485tffg1157-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 5748.395 ; gain = 116.203 ; free physical = 141 ; free virtual = 2960 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// [Engine Memory]: 864 MB (+598kb) [00:00:30]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 865 MB (+729kb) [00:00:30]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 865 MB (+729kb) [00:00:31]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 867 MB (+1396kb) [00:00:34]
+// [Engine Memory]: 867 MB (+593kb) [00:00:36]
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 4); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 4); // u:k (I:JPanel, ch:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 4); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 4); // u:k (I:JPanel, ch:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 3); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 3); // u:k (I:JPanel, ch:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 3); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 3); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 868 MB (+262kb) [00:00:52]
+// [Engine Memory]: 868 MB (+266kb) [00:01:01]
+// [Engine Memory]: 868 MB (+131kb) [00:01:36]
+// [Engine Memory]: 868 MB (+69kb) [00:01:46]
+// [Engine Memory]: 868 MB (+65kb) [00:01:56]
+// [Engine Memory]: 868 MB (+65kb) [00:05:31]
+// [Engine Memory]: 868 MB (+262kb) [00:05:46]
+// HMemoryUtils.trashcanNow. Engine heap size: 869 MB. GUI used memory: 24 MB. Current time: 7/26/23 4:37:12 PM
+// [Engine Memory]: 869 MB (+135kb) [00:06:41]
+// [Engine Memory]: 869 MB (+65kb) [00:08:11]
+// [Engine Memory]: 869 MB (+65kb) [00:08:41]
+// [Engine Memory]: 869 MB (+65kb) [00:10:41]

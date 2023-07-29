@@ -1,0 +1,1145 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jul 26 16:56:53 2023
+# Process ID: 3403
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 5751.133 ; gain = 126.047 ; free physical = 2436 ; free virtual = 4133
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: top_module
+ERROR: [Synth 8-1031] result is not declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:124]
+INFO: [Synth 8-2350] module core ignored due to previous errors [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1]
+Failed to read verilog '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v'
+    while executing
+"rt::read_verilog {
+      /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v
+      /home/ishita/Documents/minor_proj..."
+    ("uplevel" body line 23)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    rt::HARTNDb_resetJobStats
+    rt::HARTNDb_startJobS..."
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj top_module_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_module_tb_behav xil_defaultlib.top_module_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port result_EX [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:124]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu_MEM_MEM_WB [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:303]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:321]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.store_whb
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1387926300 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_w..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 16:59:04 2023...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 5802.438 ; gain = 0.000 ; free physical = 2291 ; free virtual = 4067
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_module_tb_behav -key {Behavioral:sim_1:Functional:top_module_tb} -tclbatch {top_module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source top_module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 5856.570 ; gain = 54.133 ; free physical = 2276 ; free virtual = 4064
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: top_module
+ERROR: [Synth 8-1031] result is not declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:124]
+INFO: [Synth 8-2350] module core ignored due to previous errors [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1]
+Failed to read verilog '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v'
+    while executing
+"rt::read_verilog {
+      /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v
+      /home/ishita/Documents/minor_proj..."
+    ("uplevel" body line 23)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    rt::HARTNDb_resetJobStats
+    rt::HARTNDb_startJobS..."
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj top_module_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_module_tb_behav xil_defaultlib.top_module_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port result_EX [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:125]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu_MEM_MEM_WB [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:304]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:322]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.store_whb
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 29529421 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/fin..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_w..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 17:01:06 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_module_tb_behav -key {Behavioral:sim_1:Functional:top_module_tb} -tclbatch {top_module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source top_module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5862.188 ; gain = 2.004 ; free physical = 2261 ; free virtual = 4049
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj top_module_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_module_tb_behav xil_defaultlib.top_module_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu_MEM_MEM_WB [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:304]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:322]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" Line 1. Module IF_ID doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" Line 1. Module ID_EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" Line 1. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" Line 1. Module MEM_WB doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.store_whb
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 592645540 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/fi..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_tb_behav/webtalk/xsim_w..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 17:04:33 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_module_tb_behav -key {Behavioral:sim_1:Functional:top_module_tb} -tclbatch {top_module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source top_module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 5862.188 ; gain = 0.000 ; free physical = 2246 ; free virtual = 4034
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: top_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:16 ; elapsed = 00:11:49 . Memory (MB): peak = 5870.445 ; gain = 5155.969 ; free physical = 2233 ; free virtual = 4024
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_module' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:4]
+INFO: [Synth 8-638] synthesizing module 'core' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1]
+INFO: [Synth 8-638] synthesizing module 'IF' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v:4]
+INFO: [Synth 8-256] done synthesizing module 'IF' (1#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v:4]
+INFO: [Synth 8-638] synthesizing module 'IF_ID' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v:1]
+INFO: [Synth 8-256] done synthesizing module 'IF_ID' (2#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v:1]
+INFO: [Synth 8-638] synthesizing module 'ID' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter BR bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-638] synthesizing module 'reg_file' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:4]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (3#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:4]
+INFO: [Synth 8-638] synthesizing module 'store_whb' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:4]
+	Parameter byte bound to: 2'b00 
+	Parameter half_word bound to: 2'b01 
+	Parameter word bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'store_whb' (4#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:4]
+INFO: [Synth 8-638] synthesizing module 'imm_gen' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter B bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-256] done synthesizing module 'imm_gen' (5#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:4]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter B bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (6#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ID' (7#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v:4]
+INFO: [Synth 8-638] synthesizing module 'ID_EX' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ID_EX' (8#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1]
+INFO: [Synth 8-638] synthesizing module 'EX' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter BR bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-638] synthesizing module 'alu' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:4]
+	Parameter ADD bound to: 4'b0000 
+	Parameter SUB bound to: 4'b0001 
+	Parameter AND bound to: 4'b0010 
+	Parameter OR bound to: 4'b0100 
+	Parameter XOR bound to: 4'b1000 
+	Parameter SRL bound to: 4'b1001 
+	Parameter SLL bound to: 4'b1010 
+	Parameter SRA bound to: 4'b1100 
+	Parameter BUF bound to: 4'b1101 
+INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:4]
+INFO: [Synth 8-638] synthesizing module 'PC_src' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:4]
+	Parameter BEQ bound to: 3'b000 
+	Parameter BNE bound to: 3'b001 
+	Parameter BLT bound to: 3'b100 
+	Parameter BGE bound to: 3'b101 
+	Parameter BLTU bound to: 3'b110 
+	Parameter BGEU bound to: 3'b111 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+INFO: [Synth 8-256] done synthesizing module 'PC_src' (10#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:4]
+INFO: [Synth 8-256] done synthesizing module 'EX' (11#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:4]
+INFO: [Synth 8-638] synthesizing module 'EX_MEM' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1]
+INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (12#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1]
+INFO: [Synth 8-638] synthesizing module 'MEM' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter BR bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-256] done synthesizing module 'MEM' (13#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:4]
+INFO: [Synth 8-638] synthesizing module 'MEM_WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1]
+INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (14#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1]
+WARNING: [Synth 8-689] width (2) of port connection 'ltu_MEM_MEM_WB' does not match port width (1) of module 'MEM_WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:304]
+INFO: [Synth 8-638] synthesizing module 'WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter BR bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-638] synthesizing module 'signext' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:4]
+	Parameter byte bound to: 2'b00 
+	Parameter half_word bound to: 2'b01 
+	Parameter word bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'signext' (15#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:4]
+INFO: [Synth 8-256] done synthesizing module 'WB' (16#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:4]
+WARNING: [Synth 8-689] width (2) of port connection 'ltu' does not match port width (1) of module 'WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:322]
+INFO: [Synth 8-256] done synthesizing module 'core' (17#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1]
+INFO: [Synth 8-638] synthesizing module 'instr_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v:4]
+INFO: [Synth 8-3876] $readmem data file '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/instructions/dump1.mem' is read successfully [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v:18]
+INFO: [Synth 8-256] done synthesizing module 'instr_mem' (18#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v:4]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:4]
+ERROR: [Synth 8-4556] size of variable 'memory' is too large to handle; the size of the variable is 8388616, the limit is 1000000 [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:15]
+ERROR: [Synth 8-285] failed synthesizing module 'data_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:4]
+ERROR: [Synth 8-285] failed synthesizing module 'top_module' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:18 ; elapsed = 00:11:50 . Memory (MB): peak = 5938.098 ; gain = 5223.621 ; free physical = 2160 ; free virtual = 3956
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 60)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    rt::HARTNDb_resetJobStats
+    rt::HARTNDb_startJobS..."
+39 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" into library work [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:1]
+[Wed Jul 26 17:11:09 2023] Launched synth_1...
+Run output will be captured here: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: top_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:54 ; elapsed = 00:14:24 . Memory (MB): peak = 5943.168 ; gain = 5228.691 ; free physical = 2137 ; free virtual = 3946
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_module' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:4]
+INFO: [Synth 8-638] synthesizing module 'core' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1]
+INFO: [Synth 8-638] synthesizing module 'IF' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v:4]
+INFO: [Synth 8-256] done synthesizing module 'IF' (1#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v:4]
+INFO: [Synth 8-638] synthesizing module 'IF_ID' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v:1]
+INFO: [Synth 8-256] done synthesizing module 'IF_ID' (2#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v:1]
+INFO: [Synth 8-638] synthesizing module 'ID' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter BR bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-638] synthesizing module 'reg_file' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:4]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (3#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v:4]
+INFO: [Synth 8-638] synthesizing module 'store_whb' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:4]
+	Parameter byte bound to: 2'b00 
+	Parameter half_word bound to: 2'b01 
+	Parameter word bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'store_whb' (4#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v:4]
+INFO: [Synth 8-638] synthesizing module 'imm_gen' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter B bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-256] done synthesizing module 'imm_gen' (5#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v:4]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter B bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (6#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ID' (7#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v:4]
+INFO: [Synth 8-638] synthesizing module 'ID_EX' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ID_EX' (8#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v:1]
+INFO: [Synth 8-638] synthesizing module 'EX' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter BR bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-638] synthesizing module 'alu' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:4]
+	Parameter ADD bound to: 4'b0000 
+	Parameter SUB bound to: 4'b0001 
+	Parameter AND bound to: 4'b0010 
+	Parameter OR bound to: 4'b0100 
+	Parameter XOR bound to: 4'b1000 
+	Parameter SRL bound to: 4'b1001 
+	Parameter SLL bound to: 4'b1010 
+	Parameter SRA bound to: 4'b1100 
+	Parameter BUF bound to: 4'b1101 
+INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v:4]
+INFO: [Synth 8-638] synthesizing module 'PC_src' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:4]
+	Parameter BEQ bound to: 3'b000 
+	Parameter BNE bound to: 3'b001 
+	Parameter BLT bound to: 3'b100 
+	Parameter BGE bound to: 3'b101 
+	Parameter BLTU bound to: 3'b110 
+	Parameter BGEU bound to: 3'b111 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+INFO: [Synth 8-256] done synthesizing module 'PC_src' (10#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v:4]
+INFO: [Synth 8-256] done synthesizing module 'EX' (11#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v:4]
+INFO: [Synth 8-638] synthesizing module 'EX_MEM' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1]
+INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (12#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v:1]
+INFO: [Synth 8-638] synthesizing module 'MEM' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter BR bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-256] done synthesizing module 'MEM' (13#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v:4]
+INFO: [Synth 8-638] synthesizing module 'MEM_WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1]
+INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (14#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v:1]
+WARNING: [Synth 8-689] width (2) of port connection 'ltu_MEM_MEM_WB' does not match port width (1) of module 'MEM_WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:304]
+INFO: [Synth 8-638] synthesizing module 'WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:4]
+	Parameter I1 bound to: 7'b0010011 
+	Parameter I2 bound to: 7'b0000011 
+	Parameter S bound to: 7'b0100011 
+	Parameter R bound to: 7'b0110011 
+	Parameter BR bound to: 7'b1100011 
+	Parameter J bound to: 7'b1101111 
+	Parameter JR bound to: 7'b1100111 
+	Parameter U bound to: 7'b0110111 
+	Parameter UPC bound to: 7'b0010111 
+INFO: [Synth 8-638] synthesizing module 'signext' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:4]
+	Parameter byte bound to: 2'b00 
+	Parameter half_word bound to: 2'b01 
+	Parameter word bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'signext' (15#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v:4]
+INFO: [Synth 8-256] done synthesizing module 'WB' (16#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v:4]
+WARNING: [Synth 8-689] width (2) of port connection 'ltu' does not match port width (1) of module 'WB' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:322]
+INFO: [Synth 8-256] done synthesizing module 'core' (17#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:1]
+INFO: [Synth 8-638] synthesizing module 'instr_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v:4]
+INFO: [Synth 8-3876] $readmem data file '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/instructions/dump1.mem' is read successfully [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v:18]
+INFO: [Synth 8-256] done synthesizing module 'instr_mem' (18#1) [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v:4]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:4]
+ERROR: [Synth 8-4556] size of variable 'memory' is too large to handle; the size of the variable is 8388616, the limit is 1000000 [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:15]
+ERROR: [Synth 8-285] failed synthesizing module 'data_mem' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v:4]
+ERROR: [Synth 8-285] failed synthesizing module 'top_module' [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:55 ; elapsed = 00:14:26 . Memory (MB): peak = 6007.109 ; gain = 5292.633 ; free physical = 2127 ; free virtual = 3935
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 60)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    rt::HARTNDb_resetJobStats
+    rt::HARTNDb_startJobS..."
+39 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+set_property top core [current_fileset]
+update_compile_order -fileset sources_1
+set_property top top_module [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj top_module_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_tb
+ERROR: [VRFC 10-1280] procedural assignment to a non-register i_addr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:42]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register i_addr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:42]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register d_addr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:43]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register d_addr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:43]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register rd is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register rd is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register wr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:45]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register wr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:45]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register rd is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:52]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register rd is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:52]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register wr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:53]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register wr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:53]
+ERROR: [VRFC 10-1040] module top_module_tb ignored due to previous errors [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:4]
+INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj top_module_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_tb
+ERROR: [VRFC 10-46] i_data is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:17]
+WARNING: [VRFC 10-144] i_data was previously declared without a range [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:17]
+ERROR: [VRFC 10-46] d_data is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:18]
+WARNING: [VRFC 10-144] d_data was previously declared without a range [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:18]
+ERROR: [VRFC 10-46] rd is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:19]
+ERROR: [VRFC 10-46] wr is already declared [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:20]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register i_addr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register i_addr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register d_addr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:45]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register d_addr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:45]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register rd is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register rd is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register wr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:47]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register wr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:47]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register rd is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:54]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register rd is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:54]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register wr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:55]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register wr is not permitted, left-hand side should be reg/integer/time/genvar [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:55]
+ERROR: [VRFC 10-1040] module top_module_tb ignored due to previous errors [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/top_module_tb.v:4]
+INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' file for more information.
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'top_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj top_module_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_whb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_module_behav xil_defaultlib.top_module xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu_MEM_MEM_WB [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:304]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port ltu [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/core.v:322]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" Line 4. Module IF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" Line 4. Module ID has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" Line 4. Module reg_file has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" Line 4. Module store_whb has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" Line 4. Module imm_gen has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" Line 4. Module control_unit has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" Line 4. Module EX has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" Line 4. Module alu has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" Line 4. Module PC_src has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" Line 4. Module MEM has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" Line 4. Module WB has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" Line 4. Module signext has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" Line 4. Module instr_mem has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/IF.v" Line 4. Module IF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/ID.v" Line 4. Module ID has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/reg_file.v" Line 4. Module reg_file has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/store_whb.v" Line 4. Module store_whb has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/imm_gen.v" Line 4. Module imm_gen has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/control_unit.v" Line 4. Module control_unit has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" Line 4. Module EX has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" Line 4. Module alu has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" Line 4. Module PC_src has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/MEM.v" Line 4. Module MEM has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/WB.v" Line 4. Module WB has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/signext.v" Line 4. Module signext has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/instr_mem.v" Line 4. Module instr_mem has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.store_whb
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2364271057 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/top_module_behav/webtalk/xsim_webt..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 17:24:00 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_module_behav -key {Behavioral:sim_1:Functional:top_module} -tclbatch {top_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source top_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 6014.117 ; gain = 0.004 ; free physical = 1284 ; free virtual = 3370
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'EX_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+xvlog -m64 -prj EX_tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/PC_Src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot EX_tb_behav xil_defaultlib.EX_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:48]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 7 for port opcode_EX [/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/EX_tb.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.PC_src
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot EX_tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3223649654 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."
+    (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/EX_tb_behav/webtalk/xsim_webtalk.t..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 26 17:24:31 2023...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "EX_tb_behav -key {Behavioral:sim_1:Functional:EX_tb} -tclbatch {EX_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source EX_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'EX_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6050.945 ; gain = 36.828 ; free physical = 1273 ; free virtual = 3358

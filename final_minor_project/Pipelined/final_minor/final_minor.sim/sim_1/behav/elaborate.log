@@ -1,0 +1,15 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 152242e094414545a04bc79ae1f82389 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot branch_pred_unit_tb_behav xil_defaultlib.branch_pred_unit_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v" Line 147. Module branch_pred_unit doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.branch_pred_unit
+Compiling module xil_defaultlib.branch_pred_unit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot branch_pred_unit_tb_behav

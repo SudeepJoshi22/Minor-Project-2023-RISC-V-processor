@@ -2,10 +2,10 @@
 # Vivado v2014.4 (64-bit)
 # SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Sat Jul 29 05:45:56 2023
-# Process ID: 4104
-# Log file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Pipelined/vivado.log
-# Journal file: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Pipelined/vivado.jou
+# Start of session at: Wed Jul 26 16:28:34 2023
+# Process ID: 20230
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project /home/ishita/Documents/minor_project/full_riscv/full_riscv.xpr
@@ -14,7 +14,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
-open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:06 . Memory (MB): peak = 5737.289 ; gain = 93.586 ; free physical = 938 ; free virtual = 3037
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 5735.008 ; gain = 95.531 ; free physical = 126 ; free virtual = 2959
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Jul 29 06:25:15 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 26 16:30:18 2023...

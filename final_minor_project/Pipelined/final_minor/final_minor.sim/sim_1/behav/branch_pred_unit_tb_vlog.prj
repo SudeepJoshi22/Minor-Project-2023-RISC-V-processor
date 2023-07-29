@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../../../Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v"
+verilog xil_defaultlib  "../../../../testbench/branch_pred_unit_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"

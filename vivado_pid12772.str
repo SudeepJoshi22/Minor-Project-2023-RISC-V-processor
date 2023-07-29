@@ -1,0 +1,558 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+Process ID: 12772
+
+Current time: 	7/26/23 2:59:37 AM
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: NAME="Ubuntu"
+Version: 5.15.0-76-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	/opt/Xilinx/Vivado/2014.4/tps/lnx64/jre
+
+User name: 	ishita
+User directory: /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: /home/ishita/.Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: /home/ishita/.Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	144 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 718 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 0.5s
+// Tcl Message: start_gui 
+// [GUI Memory]: 63 MB (+63224kb) [00:00:06]
+// [Engine Memory]: 718 MB (+601647kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 723 MB. GUI used memory: 23 MB. Current time: 7/26/23 2:59:39 AM
+// [Engine Memory]: 723 MB (+5304kb) [00:00:11]
+// [Engine Memory]: 723 MB (+65kb) [00:00:16]
+// [Engine Memory]: 737 MB (+13930kb) [00:00:31]
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.xpr", 2); // s:v (JViewport:JComponent, ch:JFrame)
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.xpr 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 770 MB (+35405kb) [00:00:32]
+// [Engine Memory]: 774 MB (+4096kb) [00:00:33]
+// [Engine Memory]: 826 MB (+54435kb) [00:00:34]
+// [Engine Memory]: 832 MB (+5799kb) [00:00:34]
+// Tcl Message: open_project /home/ishita/Documents/minor_project/unpipelined_riscv/unpipelined_riscv.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 833 MB (+1314kb) [00:00:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 843 MB. GUI used memory: 24 MB. Current time: 7/26/23 3:00:05 AM
+// [Engine Memory]: 844 MB (+11403kb) [00:00:35]
+// [Engine Memory]: 844 MB (+196kb) [00:00:35]
+// [Engine Memory]: 844 MB (+69kb) [00:00:35]
+// [Engine Memory]: 844 MB (+327kb) [00:00:35]
+// [Engine Memory]: 845 MB (+65kb) [00:00:35]
+// [Engine Memory]: 845 MB (+135kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 845 MB (+131kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 845 MB (+135kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 845 MB (+131kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 845 MB (+200kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 845 MB (+131kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 845 MB (+69kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 845 MB (+65kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 846 MB (+266kb) [00:00:36]
+// [Engine Memory]: 846 MB (+65kb) [00:00:36]
+// [Engine Memory]: 846 MB (+200kb) [00:00:36]
+// [Engine Memory]: 846 MB (+65kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 846 MB (+397kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 846 MB (+65kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 847 MB (+65kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 847 MB (+65kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 847 MB (+69kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 847 MB (+131kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 847 MB (+200kb) [00:00:37]
+// [Engine Memory]: 847 MB (+131kb) [00:00:37]
+// [Engine Memory]: 847 MB (+69kb) [00:00:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 847 MB (+65kb) [00:00:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 847 MB (+65kb) [00:00:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 849 MB (+1744kb) [00:00:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 851 MB (+1884kb) [00:00:37]
+// [Engine Memory]: 852 MB (+1724kb) [00:00:37]
+// [Engine Memory]: 854 MB (+1228kb) [00:00:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 854 MB (+196kb) [00:00:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 854 MB (+135kb) [00:00:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 854 MB (+131kb) [00:00:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 854 MB (+69kb) [00:00:37]
+// Project name: unpipelined_riscv; location: /home/ishita/Documents/minor_project/unpipelined_riscv; part: xc7vx485tffg1157-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 5739.238 ; gain = 109.578 ; free physical = 328 ; free virtual = 2544 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// [Engine Memory]: 855 MB (+794kb) [00:00:38]
+// [Engine Memory]: 855 MB (+397kb) [00:00:38]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 856 MB (+598kb) [00:00:38]
+// [Engine Memory]: 858 MB (+1925kb) [00:00:40]
+// [Engine Memory]: 858 MB (+462kb) [00:00:44]
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New Project..."); // Z:JMenuItem (JPopupMenu:JComponent, ch:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [Engine Memory]: 878 MB (+21090kb) [00:00:48]
+// [Engine Memory]: 878 MB (+65kb) [00:00:49]
+// [Engine Memory]: 879 MB (+602kb) [00:00:49]
+// a:g (ch:JFrame): New Project: addNotify
+// [Engine Memory]: 894 MB (+15613kb) [00:00:52]
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+// [Engine Memory]: 894 MB (+131kb) [00:00:57]
+// [Engine Memory]: 894 MB (+593kb) [00:01:02]
+// Elapsed time: 26 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "RISCV-unpipeline-core"); // an:JTextField (JPanel:JComponent, a:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+// [Engine Memory]: 895 MB (+393kb) [00:01:22]
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, a:g)
+// [Engine Memory]: 895 MB (+262kb) [00:01:32]
+// Elapsed time: 27 seconds
+String[] filenames31467 = {"/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/EX.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/ID.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/IF.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/MEM.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/PC_Src.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/WB.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/alu.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/control_unit.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/core.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/data_mem.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/imm_gen.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/instr_fetch.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/instr_mem.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/processor_unpipelined.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/reg_file.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/signext.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/store_whb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/top_module.v"};
+setFileChooser(filenames31467);
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+// [Engine Memory]: 895 MB (+393kb) [00:02:01]
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+// [Engine Memory]: 896 MB (+200kb) [00:02:04]
+// [Engine Memory]: 896 MB (+397kb) [00:02:09]
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 886 MB. GUI used memory: 26 MB. Current time: 7/26/23 3:01:42 AM
+// cm:N (a:g):  Create Project : addNotify
+selectButton("PAResourceItoN.NewProjectWizard_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, Q:JDialog)
+// Tcl Message: close_project 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project RISCV-unpipeline-core /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core -part xc7vx485tffg1157-1 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 63 MB (+525kb) [00:02:14]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 64 MB (+685kb) [00:02:15]
+// [GUI Memory]: 65 MB (+758kb) [00:02:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+// 'f' command handler elapsed time: 87 seconds
+dismissDialog("Create Project"); // cm:N (a:g)
+dismissDialog("New Project"); // a:g (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, b:g)
+// [Engine Memory]: 907 MB (+11538kb) [00:02:39]
+// [Engine Memory]: 907 MB (+131kb) [00:02:44]
+dismissFileChooser();
+// [Engine Memory]: 907 MB (+69kb) [00:02:49]
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, b:g)
+// [Engine Memory]: 907 MB (+65kb) [00:02:54]
+// [Engine Memory]: 907 MB (+65kb) [00:02:59]
+// [Engine Memory]: 907 MB (+135kb) [00:03:04]
+// Elapsed time: 16 seconds
+String[] filenames16706 = {"/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/EX_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/ID_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/IF_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/MEM_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/PC_src_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/WB_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/alu_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/data_mem_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/imm_gen_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/instr_fetch_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/instr_mem_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/processor_ris_type_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/reg_file_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/signext_tb.v", "/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/testbench/top_module_tb.v"};
+setFileChooser(filenames16706);
+// [Engine Memory]: 908 MB (+393kb) [00:03:09]
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, b:g)
+// [Engine Memory]: 908 MB (+135kb) [00:03:14]
+dismissFileChooser();
+// [GUI Memory]: 69 MB (+4901kb) [00:03:19]
+// [Engine Memory]: 908 MB (+397kb) [00:03:19]
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 51 seconds
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 908 MB (+65kb) [00:03:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 909 MB (+266kb) [00:03:22]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 909 MB (+200kb) [00:03:23]
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 71 MB (+1547kb) [00:03:24]
+// [Engine Memory]: 909 MB (+135kb) [00:03:24]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 909 MB (+65kb) [00:03:24]
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 909 MB (+266kb) [00:03:27]
+// [Engine Memory]: 909 MB (+65kb) [00:03:28]
+// [Engine Memory]: 911 MB (+1445kb) [00:03:30]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 911 MB (+200kb) [00:03:30]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 2, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+// [Engine Memory]: 911 MB (+65kb) [00:03:31]
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// [Engine Memory]: 911 MB (+65kb) [00:03:34]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top top_module [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 911 MB (+200kb) [00:03:36]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 912 MB (+462kb) [00:03:37]
+// [GUI Memory]: 73 MB (+2578kb) [00:03:45]
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 22, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_module_tb (top_module_tb.v)]", 22, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+// [Engine Memory]: 912 MB (+131kb) [00:03:52]
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top top_module_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 912 MB (+135kb) [00:03:53]
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 912 MB (+200kb) [00:03:54]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 912 MB (+131kb) [00:03:54]
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 912 MB (+200kb) [00:03:55]
+// [Engine Memory]: 912 MB (+65kb) [00:03:59]
+// [Engine Memory]: 913 MB (+65kb) [00:04:08]
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+// [Engine Memory]: 913 MB (+335kb) [00:04:09]
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 913 MB (+65kb) [00:04:11]
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'top_module_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core/RISCV-unpipeline-core.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core/RISCV-unpipeline-core.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '' file for more information. 
+// a:a (ch:JFrame): Critical Messages: addNotify
+// [Engine Memory]: 914 MB (+724kb) [00:04:13]
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 914 MB. GUI used memory: 29 MB. Current time: 7/26/23 3:03:44 AM
+// [Engine Memory]: 914 MB (+200kb) [00:04:16]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// [Engine Memory]: 914 MB (+65kb) [00:04:19]
+// [Engine Memory]: 914 MB (+65kb) [00:04:32]
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 2); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 914 MB (+135kb) [00:04:35]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 914 MB (+65kb) [00:04:38]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v)]", 3, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 914 MB (+65kb) [00:04:38]
+// [Engine Memory]: 914 MB (+135kb) [00:04:39]
+// [Engine Memory]: 914 MB (+65kb) [00:04:39]
+// [Engine Memory]: 915 MB (+200kb) [00:04:43]
+// [Engine Memory]: 915 MB (+65kb) [00:04:48]
+// [Engine Memory]: 915 MB (+65kb) [00:04:53]
+// [Engine Memory]: 915 MB (+69kb) [00:05:18]
+// [Engine Memory]: 915 MB (+131kb) [00:06:07]
+// [Engine Memory]: 915 MB (+65kb) [00:06:10]
+// [Engine Memory]: 915 MB (+135kb) [00:06:24]
+// [Engine Memory]: 915 MB (+131kb) [00:06:27]
+// Elapsed time: 108 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M0 - IF (IF.v)]", 4, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M0 - IF (IF.v)]", 4, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 915 MB (+135kb) [00:06:32]
+// [Engine Memory]: 915 MB (+65kb) [00:06:37]
+// [Engine Memory]: 916 MB (+262kb) [00:06:42]
+// [Engine Memory]: 916 MB (+200kb) [00:07:07]
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 18, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 18, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectCodeEditor("IF_tb.v", 23, 373); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("IF_tb.v", 25, 482); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("IF_tb.v", 7, 113); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("IF_tb.v", 3, 251); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 81, 285); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 72, 273); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 33, 265); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 1, 294); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M0 - IF (IF.v)]", 4, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M0 - IF (IF.v)]", 4, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 18, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 18, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 18, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("IF_tb.v", 79, 92); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 92 seconds
+selectCodeEditor("IF_tb.v", 79, 92); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 254 seconds
+selectCodeEditor("IF_tb.v", 26, 413); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 88 seconds
+selectCodeEditor("IF_tb.v", 61, 370); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 74 MB (+704kb) [00:17:32]
+// [Engine Memory]: 916 MB (+262kb) [00:17:37]
+// Elapsed time: 68 seconds
+selectCodeEditor("IF_tb.v", 26, 393); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 92 seconds
+selectCodeEditor("IF_tb.v", 109, 342); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 109, 342); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 916 MB (+65kb) [00:20:52]
+// [Engine Memory]: 916 MB (+65kb) [00:23:07]
+// [GUI Memory]: 74 MB (+3kb) [00:23:37]
+// [GUI Memory]: 74 MB (+110kb) [00:23:42]
+// Elapsed time: 241 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M0 - IF (IF.v)]", 4, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 916 MB (+69kb) [00:23:46]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M0 - IF (IF.v)]", 4, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 916 MB (+65kb) [00:23:46]
+// [Engine Memory]: 916 MB (+65kb) [00:23:46]
+// Elapsed time: 20 seconds
+selectCodeEditor("IF.v", 102, 308); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 917 MB (+200kb) [00:24:11]
+// Elapsed time: 18 seconds
+selectCodeEditor("IF.v", 102, 308); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 917 MB (+65kb) [00:24:29]
+// [GUI Memory]: 74 MB (+40kb) [00:24:59]
+// [GUI Memory]: 74 MB (+134kb) [00:25:04]
+// [GUI Memory]: 74 MB (+47kb) [00:25:09]
+// [GUI Memory]: 74 MB (+109kb) [00:25:14]
+// [GUI Memory]: 75 MB (+859kb) [00:25:19]
+// [GUI Memory]: 75 MB (+106kb) [00:25:24]
+// Elapsed time: 82 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M1 - ID (ID.v)]", 5); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 917 MB (+65kb) [00:25:48]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, instr_fetch_tb (instr_fetch_tb.v)]", 29, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, instr_fetch_tb (instr_fetch_tb.v)]", 29, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 917 MB (+200kb) [00:26:00]
+// [Engine Memory]: 922 MB (+5234kb) [00:26:03]
+selectCodeEditor("instr_fetch_tb.v", 197, 381); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 922 MB (+598kb) [00:26:13]
+typeControlKey((HResource) null, "instr_fetch_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 923 MB (+397kb) [00:26:16]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 22, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 22, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 923 MB (+200kb) [00:26:27]
+selectCodeEditor("IF_tb.v", 37, 391); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 33, 383); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "IF_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 30, 383); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 211, 389); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 923 MB (+131kb) [00:27:17]
+// Elapsed time: 45 seconds
+selectCodeEditor("IF_tb.v", 230, 553); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 923 MB (+331kb) [00:27:27]
+selectCodeEditor("IF_tb.v", 111, 349); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 924 MB (+69kb) [00:27:32]
+typeControlKey((HResource) null, "IF_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("IF_tb.v", 208, 443); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 924 MB (+65kb) [00:27:47]
+// [Engine Memory]: 924 MB (+65kb) [00:27:57]
+// [GUI Memory]: 76 MB (+533kb) [00:28:15]
+// [GUI Memory]: 78 MB (+1999kb) [00:28:17]
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v), DUT - IF (IF.v)]", 23, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 924 MB (+135kb) [00:28:18]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v), DUT - IF (IF.v)]", 23, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 924 MB (+65kb) [00:28:18]
+// [Engine Memory]: 924 MB (+65kb) [00:28:22]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 22, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, IF_tb (IF_tb.v)]", 22, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// [GUI Memory]: 78 MB (+762kb) [00:28:32]
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 924 MB (+65kb) [00:28:32]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top IF_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 924 MB (+266kb) [00:28:33]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M0 - IF (IF.v)]", 4, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M0 - core (core.v), M0 - IF (IF.v)]", 4, false, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// [Engine Memory]: 924 MB (+69kb) [00:28:41]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 79 MB (+264kb) [00:28:41]
+// Tcl Message: set_property top IF [current_fileset] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [current_fileset] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_file {/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/Final RISC-V Processor/Unpipelined/design/IF.v} [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 929 MB (+5300kb) [00:28:41]
+// [Engine Memory]: 929 MB (+131kb) [00:28:42]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 930 MB (+69kb) [00:28:42]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 930 MB (+65kb) [00:28:45]
+// [Engine Memory]: 930 MB (+131kb) [00:28:46]
+// [Engine Memory]: 930 MB (+69kb) [00:28:46]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'IF_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core/RISCV-unpipeline-core.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISCV-unpipeline-core/RISCV-unpipeline-core.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// [Engine Memory]: 930 MB (+393kb) [00:28:52]
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '' file for more information. 
+// a:a (ch:JFrame): Critical Messages: addNotify
+// [Engine Memory]: 930 MB (+135kb) [00:28:53]
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// n:al (ch:JFrame): Save Text Editor Changes: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b (TdiGroup:JideTabbedPane, ch:JFrame)
+// [Engine Memory]: 931 MB (+262kb) [00:29:07]
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, n:al)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Text Editor Changes"); // n:al (ch:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 931 MB (+65kb) [00:29:08]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 931 MB (+69kb) [00:29:10]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 931 MB (+65kb) [00:29:10]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 931 MB (+65kb) [00:29:12]
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, ch:JFrame)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_SETUP");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// al:bE (ch:JFrame): Close Project: addNotify
+// [Engine Memory]: 931 MB (+65kb) [00:29:14]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, al:bE)
+// cm:N (ch:JFrame):  Close Project : addNotify
+dismissDialog("Close Project"); // al:bE (ch:JFrame)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 916 MB. GUI used memory: 29 MB. Current time: 7/26/23 3:28:46 AM
+// Tcl Message: close_project 
+// 'b' command handler elapsed time: 3 seconds
+dismissDialog("Close Project"); // cm:N (ch:JFrame)

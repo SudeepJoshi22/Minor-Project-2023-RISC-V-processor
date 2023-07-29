@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Jul 28 14:49:52 2023
+# Process ID: 2925
+# Log file: /home/ishita/Documents/minor_project/final_minor_project/vivado.log
+# Journal file: /home/ishita/Documents/minor_project/final_minor_project/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr
+update_compile_order -fileset sim_1
+launch_simulation
+source EX_tb.tcl
+close_sim
+launch_simulation
+source EX_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source top_module_tb.tcl
+add_bp /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v 52
+add_bp /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v 53
+restart
+run all
+run all
+run all
+run all
+close_sim
+launch_simulation
+source top_module_tb.tcl
+add_bp /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v 52
+add_bp /home/ishita/Documents/minor_project/final_minor_project/Pipelined/design/EX.v 53
+close_sim
+close_sim

@@ -1,0 +1,1230 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+Process ID: 3624
+
+Current time: 	7/29/23 5:43:29 AM
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: NAME="Ubuntu"
+Version: 5.15.0-78-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	/opt/Xilinx/Vivado/2014.4/tps/lnx64/jre
+
+User name: 	ishita
+User directory: /home/ishita/Documents/minor_project/final_minor_project
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: /home/ishita/.Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: /home/ishita/.Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	143 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 717 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 28 MB (+27105kb) [00:00:06]
+// [Engine Memory]: 716 MB (+598870kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 722 MB. GUI used memory: 19 MB. Current time: 7/29/23 5:43:31 AM
+// [Engine Memory]: 722 MB (+7081kb) [00:00:11]
+// [Engine Memory]: 722 MB (+69kb) [00:00:21]
+// [Engine Memory]: 722 MB (+65kb) [00:00:36]
+// [Engine Memory]: 725 MB (+2629kb) [00:01:16]
+// [Engine Memory]: 725 MB (+65kb) [00:01:21]
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr", 0); // s:v (JViewport:JComponent, ch:JFrame)
+// cm:N (ch:JFrame):  Open Project : addNotify
+// [GUI Memory]: 32 MB (+4245kb) [00:01:46]
+// [Engine Memory]: 737 MB (+12881kb) [00:01:46]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 51 MB (+20005kb) [00:01:47]
+// [Engine Memory]: 782 MB (+47108kb) [00:01:47]
+// [Engine Memory]: 804 MB (+22999kb) [00:01:48]
+// [GUI Memory]: 54 MB (+2677kb) [00:01:49]
+// [Engine Memory]: 841 MB (+38940kb) [00:01:49]
+// [Engine Memory]: 842 MB (+933kb) [00:01:50]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 844 MB (+1982kb) [00:01:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 858 MB. GUI used memory: 24 MB. Current time: 7/29/23 5:45:13 AM
+// [Engine Memory]: 860 MB (+16388kb) [00:01:51]
+// [Engine Memory]: 860 MB (+135kb) [00:01:51]
+// [Engine Memory]: 860 MB (+65kb) [00:01:51]
+// [Engine Memory]: 860 MB (+65kb) [00:01:51]
+// [Engine Memory]: 860 MB (+135kb) [00:01:51]
+// [Engine Memory]: 860 MB (+65kb) [00:01:51]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 860 MB (+200kb) [00:01:51]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 861 MB (+327kb) [00:01:51]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 861 MB (+65kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 861 MB (+65kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 861 MB (+69kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 861 MB (+266kb) [00:01:52]
+// [Engine Memory]: 861 MB (+65kb) [00:01:52]
+// [Engine Memory]: 861 MB (+65kb) [00:01:52]
+// [Engine Memory]: 861 MB (+65kb) [00:01:52]
+// [Engine Memory]: 861 MB (+69kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 862 MB (+266kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 862 MB (+131kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 862 MB (+65kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 862 MB (+262kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 862 MB (+200kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 862 MB (+135kb) [00:01:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 862 MB (+65kb) [00:01:52]
+// [Engine Memory]: 863 MB (+65kb) [00:01:52]
+// [Engine Memory]: 863 MB (+65kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+69kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+65kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+65kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+65kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+69kb) [00:01:53]
+// [Engine Memory]: 863 MB (+65kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+65kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+65kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 863 MB (+135kb) [00:01:53]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: final_minor; location: /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor; part: xc7vx485tffg1157-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:07 . Memory (MB): peak = 5747.785 ; gain = 115.664 ; free physical = 1315 ; free virtual = 3408 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// [Engine Memory]: 864 MB (+663kb) [00:01:53]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 864 MB (+135kb) [00:01:53]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 865 MB (+1126kb) [00:01:54]
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 867 MB (+1658kb) [00:01:56]
+// [Engine Memory]: 867 MB (+532kb) [00:01:59]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 868 MB (+794kb) [00:02:00]
+// [Engine Memory]: 868 MB (+466kb) [00:02:04]
+// PAPropertyPanels.initPanels (instr_mem.v) elapsed time: 0.2s
+// [Engine Memory]: 869 MB (+1114kb) [00:02:05]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M1 - instr_mem (instr_mem.v)]", 3, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 870 MB (+262kb) [00:02:05]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M1 - instr_mem (instr_mem.v)]", 3, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M1 - instr_mem (instr_mem.v)]", 3, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 870 MB (+262kb) [00:02:06]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M1 - instr_mem (instr_mem.v)]", 3, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 870 MB (+135kb) [00:02:06]
+// [Engine Memory]: 870 MB (+266kb) [00:02:08]
+// [Engine Memory]: 871 MB (+532kb) [00:02:12]
+// [Engine Memory]: 871 MB (+266kb) [00:02:14]
+// [Engine Memory]: 871 MB (+131kb) [00:02:19]
+// [Engine Memory]: 871 MB (+69kb) [00:02:39]
+// [Engine Memory]: 871 MB (+131kb) [00:02:44]
+// [Engine Memory]: 871 MB (+135kb) [00:02:54]
+// [Engine Memory]: 872 MB (+65kb) [00:02:59]
+// [Engine Memory]: 872 MB (+65kb) [00:03:19]
+// [Engine Memory]: 872 MB (+65kb) [00:03:24]
+// [Engine Memory]: 872 MB (+528kb) [00:03:28]
+// [Engine Memory]: 873 MB (+335kb) [00:03:32]
+// [Engine Memory]: 873 MB (+266kb) [00:03:35]
+// Elapsed time: 92 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+// [GUI Memory]: 59 MB (+5268kb) [00:03:41]
+// [Engine Memory]: 873 MB (+393kb) [00:03:41]
+// [GUI Memory]: 60 MB (+741kb) [00:03:46]
+// Elapsed time: 10 seconds
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// [Engine Memory]: 874 MB (+524kb) [00:03:51]
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, b:g)
+// [Engine Memory]: 879 MB (+5234kb) [00:03:56]
+// [Engine Memory]: 879 MB (+262kb) [00:04:46]
+// Elapsed time: 88 seconds
+setFileChooser("/home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v");
+// [GUI Memory]: 62 MB (+2409kb) [00:05:21]
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 106 seconds
+// [Engine Memory]: 879 MB (+200kb) [00:05:25]
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/ishita/Documents/minor_project/Minor-Project-2023-RISC-V-processor/RISC-V_Unpipelined_Processor/design/branch_pred_unit.v 
+// [Engine Memory]: 879 MB (+266kb) [00:05:25]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 880 MB (+200kb) [00:05:25]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 880 MB (+528kb) [00:05:26]
+// [Engine Memory]: 880 MB (+131kb) [00:05:28]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M2 - data_mem (data_mem.v)]", 4, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 880 MB (+331kb) [00:05:28]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), M2 - data_mem (data_mem.v)]", 4, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 881 MB (+135kb) [00:05:28]
+// [Engine Memory]: 881 MB (+65kb) [00:05:29]
+// [Engine Memory]: 881 MB (+135kb) [00:05:29]
+// [Engine Memory]: 881 MB (+131kb) [00:05:29]
+// [GUI Memory]: 63 MB (+1596kb) [00:05:29]
+// [Engine Memory]: 881 MB (+65kb) [00:05:29]
+// [Engine Memory]: 881 MB (+69kb) [00:05:29]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, branch_pred_unit (branch_pred_unit.v)]", 5, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 881 MB (+196kb) [00:05:30]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, branch_pred_unit (branch_pred_unit.v)]", 5, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 881 MB (+200kb) [00:05:30]
+// [Engine Memory]: 887 MB (+5423kb) [00:05:30]
+// [GUI Memory]: 65 MB (+1661kb) [00:05:35]
+// [Engine Memory]: 887 MB (+532kb) [00:05:35]
+// [GUI Memory]: 66 MB (+802kb) [00:05:39]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [GUI Memory]: 68 MB (+2747kb) [00:05:40]
+// [Engine Memory]: 888 MB (+528kb) [00:05:40]
+// [Engine Memory]: 888 MB (+335kb) [00:05:41]
+// [Engine Memory]: 888 MB (+266kb) [00:05:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 27 MB. Current time: 7/29/23 5:49:07 AM
+// [Engine Memory]: 894 MB (+5632kb) [00:05:44]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+// [Engine Memory]: 894 MB (+65kb) [00:05:46]
+// [GUI Memory]: 69 MB (+574kb) [00:05:51]
+// [GUI Memory]: 70 MB (+978kb) [00:05:56]
+// Elapsed time: 11 seconds
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, b:g)
+// Elapsed time: 69 seconds
+dismissFileChooser();
+// [Engine Memory]: 894 MB (+262kb) [00:07:16]
+// [GUI Memory]: 70 MB (+352kb) [00:09:36]
+// [GUI Memory]: 70 MB (+48kb) [00:09:41]
+// [GUI Memory]: 71 MB (+940kb) [00:09:46]
+// Elapsed time: 236 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, b:g)
+// [Engine Memory]: 899 MB (+5234kb) [00:11:11]
+dismissFileChooser();
+// 'f' command handler elapsed time: 331 seconds
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, b:g)
+// Elapsed time: 22 seconds
+setFileChooser("/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 28 seconds
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse /home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 899 MB (+69kb) [00:11:51]
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // u:k (I:JPanel, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 899 MB (+196kb) [00:11:55]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, branch_pred_unit_tb (branch_pred_unit_tb.v)]", 17, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, branch_pred_unit_tb (branch_pred_unit_tb.v)]", 17, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+// [Engine Memory]: 899 MB (+331kb) [00:11:57]
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// [Engine Memory]: 900 MB (+196kb) [00:11:59]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top branch_pred_unit_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 900 MB (+69kb) [00:11:59]
+// [Engine Memory]: 900 MB (+65kb) [00:11:59]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 900 MB (+331kb) [00:12:00]
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 900 MB (+65kb) [00:12:01]
+// [Engine Memory]: 900 MB (+69kb) [00:12:02]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, branch_pred_unit (branch_pred_unit.v)]", 5, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 900 MB (+131kb) [00:12:03]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, branch_pred_unit (branch_pred_unit.v)]", 5, false, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// [Engine Memory]: 900 MB (+65kb) [00:12:05]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 900 MB (+69kb) [00:12:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top branch_pred_unit [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 901 MB (+131kb) [00:12:06]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 901 MB (+65kb) [00:12:07]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 901 MB (+69kb) [00:12:07]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 901 MB (+266kb) [00:12:08]
+// [Engine Memory]: 901 MB (+65kb) [00:12:10]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+// [Engine Memory]: 901 MB (+65kb) [00:12:10]
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 902 MB (+458kb) [00:12:12]
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// [Engine Memory]: 902 MB (+135kb) [00:12:14]
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// [Engine Memory]: 902 MB (+466kb) [00:12:18]
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 911 MB. GUI used memory: 28 MB. Current time: 7/29/23 5:55:42 AM
+// Tcl Message:      while executing "webtalk_transmit -clientid 349206198 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/fi..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/..." line 41) INFO: [Common 17-206] Exiting Webtalk at Sat Jul 29 05:55:41 2023... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 5773.113 ; gain = 0.000 ; free physical = 479 ; free virtual = 2829 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "branch_pred_unit_tb_behav -key {Behavioral:sim_1:Functional:branch_pred_unit_tb} -tclbatch {branch_pred_unit_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// [Engine Memory]: 935 MB (+34414kb) [00:12:20]
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// [Engine Memory]: 936 MB (+987kb) [00:12:20]
+// [Engine Memory]: 936 MB (+659kb) [00:12:20]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 937 MB (+65kb) [00:12:20]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 937 MB (+327kb) [00:12:20]
+// [Engine Memory]: 937 MB (+593kb) [00:12:20]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source branch_pred_unit_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 74 MB (+3031kb) [00:12:21]
+// [Engine Memory]: 940 MB (+2699kb) [00:12:21]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [Engine Memory]: 940 MB (+528kb) [00:12:21]
+// [Engine Memory]: 941 MB (+65kb) [00:12:21]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 255 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" Line 107 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'branch_pred_unit_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 5826.238 ; gain = 53.125 ; free physical = 463 ; free virtual = 2823 
+// 'c' command handler elapsed time: 9 seconds
+// [Engine Memory]: 941 MB (+397kb) [00:12:22]
+// Elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// [Engine Memory]: 941 MB (+266kb) [00:12:22]
+// [Engine Memory]: 942 MB (+528kb) [00:12:24]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 75 MB (+540kb) [00:12:24]
+// [Engine Memory]: 942 MB (+69kb) [00:12:24]
+// [Engine Memory]: 942 MB (+131kb) [00:12:25]
+// [Engine Memory]: 942 MB (+65kb) [00:12:27]
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 63 MB. Current time: 7/29/23 5:55:51 AM
+// [Engine Memory]: 943 MB (+798kb) [00:12:30]
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_waveformGotoTime0"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O:a (Workspace:JPanel, ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:55:56 AM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 38 MB. Current time: 7/29/23 5:56:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 596, -8); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 943 MB (+262kb) [00:12:57]
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 40 MB. Current time: 7/29/23 5:56:19 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 37 MB. Current time: 7/29/23 5:56:20 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 36 MB. Current time: 7/29/23 5:56:20 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 36 MB. Current time: 7/29/23 5:56:20 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 37 MB. Current time: 7/29/23 5:56:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 36 MB. Current time: 7/29/23 5:56:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 37 MB. Current time: 7/29/23 5:56:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 36 MB. Current time: 7/29/23 5:56:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 36 MB. Current time: 7/29/23 5:56:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 21 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 632, 44); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 45 MB. Current time: 7/29/23 5:56:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 43 MB. Current time: 7/29/23 5:56:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 42 MB. Current time: 7/29/23 5:56:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 49 MB. Current time: 7/29/23 5:56:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 54 MB. Current time: 7/29/23 5:56:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 60 MB. Current time: 7/29/23 5:56:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 62 MB. Current time: 7/29/23 5:56:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 68 MB. Current time: 7/29/23 5:56:37 AM
+// [GUI Memory]: 109 MB (+35630kb) [00:13:19]
+// [Engine Memory]: 943 MB (+262kb) [00:21:28]
+// [GUI Memory]: 109 MB (+152kb) [00:23:13]
+// [GUI Memory]: 110 MB (+985kb) [00:23:18]
+// [GUI Memory]: 110 MB (+145kb) [00:23:23]
+// [GUI Memory]: 110 MB (+50kb) [00:23:28]
+// [GUI Memory]: 110 MB (+146kb) [00:23:33]
+// [GUI Memory]: 111 MB (+986kb) [00:23:38]
+// [GUI Memory]: 111 MB (+157kb) [00:23:43]
+// [GUI Memory]: 111 MB (+40kb) [00:23:48]
+// [GUI Memory]: 112 MB (+1091kb) [00:23:53]
+// [GUI Memory]: 112 MB (+52kb) [00:23:58]
+// [GUI Memory]: 112 MB (+154kb) [00:24:03]
+// [GUI Memory]: 112 MB (+44kb) [00:24:08]
+// [GUI Memory]: 113 MB (+1098kb) [00:24:13]
+// [GUI Memory]: 113 MB (+42kb) [00:24:18]
+// [GUI Memory]: 114 MB (+145kb) [00:24:23]
+// [GUI Memory]: 114 MB (+47kb) [00:24:28]
+// [GUI Memory]: 115 MB (+1090kb) [00:24:33]
+// [GUI Memory]: 115 MB (+42kb) [00:24:38]
+// [GUI Memory]: 115 MB (+155kb) [00:24:43]
+// [GUI Memory]: 115 MB (+42kb) [00:24:48]
+// Elapsed time: 957 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // al:DockableFrame
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, branch_pred_unit (branch_pred_unit.v)]", 5, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, branch_pred_unit (branch_pred_unit.v)]", 5, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 943 MB (+135kb) [00:29:23]
+// [Engine Memory]: 943 MB (+65kb) [00:29:28]
+// Elapsed time: 46 seconds
+selectCodeEditor("branch_pred_unit.v", 188, 587, false, false, false, true, false); // bi:J (JPanel:JComponent, ch:JFrame) - Popup Trigger
+// [Engine Memory]: 944 MB (+200kb) [00:29:51]
+// [Engine Memory]: 944 MB (+65kb) [00:30:02]
+// [GUI Memory]: 116 MB (+828kb) [00:30:07]
+// [Engine Memory]: 944 MB (+266kb) [00:30:17]
+// Elapsed time: 49 seconds
+selectCodeEditor("branch_pred_unit.v", 177, 263); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 944 MB (+262kb) [00:30:45]
+// [Engine Memory]: 944 MB (+135kb) [00:30:50]
+// [Engine Memory]: 944 MB (+131kb) [00:30:55]
+// [Engine Memory]: 945 MB (+135kb) [00:31:00]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// y:ad (ch:JFrame): Invalid Top Module: addNotify
+// [Engine Memory]: 945 MB (+65kb) [00:31:08]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 945 MB (+65kb) [00:31:08]
+// [Engine Memory]: 945 MB (+135kb) [00:31:10]
+// Elapsed time: 31 seconds
+dismissDialog("Invalid Top Module"); // y:ad (ch:JFrame)
+selectCodeEditor("branch_pred_unit.v", 157, 253); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit.v", 214, 307); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 945 MB (+65kb) [00:31:23]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 945 MB (+65kb) [00:31:24]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("branch_pred_unit.v", 7, 456); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 945 MB (+65kb) [00:31:45]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 945 MB (+69kb) [00:31:54]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 945 MB (+65kb) [00:31:56]
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+// [Engine Memory]: 945 MB (+65kb) [00:31:57]
+// [Engine Memory]: 945 MB (+65kb) [00:31:58]
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 945 MB (+69kb) [00:32:00]
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// [Engine Memory]: 945 MB (+65kb) [00:32:01]
+// [Engine Memory]: 946 MB (+200kb) [00:32:01]
+// [Engine Memory]: 946 MB (+131kb) [00:32:01]
+// [Engine Memory]: 946 MB (+397kb) [00:32:03]
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, Q:JDialog)
+// TclEventType: FILE_SET_CHANGE
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // u:aG
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 946 MB (+196kb) [00:32:03]
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// [Engine Memory]: 946 MB (+135kb) [00:32:04]
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:      while executing "webtalk_transmit -clientid 3075999663 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/..." line 41) INFO: [Common 17-206] Exiting Webtalk at Sat Jul 29 06:15:29 2023... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "branch_pred_unit_tb_behav -key {Behavioral:sim_1:Functional:branch_pred_unit_tb} -tclbatch {branch_pred_unit_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// [Engine Memory]: 947 MB (+266kb) [00:32:08]
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// [Engine Memory]: 947 MB (+65kb) [00:32:08]
+// [Engine Memory]: 947 MB (+65kb) [00:32:08]
+// [Engine Memory]: 947 MB (+69kb) [00:32:09]
+// [Engine Memory]: 947 MB (+331kb) [00:32:09]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 947 MB (+65kb) [00:32:09]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// [Engine Memory]: 947 MB (+135kb) [00:32:09]
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 947 MB (+65kb) [00:32:09]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [GUI Memory]: 116 MB (+32kb) [00:32:09]
+// [Engine Memory]: 947 MB (+65kb) [00:32:09]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source branch_pred_unit_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 255 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" Line 107 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'branch_pred_unit_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 5828.387 ; gain = 0.000 ; free physical = 241 ; free virtual = 2426 
+// 'c' command handler elapsed time: 11 seconds
+// [Engine Memory]: 948 MB (+135kb) [00:32:10]
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// [Engine Memory]: 948 MB (+65kb) [00:32:10]
+// [Engine Memory]: 948 MB (+393kb) [00:32:12]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 116 MB (+168kb) [00:32:12]
+// [Engine Memory]: 948 MB (+69kb) [00:32:12]
+// [Engine Memory]: 948 MB (+65kb) [00:32:12]
+// [Engine Memory]: 948 MB (+131kb) [00:32:18]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "branch_pred_unit_tb.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 948 MB (+135kb) [00:32:18]
+// [Engine Memory]: 949 MB (+131kb) [00:32:24]
+selectCodeEditor("branch_pred_unit_tb.v", 33, 315); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 949 MB (+69kb) [00:32:27]
+// Elapsed time: 13 seconds
+selectCodeEditor("branch_pred_unit_tb.v", 58, 497); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 949 MB (+65kb) [00:32:42]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 949 MB (+200kb) [00:32:45]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 949 MB (+131kb) [00:32:46]
+// [Engine Memory]: 949 MB (+65kb) [00:32:48]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+// [Engine Memory]: 949 MB (+69kb) [00:32:50]
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// [Engine Memory]: 949 MB (+65kb) [00:33:00]
+// [Engine Memory]: 949 MB (+65kb) [00:33:01]
+// [Engine Memory]: 949 MB (+200kb) [00:33:01]
+// [Engine Memory]: 949 MB (+65kb) [00:33:01]
+// [Engine Memory]: 950 MB (+135kb) [00:33:03]
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, Q:JDialog)
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 2"); // u:aG
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-99] Step results log file:'/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xvlog.log' file for more information. 
+// a:a (ch:JFrame): Critical Messages: addNotify
+// [Engine Memory]: 950 MB (+262kb) [00:33:04]
+// 'c' command handler elapsed time: 13 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// [Engine Memory]: 950 MB (+65kb) [00:33:06]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// [Engine Memory]: 950 MB (+69kb) [00:33:11]
+// [Engine Memory]: 950 MB (+65kb) [00:33:20]
+// [Engine Memory]: 950 MB (+65kb) [00:33:35]
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "branch_pred_unit_tb.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 950 MB (+262kb) [00:33:44]
+selectCodeEditor("branch_pred_unit_tb.v", 115, 322); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 950 MB (+65kb) [00:33:49]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 950 MB (+69kb) [00:33:51]
+// [Engine Memory]: 951 MB (+65kb) [00:33:53]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 951 MB (+65kb) [00:33:56]
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// [Engine Memory]: 951 MB (+135kb) [00:33:59]
+// TclEventType: LAUNCH_SIM
+// Tcl Message:      while executing "webtalk_transmit -clientid 4214340824 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/..." line 41) INFO: [Common 17-206] Exiting Webtalk at Sat Jul 29 06:17:22 2023... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "branch_pred_unit_tb_behav -key {Behavioral:sim_1:Functional:branch_pred_unit_tb} -tclbatch {branch_pred_unit_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// [Engine Memory]: 951 MB (+266kb) [00:34:01]
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// [Engine Memory]: 951 MB (+131kb) [00:34:01]
+// [Engine Memory]: 951 MB (+65kb) [00:34:01]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 951 MB (+69kb) [00:34:01]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 951 MB (+65kb) [00:34:01]
+// [Engine Memory]: 951 MB (+65kb) [00:34:01]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 951 MB (+65kb) [00:34:01]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source branch_pred_unit_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [Engine Memory]: 952 MB (+69kb) [00:34:02]
+// [Engine Memory]: 952 MB (+65kb) [00:34:02]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 255 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" Line 108 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'branch_pred_unit_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 5829.426 ; gain = 1.039 ; free physical = 199 ; free virtual = 2387 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+// [Engine Memory]: 952 MB (+65kb) [00:34:02]
+// [Engine Memory]: 952 MB (+266kb) [00:34:02]
+// [Engine Memory]: 952 MB (+65kb) [00:34:04]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 952 MB (+69kb) [00:34:04]
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 952 MB (+131kb) [00:34:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 952 MB. GUI used memory: 117 MB. Current time: 7/29/23 6:17:33 AM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_waveformGotoTime0"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 952 MB (+262kb) [00:34:16]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 952 MB. GUI used memory: 81 MB. Current time: 7/29/23 6:17:40 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O:a (Workspace:JPanel, ch:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 207, 284); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 171, 294); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 952 MB. GUI used memory: 79 MB. Current time: 7/29/23 6:17:44 AM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 360, 287); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 471, 282); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [Engine Memory]: 952 MB (+65kb) [00:34:33]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "branch_pred_unit_tb.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 953 MB (+69kb) [00:34:37]
+// [Engine Memory]: 953 MB (+65kb) [00:34:42]
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Elapsed time: 10 seconds
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 3"); // u:aG
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "branch_pred_unit_tb.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 953 MB (+65kb) [00:34:57]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "branch_pred_unit.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 953 MB (+65kb) [00:35:02]
+selectCodeEditor("branch_pred_unit_tb.v", 222, 202); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 953 MB (+401kb) [00:35:06]
+// [Engine Memory]: 953 MB (+65kb) [00:35:22]
+// [Engine Memory]: 953 MB (+65kb) [00:35:24]
+// Elapsed time: 59 seconds
+selectCodeEditor("branch_pred_unit_tb.v", 168, 263); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 954 MB (+335kb) [00:36:08]
+selectCodeEditor("branch_pred_unit_tb.v", 285, 214); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 954 MB (+331kb) [00:36:12]
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("branch_pred_unit_tb.v", 169, 278); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 124, 276); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 954 MB (+65kb) [00:36:22]
+// [GUI Memory]: 117 MB (+1138kb) [00:36:24]
+// [Engine Memory]: 954 MB (+135kb) [00:36:27]
+// [Engine Memory]: 954 MB (+65kb) [00:36:36]
+// Elapsed time: 55 seconds
+selectCodeEditor("branch_pred_unit_tb.v", 184, 308); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 954 MB (+131kb) [00:37:20]
+selectCodeEditor("branch_pred_unit_tb.v", 171, 276); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 954 MB (+200kb) [00:37:25]
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 192, 294); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 955 MB (+262kb) [00:37:30]
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 317, 338); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 137, 217); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 158, 261); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 955 MB (+65kb) [00:37:45]
+typeControlKey(null, null, 'z');
+selectCodeEditor("branch_pred_unit_tb.v", 140, 251); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 118 MB (+613kb) [00:37:52]
+// [Engine Memory]: 955 MB (+135kb) [00:37:52]
+selectCodeEditor("branch_pred_unit_tb.v", 73, 274); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 57, 274); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 955 MB (+65kb) [00:37:57]
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 48, 276); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 142, 373); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 153, 372); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 57, 416); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 180, 514); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 955 MB (+135kb) [00:38:17]
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 194, 503); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 955 MB (+65kb) [00:38:22]
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 106, 555); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 58, 405); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 955 MB (+65kb) [00:38:32]
+selectCodeEditor("branch_pred_unit_tb.v", 131, 578); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 955 MB (+65kb) [00:38:37]
+selectCodeEditor("branch_pred_unit_tb.v", 42, 595); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("branch_pred_unit_tb.v", 155, 621); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 955 MB (+69kb) [00:39:02]
+// Elapsed time: 11 seconds
+selectCodeEditor("branch_pred_unit_tb.v", 190, 482); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 119 MB (+1272kb) [00:39:12]
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "branch_pred_unit_tb.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 955 MB (+131kb) [00:39:21]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "branch_pred_unit.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 159, 263); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 91, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 114, 351); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 159, 320); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("branch_pred_unit_tb.v", 105, 401); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 37, 192); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 26, 37); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 51, 77); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 51, 77); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 43, 436); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 47, 588); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 64, 526); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 59, 506); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 36, 288); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 956 MB (+262kb) [00:40:34]
+// Elapsed time: 32 seconds
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 154, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 176, 403); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 183, 429); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 179, 416); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 42, 338); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 113, 290); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 210, 338); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 238, 352); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 120 MB (+1573kb) [00:41:50]
+// Elapsed time: 39 seconds
+selectCodeEditor("branch_pred_unit_tb.v", 347, 345); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 262, 350); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 315, 357); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 249, 352); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 313, 349); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 313, 349, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("branch_pred_unit_tb.v", 247, 369); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 149, 410); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 189, 379); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 182, 383); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 193, 419); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 160, 525); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 31, 462); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 66, 423); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 257, 532); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 248, 536); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 239, 539); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 239, 541); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 233, 545); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 281, 552); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 187, 629); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 373, 698); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 407, 669); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 255, 512); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 206, 475); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 123 MB (+2770kb) [00:43:41]
+selectCodeEditor("branch_pred_unit_tb.v", 206, 475); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 379, 591); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 408, 576); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 271, 437); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 450, 578); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 230, 684); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("branch_pred_unit_tb.v", 403, 676); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 430, 520); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "branch_pred_unit_tb.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("branch_pred_unit_tb.v", 640, 622); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+// [GUI Memory]: 124 MB (+1600kb) [00:44:43]
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, Q:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'branch_pred_unit_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' 
+// Tcl Message:  ****** Webtalk v2014.4 (64-bit)   **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014   **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014     ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.  source /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:      while executing "webtalk_transmit -clientid 2514272673 -regid "212739188_0_0_343" -xml /home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/f..."     (file "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav/xsim.dir/branch_pred_unit_tb_behav/webtalk/..." line 41) INFO: [Common 17-206] Exiting Webtalk at Sat Jul 29 06:28:19 2023... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ishita/Documents/minor_project/final_minor_project/Pipelined/final_minor/final_minor.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "branch_pred_unit_tb_behav -key {Behavioral:sim_1:Functional:branch_pred_unit_tb} -tclbatch {branch_pred_unit_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2014.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 125 MB (+241kb) [00:44:58]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 126 MB (+1060kb) [00:44:58]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source branch_pred_unit_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 135 ns : File "/home/ishita/Documents/minor_project/final_minor_project/Pipelined/testbench/branch_pred_unit_tb.v" Line 157 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'branch_pred_unit_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 5829.426 ; gain = 0.000 ; free physical = 676 ; free virtual = 2881 
+// 'c' command handler elapsed time: 14 seconds
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 85 MB. Current time: 7/29/23 6:28:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O:a (Workspace:JPanel, ch:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_waveformGotoTime0"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 91 MB. Current time: 7/29/23 6:28:30 AM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 59, 205); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 59, 227); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 570, 222); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 100 MB. Current time: 7/29/23 6:28:42 AM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 517, 224); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 424, 956); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 92 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 85 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 87 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 89 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 87 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 87 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 87 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 85 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 91 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 94 MB. Current time: 7/29/23 6:28:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 400, 182); // n:a (JViewport:JComponent, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 400, 182); // n:a (JViewport:JComponent, ch:JFrame)Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O:a (Workspace:JPanel, ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 36 MB. Current time: 7/29/23 6:29:07 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O:a (Workspace:JPanel, ch:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 400, 182); // n:a (JViewport:JComponent, ch:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 400, 180); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 400, 180); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 59 MB. Current time: 7/29/23 6:29:10 AM
+// [Engine Memory]: 956 MB (+262kb) [00:45:47]
+floatFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 4"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// RDIResource.RDIViews_WAVEFORM_VIEWER: Untitled 4: float view
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 82 MB. Current time: 7/29/23 6:29:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 64 MB. Current time: 7/29/23 6:29:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 65 MB. Current time: 7/29/23 6:29:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 62 MB. Current time: 7/29/23 6:29:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 57 MB. Current time: 7/29/23 6:29:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 55 MB. Current time: 7/29/23 6:29:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 55 MB. Current time: 7/29/23 6:29:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 59 MB. Current time: 7/29/23 6:29:15 AM
+// Elapsed time: 16 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 73 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 88 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 79 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 76 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 76 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 76 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 76 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 75 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 76 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 75 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 75 MB. Current time: 7/29/23 6:29:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // v:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // v:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 88 MB. Current time: 7/29/23 6:29:33 AM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // v:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [Engine Memory]: 1,003 MB (+48947kb) [00:46:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 39 MB. Current time: 7/29/23 6:29:52 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 48 MB. Current time: 7/29/23 6:29:58 AM
+// Elapsed time: 15 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, NoName, ghp[3:0]]", 12, true); // a:k (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, NoName, ghp[3:0]]", 12, true, false, false, false, true, false); // a:k (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Name"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Waveform Style"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Signal Color"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Signal Color"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Waveform Style"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Name"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Name"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Waveform Style"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, FrameFloatingContainer:ResizableFrame)
+selectMenuItem((HResource) null, "Binary"); // N:JCheckBoxMenuItem (JPopupMenu:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 674, 288); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 674, 288, false, false, false, false, true); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 54 MB. Current time: 7/29/23 6:30:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 667, 289); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 245, 442); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 62 MB. Current time: 7/29/23 6:30:19 AM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // v:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 61 MB. Current time: 7/29/23 6:30:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 52 MB. Current time: 7/29/23 6:30:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 59 MB. Current time: 7/29/23 6:30:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 69 MB. Current time: 7/29/23 6:30:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 69 MB. Current time: 7/29/23 6:30:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 69 MB. Current time: 7/29/23 6:30:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 63 MB. Current time: 7/29/23 6:30:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 73 MB. Current time: 7/29/23 6:30:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 76 MB. Current time: 7/29/23 6:30:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 76 MB. Current time: 7/29/23 6:30:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 554, 232); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 87 MB. Current time: 7/29/23 6:30:29 AM
