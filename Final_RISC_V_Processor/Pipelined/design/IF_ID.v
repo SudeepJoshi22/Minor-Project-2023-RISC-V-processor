@@ -7,7 +7,7 @@ module IF_ID (
     output reg [31:0] PC_IF_IF_ID
 );
 
-always @(posedge clk, negedge rst)
+always @(posedge clk)
 begin
     if (!rst)
     begin

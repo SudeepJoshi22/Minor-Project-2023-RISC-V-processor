@@ -43,6 +43,7 @@ reg_file REG_FILE(
     clk,
     RegWrite,
     rst,
+    opcode,
     rs1,
     rs2,
     rd_WB,

@@ -19,7 +19,7 @@ module EX_MEM (
     output reg [31:0] PC_EX_EX_MEM
 );
 
-always @(posedge clk, negedge rst)
+always @(posedge clk)
 begin
     if (!rst)
     begin

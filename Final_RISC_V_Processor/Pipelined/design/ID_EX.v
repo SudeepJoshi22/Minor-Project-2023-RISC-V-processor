@@ -21,7 +21,7 @@ module ID_EX (
     output reg [31:0] PC_ID_ID_EX
 );
 
-always @(posedge clk, negedge rst)
+always @(posedge clk)
 begin
     if (!rst)
     begin

@@ -45,8 +45,8 @@ assign rd_MEM = rd_r;
 assign d_addr = ~cs_d_n ? result : 32'dz;
 assign Data_write = ~cs_d_n ? DataStore : 32'dz;
 
-assign rd = (opcode == I2)? 1'b1: 1'bz;
-assign wr = (opcode == S)? 1'b1 : 1'bz;
+assign rd = (opcode == I2)? 1'b1: 1'b0;
+assign wr = (opcode == S)? 1'b1 : 1'b0;
 assign cs_d_n = ((rd == 1) || (wr == 1))? 1'b0 : 1'b1; //activate chip select only if read and write is activated
 
 endmodule

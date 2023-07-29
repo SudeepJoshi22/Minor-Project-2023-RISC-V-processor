@@ -19,7 +19,7 @@ module MEM_WB (
     output reg [31:0] PC_MEM_MEM_WB
 );
 
-always @(posedge clk, negedge rst)
+always @(posedge clk)
 begin
     if (!rst)
     begin
