@@ -1,4 +1,5 @@
 .text
+	addi x0,x0,0
 	addi t0,x0,0x00f
 	addi t1,x0,0x123
 	addi t2,x0,0x00e

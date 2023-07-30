@@ -5,7 +5,7 @@ module reg_file(
     input wire clk,
     input wire RegWrite,
     input wire rst,
-    input wire opcode,
+    input wire [6:0] opcode,
     input wire [4:0] ReadAddr1, 
     input wire [4:0] ReadAddr2, 
     input wire [4:0] WriteAddr,
@@ -22,7 +22,7 @@ reg clk2;
 wire s_hazard;
 integer i;
 
-assign s_hazard = (~((opcode==BR)||(opcode==S)))&&( (WriteAddr==ReadAddr1)||(WriteAddr==ReadAddr2));
+assign s_hazard = (~((opcode==BR)||(opcode==S)))&&( (WriteAddr==ReadAddr1)||(WriteAddr==ReadAddr2)) && (~(WriteAddr == 5'd0));
 
 assign {ReadData1,ReadData2} = (read_data_valid)? {Read1,Read2} : 64'dz;
 
