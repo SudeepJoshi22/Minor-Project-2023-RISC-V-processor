@@ -9,13 +9,13 @@ input wire cs_n,
 output reg [31:0] instrCode
 );
 
-reg [7:0] Mem[2**20:0];
+reg [7:0] Mem[1000:0];
 
 always @(*)
 begin
     if(~rst)
     begin
-        $readmemh("/home/sudeep/Documents/Project-GITHUB/Minor-Project-2023-RISC-V-processor/Final_RISC_V_Processor/Unpipelined/instructions/dump2.mem",Mem);
+        $readmemh("memory.mem",Mem);
         instrCode <= 32'dz;
     end
 end
