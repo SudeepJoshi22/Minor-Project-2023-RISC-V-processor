@@ -55,7 +55,7 @@ begin
     else if(RegWrite) begin
         if(WriteAddr != 5'b00000) begin //x0 register must be always 0
             	reg_file[WriteAddr] <= WriteData;
-    		fd = $fopen("register_file.txt","ab+");
+    		fd = $fopen("register_file.log","ab+");
     		$fdisplay(fd,"At time: %t\n",$time);
     		for(i=0;i<32;i=i+1) begin
     			$fdisplay(fd,"\tRegister %d: %h\n",i,reg_file[i]);
@@ -71,4 +71,3 @@ assign ReadData2 = reg_file[ReadAddr2];
 
 
 endmodule
-

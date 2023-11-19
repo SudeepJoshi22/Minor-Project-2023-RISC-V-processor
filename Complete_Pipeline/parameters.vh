@@ -1,0 +1,2 @@
+`define DATA_WIDTH 32
+`define INSTR_MEM_SIZE 2000
