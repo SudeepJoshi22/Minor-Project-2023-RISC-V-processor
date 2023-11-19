@@ -33,12 +33,12 @@ d_addr,
 Data_write
 );
 
-initial 
+initial clk <= 0;
+
+initial
 begin
-clk <= 0;
 	$dumpfile("waveform.vcd");
-	$dumpvars(0, top_module_tb);
-	
+	$dumpvars(0,top_module_tb);
 end
 
 always #10 clk <= ~clk;
@@ -48,8 +48,7 @@ begin
     rst_n <= 0;
     #15
     rst_n <= 1;
-    
-    #400 $finish;
+    #1000 $finish;
 end
 
 endmodule

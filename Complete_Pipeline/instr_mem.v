@@ -9,7 +9,7 @@ input wire cs_n,
 output reg [31:0] instrCode
 );
 
-reg [7:0] Mem[1000:0];
+reg [7:0] Mem[2000:0];
 
 always @(*)
 begin
