@@ -1,5 +1,28 @@
+// MIT License
+// 
+// Copyright (c) 2023 Sudeep et al.
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 `timescale 1ns / 1ps
 `default_nettype none
+
 
 module IF(
 input wire clk,
@@ -25,24 +48,12 @@ assign PC_4_IF = PC_4;
 assign i_addr = rst? PC : 32'dz;
 assign instrCode = instr_read;
 
-assign cs_i_n = rst? 1'b0 : 'b1;
+assign cs_i_n = rst ? 1'b0 : 1'b1;
 
 assign PC_imm = PC + (immOut_EX<<1);
 assign PC_4 = PC + 32'd4;
-assign PC_next= PC_src? ( jalr ? (result_EX & ~1) : PC_imm): PC_4;
+assign PC_next = PC_src? ( jalr ? (result_EX & ~1) : PC_imm): PC_4;
 
-/*
-//ce logic for fetch stage
-always @(posedge clk, negedge rst) 
-begin
-     if(!rst) 
-         ce <= 1'b0; 
-     else if(PC_src) 
-         ce<=1'b0;
-     else 
-         ce <= 1'b1; 
-end
-*/
 
 always @(posedge clk)
 begin

@@ -1,5 +1,28 @@
+// MIT License
+// 
+// Copyright (c) 2023 Sudeep et al.
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 `timescale 1ns / 1ps
 `default_nettype none
+`include "parameters.vh"
 
 module MEM(
 input wire clk,
@@ -32,7 +55,6 @@ output wire [6:0] opcode_MEM,
 output wire [31:0] result_MEM,
 output wire [31:0] PC_4_MEM
 );
-parameter I1 = 7'b0010011, I2 = 7'b0000011, S = 7'b0100011, R = 7'b0110011,BR=7'b1100011,J=7'b1101111,JR=7'b1100111,U=7'b0110111,UPC=7'b0010111;
 
 reg [31:0] address;
 
@@ -49,8 +71,8 @@ assign Data_out_MEM = Data_read;
 assign d_addr = ~cs_d_n ? result : 32'dz;
 assign Data_write = ~cs_d_n ? Data_store : 32'dz;
 
-assign rd = (opcode == I2)? 1'b1: 1'bz;
-assign wr = (opcode == S)? 1'b1 : 1'bz;
+assign rd = (opcode == `I2)? 1'b1: 1'bz;
+assign wr = (opcode == `S)? 1'b1 : 1'bz;
 assign cs_d_n = ((rd == 1) || (wr == 1))? 1'b0 : 1'b1; //activate chip select only if read and write is activated
 
 endmodule

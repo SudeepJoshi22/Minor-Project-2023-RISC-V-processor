@@ -1,5 +1,28 @@
+// MIT License
+// 
+// Copyright (c) 2023 Sudeep et al.
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 `timescale 1ns / 1ps
 `default_nettype none
+`include "parameters.vh"
 
 module control_unit(
 input wire [31:0] instr,
@@ -8,7 +31,6 @@ output reg [1:0] whb,
 output reg su,
 output reg [1:0]wos
 );
-parameter I1 = 7'b0010011, I2 = 7'b0000011, S = 7'b0100011, R = 7'b0110011,B=7'b1100011,J=7'b1101111,JR=7'b1100111,U=7'b0110111,UPC=7'b0010111;
 
 wire [2:0] func3;
 wire [6:0] func7;
@@ -21,7 +43,7 @@ assign opcode = instr[6:0];
 always @(*)
     begin
         case(opcode)
-            R:   
+            `R:   
                 if(func3 == 3'b000 && func7 == 7'b0000000) 
                     {alu_ctrl,whb,su,wos} <= 9'b0000_10_1_01; //ADD 
                 else if(func3 == 3'b000 && func7 == 7'b0100000)
@@ -45,7 +67,7 @@ always @(*)
                 else 
                     {alu_ctrl,whb,su,wos} <=9'bxxxx_xx_x_xx;
         
-            I1:
+            `I1:
                 if(func3 == 3'b000) 
                     {alu_ctrl,whb,su,wos} <= 9'b0000_10_1_01; //ADDI 
                 else if(func3 == 3'b001 && func7 == 7'b0000000)
@@ -66,7 +88,7 @@ always @(*)
                     {alu_ctrl,whb,su,wos} <= 9'b1100_10_1_01; //SRAI 
                 else
                     {alu_ctrl,whb,su,wos} <=9'bxxxx_xx_x_xx;
-            I2:
+            `I2:
                 if(func3 == 3'b010)
                     {alu_ctrl,whb,su,wos} <= 9'b0000_10_1_01; //LW 
                 else if(func3 == 3'b001)
@@ -79,7 +101,7 @@ always @(*)
                     {alu_ctrl,whb,su,wos} <= 9'b0000_01_0_01; //LHU 
                 else 
                     {alu_ctrl,whb,su,wos} <=9'bxxxx_xx_x_xx;
-            S:
+            `S:
                 if(func3 == 3'b010) 
                     {alu_ctrl,whb,su,wos} <= 9'b0000_10_1_01; //SW 
                 else if(func3 == 3'b001) 
@@ -88,18 +110,18 @@ always @(*)
                     {alu_ctrl,whb,su,wos} <= 9'b0000_00_1_01; //SB 
                 else 
                     {alu_ctrl,whb,su,wos} <=9'bxxxx_xx_x_xx;
-            B:
+            `BR:
                     {alu_ctrl,whb,su,wos} <=9'b0001_10_1_01; //BEQ, BNE, BLT, BGE, BLTU, BGEU
-            JR:
+            `JR:
                 if(func3 == 3'b000) 
                     {alu_ctrl,whb,su,wos} <= 9'b0000_10_1_10; //JALR 
                 else
                     {alu_ctrl,whb,su,wos} <=9'bxxxx_xx_x_xx; 
-            J:
+            `J:
                     {alu_ctrl,whb,su,wos} <= 9'b0000_10_1_10; //JAL 
-            U:
+            `U:
                     {alu_ctrl,whb,su,wos} <= 9'b1101_10_1_01; //LUI 
-            UPC:
+            `UPC:
                     {alu_ctrl,whb,su,wos} <= 9'b0000_10_1_01; //AUIPC 
             default:                    
                     {alu_ctrl,whb,su,wos} <=9'bxxxx_xx_x_xx;        

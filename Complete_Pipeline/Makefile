@@ -14,6 +14,8 @@ init:
 	sudo apt install -y iverilog gtkwave
 
 core: $(VERILOG_FILES)
+	@echo "Cleaning the log files..."
+	rm -f output.vvp waveform.vcd core.vvp *_tb.vvp *.log
 	@echo "Aligning the Memory to Little Endian..."
 	python3 $(PYTHON_SCRIPT)	
 	@echo "Compiling Verilog files..."

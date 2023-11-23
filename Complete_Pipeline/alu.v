@@ -1,5 +1,28 @@
+// MIT License
+// 
+// Copyright (c) 2023 Sudeep et al.
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 `timescale 1ns / 1ps
 `default_nettype none
+`include "parameters.vh"
 
 module alu(
 input wire signed [31:0] A,
@@ -10,7 +33,6 @@ output wire zero,
 output wire lt,
 output wire ltu
 );
-parameter ADD = 4'b0000,SUB = 4'b0001,AND = 4'b0010,OR = 4'b0100,XOR = 4'b1000,SRL = 4'b1001,SLL = 4'b1010, SRA = 4'b1100, BUF = 4'b1101;
 
 reg signed [32:0] AU,BU,resultu;
 
@@ -27,26 +49,26 @@ end
 always @(*)
 begin
     case(alu_ctrl)        
-        ADD:
+        `ADD:
             result <= A + B;
-        SUB:
-        begin
-            result <= A - B;
-            resultu <= AU - BU;
-        end
-        AND:
+        `SUB:
+	begin
+	    result <= A - B;
+	    resultu <= AU - BU;
+	end
+        `AND:
             result <= A & B;
-        OR:
+        `OR:
             result <= A | B;
-        XOR:
+        `XOR:
             result <= A ^ B;
-        SRL:
+        `SRL:
             result <= A >> B[4:0]; //Shift is only define by the lower order 5-bits of B
-        SLL:
+        `SLL:
             result <= A << B[4:0]; //Same here
-        SRA:
+        `SRA:
             result <= A >>> B[4:0];
-        BUF:
+        `BUF:
             result <= B;  
         default:
             result <= 32'bz;
